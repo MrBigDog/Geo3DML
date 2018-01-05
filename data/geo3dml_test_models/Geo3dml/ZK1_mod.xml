@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GeoModel xmlns:geo3dml="http://www.cgs.gov.cn/GMML" xmlns="http://www.cgs.gov.cn/GMML"
+	xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:gmlcov="http://www.opengis.net/gml/3.2"
+	xmlns:swe="http://www.opengis.net/swe/2.0"
+	xmlns:ogc="http://www.opengis.net/ogc"
+	xmlns:se="http://www.opengis.net/se"
+	xmlns:gsml="http://xmlns.geosciml.org/GeoSciML-Core/3.0"
+	xmlns:gsmlst="http://xmlns.geosciml.org/GeologicStructure/3.0"
+	xmlns:gsmlgu="http://xmlns.geosciml.org/GeologicUnit/3.0"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns:GMML="http://www.cgs.gov.cn/GeoGML"
+	xsi:schemaLocation="http://www.cgs.gov.cn/GMML file:/E:/GMML/docs/schema/gmml.xsd">
+<Name>ZK1</Name>
+<Type>Drill</Type>
+<Metadata>
+</Metadata>
+<FeatureClasses>
+<FeatureClass><GeoFeatureClass gml:id="ZK1-Mark">
+<gml:name>Drill Mark</gml:name>
+<Schema>
+<swe:field name="Up_Attribute">
+<swe:Text>
+</swe:Text>
+</swe:field>
+<swe:field name="Down_Attribute">
+<swe:Text>
+</swe:Text>
+</swe:field>
+<swe:field name="Fault_No">
+<swe:Count>
+</swe:Count>
+</swe:field>
+<swe:field name="Shape">
+</swe:field>
+</Schema>
+<Features>
+<Feature>
+<GeoFeature gml:id="ZK1-Mark-0">
+<gml:name>ZK1-Mark-0</gml:name>
+<Fields>
+<Field Name="Up_Attribute">
+<swe:Text>
+<swe:value>-1</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Down_Attribute">
+<swe:Text>
+<swe:value>M</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Fault_No">
+<swe:Count>
+<swe:value>0</swe:value>
+</swe:Count>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:Point gml:id="ZK1-Mark-Geo-0">
+<gml:pos srsDimension="3">0.000000   50.000000  110.000000</gml:pos>
+</gml:Point>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="ZK1-Mark-1">
+<gml:name>ZK1-Mark-1</gml:name>
+<Fields>
+<Field Name="Up_Attribute">
+<swe:Text>
+<swe:value>M</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Down_Attribute">
+<swe:Text>
+<swe:value>C</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Fault_No">
+<swe:Count>
+<swe:value>0</swe:value>
+</swe:Count>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:Point gml:id="ZK1-Mark-Geo-1">
+<gml:pos srsDimension="3">0.000000   50.000000  60.000000</gml:pos>
+</gml:Point>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="ZK1-Mark-2">
+<gml:name>ZK1-Mark-2</gml:name>
+<Fields>
+<Field Name="Up_Attribute">
+<swe:Text>
+<swe:value>C</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Down_Attribute">
+<swe:Text>
+<swe:value>A</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Fault_No">
+<swe:Count>
+<swe:value>0</swe:value>
+</swe:Count>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:Point gml:id="ZK1-Mark-Geo-2">
+<gml:pos srsDimension="3">0.000000   50.000000  30.000000</gml:pos>
+</gml:Point>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="ZK1-Mark-3">
+<gml:name>ZK1-Mark-3</gml:name>
+<Fields>
+<Field Name="Up_Attribute">
+<swe:Text>
+<swe:value>A</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Down_Attribute">
+<swe:Text>
+<swe:value>-2</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Fault_No">
+<swe:Count>
+<swe:value>0</swe:value>
+</swe:Count>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:Point gml:id="ZK1-Mark-Geo-3">
+<gml:pos srsDimension="3">0.000000   50.000000  10.000000</gml:pos>
+</gml:Point>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+</Features>
+</GeoFeatureClass></FeatureClass>
+<FeatureClass><GeoFeatureClass gml:id="ZK1-Stratum">
+<gml:name>Stratum</gml:name>
+<Schema>
+<swe:field name="stratigraphical_name">
+<swe:Text>
+</swe:Text>
+</swe:field>
+<swe:field name="Shape">
+</swe:field>
+</Schema>
+<Features>
+<Feature>
+<GeoFeature gml:id="ZK1-Stratum-0">
+<gml:name>ZK1-Stratum-0</gml:name>
+<Fields>
+<Field Name="stratigraphical_name">
+<swe:Text>
+<swe:value>M</swe:value>
+</swe:Text>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:LineString gml:id="ZK1-Stratum-Geo-0">
+<gml:posList srsDimension="3" count="2">
+0.000000   50.000000  110.000000
+0.000000   50.000000  60.000000
+</gml:posList>
+</gml:LineString>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="ZK1-Stratum-1">
+<gml:name>ZK1-Stratum-1</gml:name>
+<Fields>
+<Field Name="stratigraphical_name">
+<swe:Text>
+<swe:value>C</swe:value>
+</swe:Text>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:LineString gml:id="ZK1-Stratum-Geo-1">
+<gml:posList srsDimension="3" count="2">
+0.000000   50.000000  60.000000
+0.000000   50.000000  30.000000
+</gml:posList>
+</gml:LineString>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="ZK1-Stratum-2">
+<gml:name>ZK1-Stratum-2</gml:name>
+<Fields>
+<Field Name="stratigraphical_name">
+<swe:Text>
+<swe:value>A</swe:value>
+</swe:Text>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:LineString gml:id="ZK1-Stratum-Geo-2">
+<gml:posList srsDimension="3" count="2">
+0.000000   50.000000  30.000000
+0.000000   50.000000  10.000000
+</gml:posList>
+</gml:LineString>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+</Features>
+</GeoFeatureClass></FeatureClass>
+</FeatureClasses>
+<FeatureRelationship>
+</FeatureRelationship>
+</GeoModel>

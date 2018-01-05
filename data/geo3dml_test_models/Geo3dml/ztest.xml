@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="gb2312"?>
+<Geo3DProject xmlns:geo3dml="http://www.cgs.gov.cn/GMML" xmlns="http://www.cgs.gov.cn/GMML"
+	xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:dt="http://www.opengis.net/gml/3.2"
+	xmlns:gmlcov="http://www.opengis.net/gml/3.2"
+	xmlns:swe="http://www.opengis.net/swe/2.0"
+	xmlns:ogc="http://www.opengis.net/ogc"
+	xmlns:se="http://www.opengis.net/se"
+	xmlns:gsml="http://xmlns.geosciml.org/GeoSciML-Core/3.0"
+	xmlns:gsmlst="http://xmlns.geosciml.org/GeologicStructure/3.0"
+	xmlns:gsmlgu="http://xmlns.geosciml.org/GeologicUnit/3.0"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xi="http://www.w3.org/2001/XInclude"
+	xsi:schemaLocation="http://www.cgs.gov.cn/GMML file:/E:/GMML/docs/schema/gmml.xsd">
+<Name>示例模型</Name>
+<Description>示例模型</Description>
+<Maps>
+<Map>
+<xi:include href="ZK0.xml" />
+</Map>
+<Map>
+<xi:include href="ZK1.xml" />
+</Map>
+<Map>
+<xi:include href="ZK2.xml" />
+</Map>
+<Map>
+<xi:include href="ZK3.xml" />
+</Map>
+<Map>
+<xi:include href="ZK4.xml" />
+</Map>
+<Map>
+<xi:include href="ZK5.xml" />
+</Map>
+<Map>
+<xi:include href="ZK6.xml" />
+</Map>
+<Map>
+<xi:include href="ZK7.xml" />
+</Map>
+<Map>
+<xi:include href="ZK8.xml" />
+</Map>
+<Map>
+<xi:include href="ZK20.xml" />
+</Map>
+<Map>
+<xi:include href="ZK100.xml" />
+</Map>
+<Map>
+<xi:include href="ZK150.xml" />
+</Map>
+<Map>
+<xi:include href="ZK200.xml" />
+</Map>
+<Map>
+<xi:include href="ZK220.xml" />
+</Map>
+<Map>
+<xi:include href="ZK250.xml" />
+</Map>
+<Map>
+<xi:include href="m1.xml" />
+</Map>
+<Map>
+<xi:include href="m1-1.xml" />
+</Map>
+<Map>
+<xi:include href="m2.xml" />
+</Map>
+<Map>
+<xi:include href="m2_1.xml" />
+</Map>
+<Map>
+<xi:include href="m4.xml" />
+</Map>
+<Map>
+<xi:include href="m5.xml" />
+</Map>
+<Map>
+<xi:include href="Model-1.xml" />
+</Map>
+<Map>
+<xi:include href="Model-2.xml" />
+</Map>
+<Map>
+<xi:include href="Model-3.xml" />
+</Map>
+</Maps>
+<Models>
+<Model>
+<xi:include href="ZK0_mod.xml" />
+</Model>
+<Model>
+<xi:include href="ZK1_mod.xml" />
+</Model>
+<Model>
+<xi:include href="ZK2_mod.xml" />
+</Model>
+<Model>
+<xi:include href="ZK3_mod.xml" />
+</Model>
+<Model>
+<xi:include href="ZK4_mod.xml" />
+</Model>
+<Model>
+<xi:include href="ZK5_mod.xml" />
+</Model>
+<Model>
+<xi:include href="ZK6_mod.xml" />
+</Model>
+<Model>
+<xi:include href="ZK7_mod.xml" />
+</Model>
+<Model>
+<xi:include href="ZK8_mod.xml" />
+</Model>
+<Model>
+<xi:include href="ZK20_mod.xml" />
+</Model>
+<Model>
+<xi:include href="ZK100_mod.xml" />
+</Model>
+<Model>
+<xi:include href="ZK150_mod.xml" />
+</Model>
+<Model>
+<xi:include href="ZK200_mod.xml" />
+</Model>
+<Model>
+<xi:include href="ZK220_mod.xml" />
+</Model>
+<Model>
+<xi:include href="ZK250_mod.xml" />
+</Model>
+<Model>
+<xi:include href="m1_mod.xml" />
+</Model>
+<Model>
+<xi:include href="m1-1_mod.xml" />
+</Model>
+<Model>
+<xi:include href="m2_mod.xml" />
+</Model>
+<Model>
+<xi:include href="m2_1_mod.xml" />
+</Model>
+<Model>
+<xi:include href="m4_mod.xml" />
+</Model>
+<Model>
+<xi:include href="m5_mod.xml" />
+</Model>
+<Model>
+<xi:include href="Model-1_mod.xml" />
+</Model>
+<Model>
+<xi:include href="Model-2_mod.xml" />
+</Model>
+<Model>
+<xi:include href="Model-3_mod.xml" />
+</Model>
+</Models>
+</Geo3DProject>

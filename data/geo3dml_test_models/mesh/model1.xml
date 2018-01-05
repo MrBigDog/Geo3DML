@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="gb2312"?>
+<Geo3DMap xmlns:geo3dml="http://www.cgs.gov.cn/GMML" xmlns="http://www.cgs.gov.cn/GMML"
+	xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:gmlcov="http://www.opengis.net/gml/3.2"
+	xmlns:swe="http://www.opengis.net/swe/2.0"
+	xmlns:ogc="http://www.opengis.net/ogc"
+	xmlns:se="http://www.opengis.net/se"
+	xmlns:gsml="http://xmlns.geosciml.org/GeoSciML-Core/3.0"
+	xmlns:gsmlst="http://xmlns.geosciml.org/GeologicStructure/3.0"
+	xmlns:gsmlgu="http://xmlns.geosciml.org/GeologicUnit/3.0"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns:GMML="http://www.cgs.gov.cn/GeoGML"
+	xsi:schemaLocation="http://www.cgs.gov.cn/GMML file:/E:/GMML/docs/schema/gmml.xsd">
+<Name>model1</Name>
+<Description>model1</Description>
+<Layers>
+<Layer>
+<gml:name>Tin</gml:name>
+<FeatureClass xlink:type="simple" xlink:href="#1910" />
+<Styles>
+<Style>
+<Geo3DStyle gml:id="1849">
+<gml:name>1849</gml:name>
+<se:FeatureTypeStyle>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>model1-Tin-GeoLogicFeature0</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>1 1 0</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+</se:FeatureTypeStyle>
+<se:CoverageType3DStyle>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>model1-Tin-GeoLogicFeature0</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoDiscreteCoverageSymbolizer>
+</GeoDiscreteCoverageSymbolizer>
+</se:Rule>
+</se:CoverageType3DStyle>
+</Geo3DStyle>
+</Style>
+</Styles>
+</Layer>
+</Layers>
+</Geo3DMap>

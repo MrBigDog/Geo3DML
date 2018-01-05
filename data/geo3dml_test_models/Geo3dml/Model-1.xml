@@ -1,0 +1,1557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Geo3DMap xmlns:geo3dml="http://www.cgs.gov.cn/GMML" xmlns="http://www.cgs.gov.cn/GMML"
+	xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:gmlcov="http://www.opengis.net/gml/3.2"
+	xmlns:swe="http://www.opengis.net/swe/2.0"
+	xmlns:ogc="http://www.opengis.net/ogc"
+	xmlns:se="http://www.opengis.net/se"
+	xmlns:gsml="http://xmlns.geosciml.org/GeoSciML-Core/3.0"
+	xmlns:gsmlst="http://xmlns.geosciml.org/GeologicStructure/3.0"
+	xmlns:gsmlgu="http://xmlns.geosciml.org/GeologicUnit/3.0"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns:GMML="http://www.cgs.gov.cn/GeoGML"
+	xsi:schemaLocation="http://www.cgs.gov.cn/GMML file:/E:/GMML/docs/schema/gmml.xsd">
+<Name>Model-1</Name>
+<Description>Model-1</Description>
+<Layers>
+<Layer>
+<gml:name></gml:name>
+<FeatureClass xlink:type="simple" xlink:href="#" />
+<Styles>
+<Style>
+</Style>
+</Styles>
+</Layer>
+<Layer>
+<gml:name>Marks</gml:name>
+<FeatureClass xlink:type="simple" xlink:href="#Model-1-Marks" />
+<Styles>
+<Style>
+<Geo3DStyle gml:id="Model-1-Marks-Style">
+<gml:name>Model-1-Marks-Style</gml:name>
+<se:FeatureTypeStyle>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-0</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.6875 0 0</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-1</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>1 1 0.0625</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-2</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>1 0.75 0</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-3</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.375 1 0.6875</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-4</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0 0.5625 1</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-5</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.3125 1 0.75</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-6</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0 0.4375 1</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-7</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0 0 0.6875</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-8</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.3125 1 0.75</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-9</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0 0.375 1</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-10</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.4375 1 0.625</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-11</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>1 0.75 0</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-12</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.9375 1 0.125</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-13</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>1 0.375 0</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-14</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0 0.625 1</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-15</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>1 0.875 0</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-16</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.625 1 0.4375</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-17</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.9375 1 0.125</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-18</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.375 1 0.6875</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-19</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>1 1 0.0625</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-20</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.875 0 0</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-21</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.8125 0 0</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-22</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.625 0 0</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-23</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0 0 0.75</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-24</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0 0 1</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-25</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0 0.625 1</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-26</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.5 1 0.5625</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-27</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.1875 1 0.875</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-28</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>1 0.25 0</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-29</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.9375 1 0.125</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-30</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.875 0 0</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-31</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>1 0.5 0</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-32</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.0625 1 1</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-33</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0 0.125 1</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-34</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0 0.4375 1</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-35</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.25 1 0.8125</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-36</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0 0.625 1</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-37</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0 0.375 1</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-38</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0 0 0.625</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-39</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0 0.8125 1</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-40</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0 0 0.6875</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-41</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>1 0.625 0</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-42</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0 0.9375 1</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-43</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>1 0.125 0</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-44</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0 0 0.9375</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-45</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.75 0 0</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-46</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.625 1 0.4375</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-47</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>1 1 0.0625</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-48</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.875 0 0</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-49</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0 0.625 1</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-50</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>1 0.1875 0</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-51</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0 0 0.5625</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-52</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0 0.5 1</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-53</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>1 0.625 0</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-54</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0 0 0.625</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-55</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0 0 0.6875</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-56</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>1 0.4375 0</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-57</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0 0 0.6875</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-58</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0 0.5625 1</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>Model-1-Marks-59</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.75 1 0.3125</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+</se:FeatureTypeStyle>
+</Geo3DStyle>
+</Style>
+</Styles>
+</Layer>
+<Layer>
+<gml:name>Faults</gml:name>
+<FeatureClass xlink:type="simple" xlink:href="#Model-1-Faults" />
+<Styles>
+<Style>
+<Geo3DStyle gml:id="Model-1-Faults-Style">
+<gml:name>Model-1-Faults-Style</gml:name>
+<se:FeatureTypeStyle>
+<se:Rule>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>1 0 0</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+</se:FeatureTypeStyle>
+</Geo3DStyle>
+</Style>
+</Styles>
+</Layer>
+<Layer>
+<gml:name>Stratums</gml:name>
+<FeatureClass xlink:type="simple" xlink:href="#Model-1-Stratums" />
+<Styles>
+<Style>
+<Geo3DStyle gml:id="Model-1-Stratums-Style">
+<gml:name>Model-1-Stratums-Style</gml:name>
+<se:FeatureTypeStyle>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>Stratigraphical_Name</ogc:PropertyName>
+<ogc:Literal>B</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0 0.4375 1</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>Stratigraphical_Name</ogc:PropertyName>
+<ogc:Literal>C</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>1 0.3125 0</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>Stratigraphical_Name</ogc:PropertyName>
+<ogc:Literal>D</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0 0.6875 1</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>Stratigraphical_Name</ogc:PropertyName>
+<ogc:Literal>G</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>1 0.625 0</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>Stratigraphical_Name</ogc:PropertyName>
+<ogc:Literal>Q1</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0 0 0.75</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>Stratigraphical_Name</ogc:PropertyName>
+<ogc:Literal>Q2</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.4375 1 0.625</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>Stratigraphical_Name</ogc:PropertyName>
+<ogc:Literal>T</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.75 0 0</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+</se:FeatureTypeStyle>
+</Geo3DStyle>
+</Style>
+</Styles>
+</Layer>
+</Layers>
+</Geo3DMap>

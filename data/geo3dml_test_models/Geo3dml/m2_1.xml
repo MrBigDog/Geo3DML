@@ -1,0 +1,1066 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Geo3DMap xmlns:geo3dml="http://www.cgs.gov.cn/GMML" xmlns="http://www.cgs.gov.cn/GMML"
+	xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:gmlcov="http://www.opengis.net/gml/3.2"
+	xmlns:swe="http://www.opengis.net/swe/2.0"
+	xmlns:ogc="http://www.opengis.net/ogc"
+	xmlns:se="http://www.opengis.net/se"
+	xmlns:gsml="http://xmlns.geosciml.org/GeoSciML-Core/3.0"
+	xmlns:gsmlst="http://xmlns.geosciml.org/GeologicStructure/3.0"
+	xmlns:gsmlgu="http://xmlns.geosciml.org/GeologicUnit/3.0"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns:GMML="http://www.cgs.gov.cn/GeoGML"
+	xsi:schemaLocation="http://www.cgs.gov.cn/GMML file:/E:/GMML/docs/schema/gmml.xsd">
+<Name>m2_1</Name>
+<Description>m2_1</Description>
+<Layers>
+<Layer>
+<gml:name>Geological Boundary</gml:name>
+<FeatureClass xlink:type="simple" xlink:href="#m2_1-GeoBoundary" />
+<Styles>
+<Style>
+<Geo3DStyle gml:id="m2_1-GeoBoundary-Style">
+<gml:name>m2_1-GeoBoundary-Style</gml:name>
+<se:FeatureTypeStyle>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-GeoBoundary-0</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.872671 0.726392 0.931738</DiffuseColor>
+<EmissiveColor>0.872671 0.726392 0.931738</EmissiveColor>
+<SpecularColor>0.872671 0.726392 0.931738</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-GeoBoundary-1</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.703199 0.143497 0.962673</DiffuseColor>
+<EmissiveColor>0.703199 0.143497 0.962673</EmissiveColor>
+<SpecularColor>0.703199 0.143497 0.962673</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-GeoBoundary-2</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.281685 0.942936 0.542494</DiffuseColor>
+<EmissiveColor>0.281685 0.942936 0.542494</EmissiveColor>
+<SpecularColor>0.281685 0.942936 0.542494</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-GeoBoundary-3</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.882381 0.491931 0.159427</DiffuseColor>
+<EmissiveColor>0.882381 0.491931 0.159427</EmissiveColor>
+<SpecularColor>0.882381 0.491931 0.159427</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-GeoBoundary-4</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.675131 0.050959 0.153817</DiffuseColor>
+<EmissiveColor>0.675131 0.050959 0.153817</EmissiveColor>
+<SpecularColor>0.675131 0.050959 0.153817</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-GeoBoundary-6</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.843824 0.695803 0.185464</DiffuseColor>
+<EmissiveColor>0.843824 0.695803 0.185464</EmissiveColor>
+<SpecularColor>0.843824 0.695803 0.185464</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-GeoBoundary-7</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.887594 0.435622 0.604318</DiffuseColor>
+<EmissiveColor>0.887594 0.435622 0.604318</EmissiveColor>
+<SpecularColor>0.887594 0.435622 0.604318</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-GeoBoundary-8</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.676343 0.486946 0.269556</DiffuseColor>
+<EmissiveColor>0.676343 0.486946 0.269556</EmissiveColor>
+<SpecularColor>0.676343 0.486946 0.269556</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-GeoBoundary-9</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.797561 0.791194 0.487228</DiffuseColor>
+<EmissiveColor>0.797561 0.791194 0.487228</EmissiveColor>
+<SpecularColor>0.797561 0.791194 0.487228</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-GeoBoundary-10</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.604436 0.441426 0.246249</DiffuseColor>
+<EmissiveColor>0.604436 0.441426 0.246249</EmissiveColor>
+<SpecularColor>0.604436 0.441426 0.246249</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-GeoBoundary-11</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.21357 0.853822 0.352775</DiffuseColor>
+<EmissiveColor>0.21357 0.853822 0.352775</EmissiveColor>
+<SpecularColor>0.21357 0.853822 0.352775</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-GeoBoundary-12</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.57981 0.931249 0.101953</DiffuseColor>
+<EmissiveColor>0.57981 0.931249 0.101953</EmissiveColor>
+<SpecularColor>0.57981 0.931249 0.101953</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-GeoBoundary-13</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.720916 0.024296 0.512182</DiffuseColor>
+<EmissiveColor>0.720916 0.024296 0.512182</EmissiveColor>
+<SpecularColor>0.720916 0.024296 0.512182</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-GeoBoundary-14</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.551067 0.769032 0.720103</DiffuseColor>
+<EmissiveColor>0.551067 0.769032 0.720103</EmissiveColor>
+<SpecularColor>0.551067 0.769032 0.720103</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-GeoBoundary-16</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.272376 0.660368 0.517751</DiffuseColor>
+<EmissiveColor>0.272376 0.660368 0.517751</EmissiveColor>
+<SpecularColor>0.272376 0.660368 0.517751</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-GeoBoundary-17</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.953742 0.888925 0.804642</DiffuseColor>
+<EmissiveColor>0.953742 0.888925 0.804642</EmissiveColor>
+<SpecularColor>0.953742 0.888925 0.804642</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-GeoBoundary-18</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.611838 0.07743 0.061483</DiffuseColor>
+<EmissiveColor>0.611838 0.07743 0.061483</EmissiveColor>
+<SpecularColor>0.611838 0.07743 0.061483</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-GeoBoundary-19</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.941433 0.869491 0.234815</DiffuseColor>
+<EmissiveColor>0.941433 0.869491 0.234815</EmissiveColor>
+<SpecularColor>0.941433 0.869491 0.234815</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-GeoBoundary-20</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.476138 0.609403 0.509374</DiffuseColor>
+<EmissiveColor>0.476138 0.609403 0.509374</EmissiveColor>
+<SpecularColor>0.476138 0.609403 0.509374</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-GeoBoundary-21</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.411637 0.589867 0.973516</DiffuseColor>
+<EmissiveColor>0.411637 0.589867 0.973516</EmissiveColor>
+<SpecularColor>0.411637 0.589867 0.973516</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-GeoBoundary-22</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.208348 0.547717 0.552531</DiffuseColor>
+<EmissiveColor>0.208348 0.547717 0.552531</EmissiveColor>
+<SpecularColor>0.208348 0.547717 0.552531</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-GeoBoundary-24</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.153187 0.912024 0.527886</DiffuseColor>
+<EmissiveColor>0.153187 0.912024 0.527886</EmissiveColor>
+<SpecularColor>0.153187 0.912024 0.527886</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-GeoBoundary-25</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.981946 0.306395 0.673686</DiffuseColor>
+<EmissiveColor>0.981946 0.306395 0.673686</EmissiveColor>
+<SpecularColor>0.981946 0.306395 0.673686</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-GeoBoundary-26</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.37604 0.002528 0.059447</DiffuseColor>
+<EmissiveColor>0.37604 0.002528 0.059447</EmissiveColor>
+<SpecularColor>0.37604 0.002528 0.059447</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-GeoBoundary-27</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.119529 0.468618 0.567039</DiffuseColor>
+<EmissiveColor>0.119529 0.468618 0.567039</EmissiveColor>
+<SpecularColor>0.119529 0.468618 0.567039</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-GeoBoundary-28</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.62867 0.305286 0.274841</DiffuseColor>
+<EmissiveColor>0.62867 0.305286 0.274841</EmissiveColor>
+<SpecularColor>0.62867 0.305286 0.274841</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-GeoBoundary-29</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.285492 0.552682 0.326435</DiffuseColor>
+<EmissiveColor>0.285492 0.552682 0.326435</EmissiveColor>
+<SpecularColor>0.285492 0.552682 0.326435</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-GeoBoundary-30</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.602551 0.989366 0.61327</DiffuseColor>
+<EmissiveColor>0.602551 0.989366 0.61327</EmissiveColor>
+<SpecularColor>0.602551 0.989366 0.61327</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-GeoBoundary-31</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.454426 0.747223 0.763276</DiffuseColor>
+<EmissiveColor>0.454426 0.747223 0.763276</EmissiveColor>
+<SpecularColor>0.454426 0.747223 0.763276</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-GeoBoundary-32</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.529682 0.399704 0.946817</DiffuseColor>
+<EmissiveColor>0.529682 0.399704 0.946817</EmissiveColor>
+<SpecularColor>0.529682 0.399704 0.946817</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-GeoBoundary-33</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.52424 0.492685 0.979007</DiffuseColor>
+<EmissiveColor>0.52424 0.492685 0.979007</EmissiveColor>
+<SpecularColor>0.52424 0.492685 0.979007</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-GeoBoundary-37</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.525275 0.743772 0.571002</DiffuseColor>
+<EmissiveColor>0.525275 0.743772 0.571002</EmissiveColor>
+<SpecularColor>0.525275 0.743772 0.571002</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-GeoBoundary-38</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.82772 0.914765 0.471248</DiffuseColor>
+<EmissiveColor>0.82772 0.914765 0.471248</EmissiveColor>
+<SpecularColor>0.82772 0.914765 0.471248</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-GeoBoundary-43</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.373182 0.591318 0.543185</DiffuseColor>
+<EmissiveColor>0.373182 0.591318 0.543185</EmissiveColor>
+<SpecularColor>0.373182 0.591318 0.543185</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-GeoBoundary-47</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.999357 0.995055 0.932807</DiffuseColor>
+<EmissiveColor>0.999357 0.995055 0.932807</EmissiveColor>
+<SpecularColor>0.999357 0.995055 0.932807</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-GeoBoundary-48</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.322472 0.729262 0.134018</DiffuseColor>
+<EmissiveColor>0.322472 0.729262 0.134018</EmissiveColor>
+<SpecularColor>0.322472 0.729262 0.134018</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+</se:FeatureTypeStyle>
+</Geo3DStyle>
+</Style>
+</Styles>
+</Layer>
+<Layer>
+<gml:name>Stratum</gml:name>
+<FeatureClass xlink:type="simple" xlink:href="#m2_1-Stratum" />
+<Styles>
+<Style>
+<Geo3DStyle gml:id="m2_1-Stratum-Style">
+<gml:name>m2_1-Stratum-Style</gml:name>
+<se:FeatureTypeStyle>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-Stratum-0</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.41482 0.572258 0.456602</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-Stratum-1</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.058658 0.769478 0.911548</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-Stratum-2</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.781146 0.663285 0.872603</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-Stratum-3</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.206256 0.732874 0.45241</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-Stratum-4</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.954274 0.217758 0.144007</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-Stratum-5</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.809249 0.746925 0.045397</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-Stratum-6</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.340261 0.265192 0.117989</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-Stratum-7</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.687704 0.772671 0.227625</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-Stratum-8</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.403565 0.068519 0.656608</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-Stratum-9</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.126275 0.260333 0.308797</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-Stratum-10</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.499828 0.233414 0.451049</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>m2_1-Stratum-11</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoSurfaceSymbolizer>
+<Front>
+<Material>
+<AmbientIntensity>0.2</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.636876 0.582734 0.566782</DiffuseColor>
+<EmissiveColor>0 0 0</EmissiveColor>
+<SpecularColor>1 1 1</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</Front>
+<Back>
+</Back>
+</GeoSurfaceSymbolizer>
+</se:Rule>
+</se:FeatureTypeStyle>
+</Geo3DStyle>
+</Style>
+</Styles>
+</Layer>
+</Layers>
+</Geo3DMap>

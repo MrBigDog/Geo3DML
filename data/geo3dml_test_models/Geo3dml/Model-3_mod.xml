@@ -1,0 +1,2019 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GeoModel xmlns:geo3dml="http://www.cgs.gov.cn/GMML" xmlns="http://www.cgs.gov.cn/GMML"
+	xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:gmlcov="http://www.opengis.net/gml/3.2"
+	xmlns:swe="http://www.opengis.net/swe/2.0"
+	xmlns:ogc="http://www.opengis.net/ogc"
+	xmlns:se="http://www.opengis.net/se"
+	xmlns:gsml="http://xmlns.geosciml.org/GeoSciML-Core/3.0"
+	xmlns:gsmlst="http://xmlns.geosciml.org/GeologicStructure/3.0"
+	xmlns:gsmlgu="http://xmlns.geosciml.org/GeologicUnit/3.0"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns:GMML="http://www.cgs.gov.cn/GeoGML"
+	xsi:schemaLocation="http://www.cgs.gov.cn/GMML file:/E:/GMML/docs/schema/gmml.xsd">
+<Name>Model-3</Name>
+<Type>Map3D</Type>
+<Metadata>
+</Metadata>
+<FeatureClasses>
+<FeatureClass><GeoFeatureClass gml:id="Model-3-Marks">
+<gml:name>Marks</gml:name>
+<Schema>
+<swe:field name="Front_Attribute">
+<swe:Text>
+</swe:Text>
+</swe:field>
+<swe:field name="Back_Attribute">
+<swe:Text>
+</swe:Text>
+</swe:field>
+<swe:field name="Shape">
+</swe:field>
+</Schema>
+<Features>
+<Feature>
+<GeoFeature gml:id="Model-3-Marks-0">
+<gml:name>Model-3-Marks-0</gml:name>
+<Fields>
+<Field Name="Front_Attribute">
+<swe:Text>
+<swe:value>-5</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Back_Attribute">
+<swe:Text>
+<swe:value>D</swe:value>
+</swe:Text>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<GeoTin gml:id="Model-3-Marks-0-Geo">
+<Vertices>
+<Vertex IndexNo="0" srsDimension="3">72.060364   491.909454  10.160403</Vertex>
+<Vertex IndexNo="1" srsDimension="3">80.000000   480.000000  10.000000</Vertex>
+<Vertex IndexNo="2" srsDimension="3">95.985336   442.700897  26.103258</Vertex>
+<Vertex IndexNo="3" srsDimension="3">101.448250   429.954071  55.655869</Vertex>
+<Vertex IndexNo="4" srsDimension="3">111.463593   406.584930  60.819592</Vertex>
+<Vertex IndexNo="5" srsDimension="3">122.389427   381.091339  47.878864</Vertex>
+<Vertex IndexNo="6" srsDimension="3">144.787384   328.829468  61.974682</Vertex>
+<Vertex IndexNo="7" srsDimension="3">150.250290   316.082642  70.821022</Vertex>
+<Vertex IndexNo="8" srsDimension="3">163.725479   284.640533  67.613007</Vertex>
+<Vertex IndexNo="9" srsDimension="3">175.197601   257.872253  68.390709</Vertex>
+<Vertex IndexNo="10" srsDimension="3">178.657455   249.799286  11.229741</Vertex>
+<Vertex IndexNo="11" srsDimension="3">178.657455   249.799286  76.362137</Vertex>
+<Vertex IndexNo="12" srsDimension="3">182.117294   241.726303  28.533571</Vertex>
+<Vertex IndexNo="13" srsDimension="3">186.123428   232.378647  38.935314</Vertex>
+<Vertex IndexNo="14" srsDimension="3">187.216019   229.829300  65.182693</Vertex>
+<Vertex IndexNo="15" srsDimension="3">191.040054   220.906525  56.433567</Vertex>
+<Vertex IndexNo="16" srsDimension="3">200.000000   200.000000  10.905436</Vertex>
+<Vertex IndexNo="17" srsDimension="3">200.000000   200.000000  65.225204</Vertex>
+<Vertex IndexNo="18" srsDimension="3">311.642120   136.204498  24.061794</Vertex>
+<Vertex IndexNo="19" srsDimension="3">317.414001   132.906296  16.233097</Vertex>
+<Vertex IndexNo="20" srsDimension="3">321.676208   130.470749  10.452041</Vertex>
+</Vertices>
+<Triangles>
+<Triangle IndexNo="0">
+<VertexList>16 18 19</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="1">
+<VertexList>19 20 16</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="2">
+<VertexList>18 16 17</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="3">
+<VertexList>12 13 16</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="4">
+<VertexList>16 13 15</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="5">
+<VertexList>10 12 16</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="6">
+<VertexList>15 14 17</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="7">
+<VertexList>17 14 11</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="8">
+<VertexList>9 8 11</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="9">
+<VertexList>9 11 14</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="10">
+<VertexList>7 11 8</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="11">
+<VertexList>16 15 17</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="12">
+<VertexList>4 2 3</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="13">
+<VertexList>0 3 1</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="14">
+<VertexList>6 7 8</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="15">
+<VertexList>7 6 4</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="16">
+<VertexList>6 5 4</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="17">
+<VertexList>5 2 4</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="18">
+<VertexList>1 3 2</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+</Triangles>
+</GeoTin>
+</Shape>
+<Propertymodels>
+<Description>Propertymodel</Description>
+</Propertymodels>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="Model-3-Marks-1">
+<gml:name>Model-3-Marks-1</gml:name>
+<Fields>
+<Field Name="Front_Attribute">
+<swe:Text>
+<swe:value>-5</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Back_Attribute">
+<swe:Text>
+<swe:value>D</swe:value>
+</swe:Text>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<GeoTin gml:id="Model-3-Marks-1-Geo">
+<Vertices>
+<Vertex IndexNo="0" srsDimension="3">153.309937   481.533478  10.160403</Vertex>
+<Vertex IndexNo="1" srsDimension="3">190.000000   400.000000  10.000000</Vertex>
+<Vertex IndexNo="2" srsDimension="3">190.000000   400.000000  38.751553</Vertex>
+<Vertex IndexNo="3" srsDimension="3">219.385681   372.013641  26.103258</Vertex>
+<Vertex IndexNo="4" srsDimension="3">229.428101   362.449432  55.655869</Vertex>
+<Vertex IndexNo="5" srsDimension="3">247.839218   344.915039  60.819592</Vertex>
+<Vertex IndexNo="6" srsDimension="3">267.924072   325.786621  47.878864</Vertex>
+<Vertex IndexNo="7" srsDimension="3">309.097992   286.573334  61.974682</Vertex>
+<Vertex IndexNo="8" srsDimension="3">319.140411   277.009125  70.821022</Vertex>
+<Vertex IndexNo="9" srsDimension="3">343.911713   253.417404  67.613007</Vertex>
+<Vertex IndexNo="10" srsDimension="3">365.000824   233.332565  68.390709</Vertex>
+<Vertex IndexNo="11" srsDimension="3">371.361023   227.275223  11.229741</Vertex>
+<Vertex IndexNo="12" srsDimension="3">371.361023   227.275223  76.362137</Vertex>
+<Vertex IndexNo="13" srsDimension="3">377.721222   221.217896  28.533571</Vertex>
+<Vertex IndexNo="14" srsDimension="3">385.085663   214.204132  38.935314</Vertex>
+<Vertex IndexNo="15" srsDimension="3">387.094147   212.291290  65.182693</Vertex>
+<Vertex IndexNo="16" srsDimension="3">394.123840   205.596344  56.433567</Vertex>
+<Vertex IndexNo="17" srsDimension="3">400.000000   200.000000  10.905436</Vertex>
+<Vertex IndexNo="18" srsDimension="3">400.000000   200.000000  65.225204</Vertex>
+<Vertex IndexNo="19" srsDimension="3">506.988312   128.674469  24.061794</Vertex>
+<Vertex IndexNo="20" srsDimension="3">512.519592   124.986954  16.233097</Vertex>
+<Vertex IndexNo="21" srsDimension="3">516.604126   122.263931  10.452041</Vertex>
+</Vertices>
+<Triangles>
+<Triangle IndexNo="0">
+<VertexList>2 3 1</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="1">
+<VertexList>2 1 0</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="2">
+<VertexList>4 3 2</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="3">
+<VertexList>3 4 6</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="4">
+<VertexList>16 17 14</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="5">
+<VertexList>20 17 19</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="6">
+<VertexList>13 17 11</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="7">
+<VertexList>21 17 20</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="8">
+<VertexList>14 17 13</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="9">
+<VertexList>17 16 18</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="10">
+<VertexList>5 6 4</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="11">
+<VertexList>5 7 6</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="12">
+<VertexList>8 7 5</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="13">
+<VertexList>9 7 8</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="14">
+<VertexList>16 15 18</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="15">
+<VertexList>8 12 9</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="16">
+<VertexList>15 12 18</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="17">
+<VertexList>15 10 12</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="18">
+<VertexList>9 12 10</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="19">
+<VertexList>17 18 19</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+</Triangles>
+</GeoTin>
+</Shape>
+<Propertymodels>
+<Description>Propertymodel</Description>
+</Propertymodels>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="Model-3-Marks-2">
+<gml:name>Model-3-Marks-2</gml:name>
+<Fields>
+<Field Name="Front_Attribute">
+<swe:Text>
+<swe:value>-5</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Back_Attribute">
+<swe:Text>
+<swe:value>Q4</swe:value>
+</swe:Text>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<GeoTin gml:id="Model-3-Marks-2-Geo">
+<Vertices>
+<Vertex IndexNo="0" srsDimension="3">-0.693375   601.040039  100.000000</Vertex>
+<Vertex IndexNo="1" srsDimension="3">-0.250466   600.375671  86.763878</Vertex>
+<Vertex IndexNo="2" srsDimension="3">80.000000   480.000000  88.890251</Vertex>
+<Vertex IndexNo="3" srsDimension="3">80.000000   480.000000  100.000000</Vertex>
+<Vertex IndexNo="4" srsDimension="3">80.507080   478.816833  88.902557</Vertex>
+<Vertex IndexNo="5" srsDimension="3">108.913857   412.534332  89.498428</Vertex>
+<Vertex IndexNo="6" srsDimension="3">142.899979   333.233398  90.211334</Vertex>
+<Vertex IndexNo="7" srsDimension="3">173.194534   262.546082  90.846802</Vertex>
+<Vertex IndexNo="8" srsDimension="3">194.135712   213.683350  91.332870</Vertex>
+<Vertex IndexNo="9" srsDimension="3">200.000000   200.000000  90.950279</Vertex>
+<Vertex IndexNo="10" srsDimension="3">200.000000   200.000000  105.000000</Vertex>
+<Vertex IndexNo="11" srsDimension="3">200.865952   199.505173  90.944016</Vertex>
+<Vertex IndexNo="12" srsDimension="3">550.000000   0.000000  88.034760</Vertex>
+<Vertex IndexNo="13" srsDimension="3">550.000000   0.000000  100.000002</Vertex>
+<Vertex IndexNo="14" srsDimension="3">550.854431   -0.488257  88.027643</Vertex>
+</Vertices>
+<Triangles>
+<Triangle IndexNo="0">
+<VertexList>13 14 12</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="1">
+<VertexList>13 12 11</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="2">
+<VertexList>10 11 9</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="3">
+<VertexList>13 11 10</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="4">
+<VertexList>8 7 10</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="5">
+<VertexList>9 8 10</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="6">
+<VertexList>6 10 7</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="7">
+<VertexList>3 4 2</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="8">
+<VertexList>10 6 3</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="9">
+<VertexList>3 6 5</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="10">
+<VertexList>3 5 4</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="11">
+<VertexList>1 3 2</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="12">
+<VertexList>0 3 1</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+</Triangles>
+</GeoTin>
+</Shape>
+<Propertymodels>
+<Description>Propertymodel</Description>
+</Propertymodels>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="Model-3-Marks-3">
+<gml:name>Model-3-Marks-3</gml:name>
+<Fields>
+<Field Name="Front_Attribute">
+<swe:Text>
+<swe:value>-5</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Back_Attribute">
+<swe:Text>
+<swe:value>Q4</swe:value>
+</swe:Text>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<GeoTin gml:id="Model-3-Marks-3-Geo">
+<Vertices>
+<Vertex IndexNo="0" srsDimension="3">99.487045   601.139893  100.000000</Vertex>
+<Vertex IndexNo="1" srsDimension="3">99.814705   600.411743  86.763878</Vertex>
+<Vertex IndexNo="2" srsDimension="3">190.000000   400.000000  88.890251</Vertex>
+<Vertex IndexNo="3" srsDimension="3">190.000000   400.000000  100.000000</Vertex>
+<Vertex IndexNo="4" srsDimension="3">190.932159   399.112244  88.902557</Vertex>
+<Vertex IndexNo="5" srsDimension="3">243.152054   349.378998  89.498428</Vertex>
+<Vertex IndexNo="6" srsDimension="3">305.628418   289.877716  90.211334</Vertex>
+<Vertex IndexNo="7" srsDimension="3">361.318573   236.839447  90.846802</Vertex>
+<Vertex IndexNo="8" srsDimension="3">399.814545   200.176620  91.332870</Vertex>
+<Vertex IndexNo="9" srsDimension="3">400.000000   200.000000  90.950279</Vertex>
+<Vertex IndexNo="10" srsDimension="3">400.000000   200.000000  105.000000</Vertex>
+<Vertex IndexNo="11" srsDimension="3">400.829834   199.446762  90.944016</Vertex>
+<Vertex IndexNo="12" srsDimension="3">700.000000   0.000000  88.034760</Vertex>
+<Vertex IndexNo="13" srsDimension="3">700.000000   0.000000  100.000002</Vertex>
+<Vertex IndexNo="14" srsDimension="3">700.818848   -0.545888  88.027643</Vertex>
+</Vertices>
+<Triangles>
+<Triangle IndexNo="0">
+<VertexList>13 14 12</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="1">
+<VertexList>13 12 11</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="2">
+<VertexList>11 9 8</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="3">
+<VertexList>11 10 13</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="4">
+<VertexList>8 10 11</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="5">
+<VertexList>8 7 10</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="6">
+<VertexList>7 6 10</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="7">
+<VertexList>10 6 3</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="8">
+<VertexList>3 4 2</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="9">
+<VertexList>3 6 5</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="10">
+<VertexList>3 5 4</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="11">
+<VertexList>1 3 2</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="12">
+<VertexList>0 3 1</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+</Triangles>
+</GeoTin>
+</Shape>
+<Propertymodels>
+<Description>Propertymodel</Description>
+</Propertymodels>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="Model-3-Marks-4">
+<gml:name>Model-3-Marks-4</gml:name>
+<Fields>
+<Field Name="Front_Attribute">
+<swe:Text>
+<swe:value>-5</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Back_Attribute">
+<swe:Text>
+<swe:value>C</swe:value>
+</swe:Text>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<GeoTin gml:id="Model-3-Marks-4-Geo">
+<Vertices>
+<Vertex IndexNo="0" srsDimension="3">62.829197   505.756195  26.341223</Vertex>
+<Vertex IndexNo="1" srsDimension="3">72.060364   491.909454  10.160403</Vertex>
+<Vertex IndexNo="2" srsDimension="3">80.000000   480.000000  60.787197</Vertex>
+<Vertex IndexNo="3" srsDimension="3">101.448250   429.954071  55.655869</Vertex>
+<Vertex IndexNo="4" srsDimension="3">111.463593   406.584930  60.819592</Vertex>
+<Vertex IndexNo="5" srsDimension="3">142.899979   333.233398  90.211334</Vertex>
+<Vertex IndexNo="6" srsDimension="3">150.250290   316.082642  70.821022</Vertex>
+<Vertex IndexNo="7" srsDimension="3">173.194534   262.546082  90.846802</Vertex>
+<Vertex IndexNo="8" srsDimension="3">178.657455   249.799286  76.362137</Vertex>
+<Vertex IndexNo="9" srsDimension="3">194.135712   213.683350  91.332870</Vertex>
+<Vertex IndexNo="10" srsDimension="3">200.000000   200.000000  65.225204</Vertex>
+<Vertex IndexNo="11" srsDimension="3">200.000000   200.000000  76.235352</Vertex>
+<Vertex IndexNo="12" srsDimension="3">289.179291   149.040405  50.791847</Vertex>
+<Vertex IndexNo="13" srsDimension="3">311.642120   136.204498  24.061794</Vertex>
+</Vertices>
+<Triangles>
+<Triangle IndexNo="0">
+<VertexList>13 10 12</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="1">
+<VertexList>10 9 11</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="2">
+<VertexList>6 7 8</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="3">
+<VertexList>12 10 11</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="4">
+<VertexList>10 8 9</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="5">
+<VertexList>9 8 7</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="6">
+<VertexList>5 7 6</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="7">
+<VertexList>2 1 0</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="8">
+<VertexList>3 1 2</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="9">
+<VertexList>2 5 4</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="10">
+<VertexList>6 4 5</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="11">
+<VertexList>4 3 2</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+</Triangles>
+</GeoTin>
+</Shape>
+<Propertymodels>
+<Description>Propertymodel</Description>
+</Propertymodels>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="Model-3-Marks-5">
+<gml:name>Model-3-Marks-5</gml:name>
+<Fields>
+<Field Name="Front_Attribute">
+<swe:Text>
+<swe:value>-5</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Back_Attribute">
+<swe:Text>
+<swe:value>C</swe:value>
+</swe:Text>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<GeoTin gml:id="Model-3-Marks-5-Geo">
+<Vertices>
+<Vertex IndexNo="0" srsDimension="3">146.480759   496.709442  26.341223</Vertex>
+<Vertex IndexNo="1" srsDimension="3">153.309937   481.533478  10.160403</Vertex>
+<Vertex IndexNo="2" srsDimension="3">176.642960   429.682312  54.294891</Vertex>
+<Vertex IndexNo="3" srsDimension="3">190.000000   400.000000  38.751553</Vertex>
+<Vertex IndexNo="4" srsDimension="3">190.000000   400.000000  60.787197</Vertex>
+<Vertex IndexNo="5" srsDimension="3">229.428101   362.449432  55.655869</Vertex>
+<Vertex IndexNo="6" srsDimension="3">247.839218   344.915039  60.819592</Vertex>
+<Vertex IndexNo="7" srsDimension="3">305.628418   289.877716  90.211334</Vertex>
+<Vertex IndexNo="8" srsDimension="3">319.140411   277.009125  70.821022</Vertex>
+<Vertex IndexNo="9" srsDimension="3">361.318573   236.839447  90.846802</Vertex>
+<Vertex IndexNo="10" srsDimension="3">371.361023   227.275223  76.362137</Vertex>
+<Vertex IndexNo="11" srsDimension="3">399.814545   200.176620  91.332870</Vertex>
+<Vertex IndexNo="12" srsDimension="3">400.000000   200.000000  65.225204</Vertex>
+<Vertex IndexNo="13" srsDimension="3">400.000000   200.000000  76.235352</Vertex>
+<Vertex IndexNo="14" srsDimension="3">485.461853   143.025436  50.791847</Vertex>
+<Vertex IndexNo="15" srsDimension="3">506.988312   128.674469  24.061794</Vertex>
+</Vertices>
+<Triangles>
+<Triangle IndexNo="0">
+<VertexList>1 0 3</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="1">
+<VertexList>0 2 3</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="2">
+<VertexList>12 14 15</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="3">
+<VertexList>3 2 4</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="4">
+<VertexList>3 4 5</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="5">
+<VertexList>6 4 7</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="6">
+<VertexList>4 6 5</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="7">
+<VertexList>8 6 7</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="8">
+<VertexList>10 13 12</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="9">
+<VertexList>14 12 13</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="10">
+<VertexList>9 11 10</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="11">
+<VertexList>7 9 8</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="12">
+<VertexList>9 10 8</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="13">
+<VertexList>13 10 11</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+</Triangles>
+</GeoTin>
+</Shape>
+<Propertymodels>
+<Description>Propertymodel</Description>
+</Propertymodels>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="Model-3-Marks-6">
+<gml:name>Model-3-Marks-6</gml:name>
+<Fields>
+<Field Name="Front_Attribute">
+<swe:Text>
+<swe:value>-5</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Back_Attribute">
+<swe:Text>
+<swe:value>B</swe:value>
+</swe:Text>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<GeoTin gml:id="Model-3-Marks-6-Geo">
+<Vertices>
+<Vertex IndexNo="0" srsDimension="3">255.852676   168.084183  90.457954</Vertex>
+<Vertex IndexNo="1" srsDimension="3">265.485382   162.579788  78.986877</Vertex>
+<Vertex IndexNo="2" srsDimension="3">277.526276   155.699280  64.658592</Vertex>
+<Vertex IndexNo="3" srsDimension="3">463.009979   49.708580  32.394901</Vertex>
+<Vertex IndexNo="4" srsDimension="3">466.247894   47.858341  46.797615</Vertex>
+<Vertex IndexNo="5" srsDimension="3">473.226166   43.870762  58.324112</Vertex>
+<Vertex IndexNo="6" srsDimension="3">497.071808   30.244678  73.681152</Vertex>
+</Vertices>
+<Triangles>
+<Triangle IndexNo="0">
+<VertexList>2 4 3</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="1">
+<VertexList>2 5 4</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="2">
+<VertexList>1 0 5</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="3">
+<VertexList>5 2 1</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="4">
+<VertexList>6 5 0</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+</Triangles>
+</GeoTin>
+</Shape>
+<Propertymodels>
+<Description>Propertymodel</Description>
+</Propertymodels>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="Model-3-Marks-7">
+<gml:name>Model-3-Marks-7</gml:name>
+<Fields>
+<Field Name="Front_Attribute">
+<swe:Text>
+<swe:value>-5</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Back_Attribute">
+<swe:Text>
+<swe:value>B</swe:value>
+</swe:Text>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<GeoTin gml:id="Model-3-Marks-7-Geo">
+<Vertices>
+<Vertex IndexNo="0" srsDimension="3">453.524445   164.317032  90.457954</Vertex>
+<Vertex IndexNo="1" srsDimension="3">462.755615   158.162918  78.986877</Vertex>
+<Vertex IndexNo="2" srsDimension="3">474.294586   150.470276  64.658592</Vertex>
+<Vertex IndexNo="3" srsDimension="3">652.046387   31.969084  32.394901</Vertex>
+<Vertex IndexNo="4" srsDimension="3">655.149292   29.900455  46.797615</Vertex>
+<Vertex IndexNo="5" srsDimension="3">661.836670   25.442204  58.324112</Vertex>
+<Vertex IndexNo="6" srsDimension="3">684.688354   10.207781  73.681152</Vertex>
+</Vertices>
+<Triangles>
+<Triangle IndexNo="0">
+<VertexList>2 4 3</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="1">
+<VertexList>2 5 4</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="2">
+<VertexList>1 0 5</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="3">
+<VertexList>5 2 1</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="4">
+<VertexList>6 5 0</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+</Triangles>
+</GeoTin>
+</Shape>
+<Propertymodels>
+<Description>Propertymodel</Description>
+</Propertymodels>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="Model-3-Marks-8">
+<gml:name>Model-3-Marks-8</gml:name>
+<Fields>
+<Field Name="Front_Attribute">
+<swe:Text>
+<swe:value>-5</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Back_Attribute">
+<swe:Text>
+<swe:value>E</swe:value>
+</swe:Text>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<GeoTin gml:id="Model-3-Marks-8-Geo">
+<Vertices>
+<Vertex IndexNo="0" srsDimension="3">80.000000   480.000000  10.000000</Vertex>
+<Vertex IndexNo="1" srsDimension="3">95.985336   442.700897  26.103258</Vertex>
+<Vertex IndexNo="2" srsDimension="3">105.454391   420.606415  10.452041</Vertex>
+<Vertex IndexNo="3" srsDimension="3">122.389427   381.091339  47.878864</Vertex>
+<Vertex IndexNo="4" srsDimension="3">128.398636   367.069855  34.366325</Vertex>
+<Vertex IndexNo="5" srsDimension="3">144.787384   328.829468  61.974682</Vertex>
+<Vertex IndexNo="6" srsDimension="3">149.071930   318.832184  10.000000</Vertex>
+<Vertex IndexNo="7" srsDimension="3">150.250290   316.082642  52.447853</Vertex>
+<Vertex IndexNo="8" srsDimension="3">161.722412   289.314362  29.019634</Vertex>
+<Vertex IndexNo="9" srsDimension="3">163.725479   284.640533  67.613007</Vertex>
+<Vertex IndexNo="10" srsDimension="3">164.271774   283.365875  55.947506</Vertex>
+<Vertex IndexNo="11" srsDimension="3">168.642105   273.168427  38.935314</Vertex>
+<Vertex IndexNo="12" srsDimension="3">175.197601   257.872253  68.390709</Vertex>
+<Vertex IndexNo="13" srsDimension="3">176.108093   255.747787  54.003254</Vertex>
+<Vertex IndexNo="14" srsDimension="3">178.657455   249.799286  11.229741</Vertex>
+<Vertex IndexNo="15" srsDimension="3">182.117294   241.726303  28.533571</Vertex>
+<Vertex IndexNo="16" srsDimension="3">186.123428   232.378647  38.935314</Vertex>
+<Vertex IndexNo="17" srsDimension="3">187.216019   229.829300  65.182693</Vertex>
+<Vertex IndexNo="18" srsDimension="3">191.040054   220.906525  56.433567</Vertex>
+</Vertices>
+<Triangles>
+<Triangle IndexNo="0">
+<VertexList>8 11 14</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="1">
+<VertexList>15 13 16</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="2">
+<VertexList>8 14 6</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="3">
+<VertexList>11 13 15</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="4">
+<VertexList>15 14 11</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="5">
+<VertexList>12 17 13</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="6">
+<VertexList>18 16 17</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="7">
+<VertexList>10 12 13</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="8">
+<VertexList>17 16 13</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="9">
+<VertexList>9 10 7</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="10">
+<VertexList>9 7 5</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="11">
+<VertexList>10 9 12</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="12">
+<VertexList>1 3 2</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="13">
+<VertexList>0 1 2</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="14">
+<VertexList>4 3 5</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="15">
+<VertexList>4 2 3</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="16">
+<VertexList>5 7 4</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+</Triangles>
+</GeoTin>
+</Shape>
+<Propertymodels>
+<Description>Propertymodel</Description>
+</Propertymodels>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="Model-3-Marks-9">
+<gml:name>Model-3-Marks-9</gml:name>
+<Fields>
+<Field Name="Front_Attribute">
+<swe:Text>
+<swe:value>-5</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Back_Attribute">
+<swe:Text>
+<swe:value>E</swe:value>
+</swe:Text>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<GeoTin gml:id="Model-3-Marks-9-Geo">
+<Vertices>
+<Vertex IndexNo="0" srsDimension="3">190.000000   400.000000  10.000000</Vertex>
+<Vertex IndexNo="1" srsDimension="3">219.385681   372.013641  26.103258</Vertex>
+<Vertex IndexNo="2" srsDimension="3">236.792557   355.435669  10.452041</Vertex>
+<Vertex IndexNo="3" srsDimension="3">267.924072   325.786621  47.878864</Vertex>
+<Vertex IndexNo="4" srsDimension="3">278.970734   315.265991  34.366325</Vertex>
+<Vertex IndexNo="5" srsDimension="3">309.097992   286.573334  61.974682</Vertex>
+<Vertex IndexNo="6" srsDimension="3">316.974243   279.072144  10.000000</Vertex>
+<Vertex IndexNo="7" srsDimension="3">319.140411   277.009125  52.447853</Vertex>
+<Vertex IndexNo="8" srsDimension="3">340.229492   256.924286  29.019634</Vertex>
+<Vertex IndexNo="9" srsDimension="3">343.911713   253.417404  67.613007</Vertex>
+<Vertex IndexNo="10" srsDimension="3">344.915955   252.460983  55.947506</Vertex>
+<Vertex IndexNo="11" srsDimension="3">352.949890   244.809616  38.935314</Vertex>
+<Vertex IndexNo="12" srsDimension="3">365.000824   233.332565  68.390709</Vertex>
+<Vertex IndexNo="13" srsDimension="3">366.674561   231.738525  54.003254</Vertex>
+<Vertex IndexNo="14" srsDimension="3">371.361023   227.275223  11.229741</Vertex>
+<Vertex IndexNo="15" srsDimension="3">377.721222   221.217896  28.533571</Vertex>
+<Vertex IndexNo="16" srsDimension="3">385.085663   214.204132  38.935314</Vertex>
+<Vertex IndexNo="17" srsDimension="3">387.094147   212.291290  65.182693</Vertex>
+<Vertex IndexNo="18" srsDimension="3">394.123840   205.596344  56.433567</Vertex>
+</Vertices>
+<Triangles>
+<Triangle IndexNo="0">
+<VertexList>0 1 2</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="1">
+<VertexList>3 2 1</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="2">
+<VertexList>3 4 2</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="3">
+<VertexList>15 14 11</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="4">
+<VertexList>14 6 8</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="5">
+<VertexList>15 13 16</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="6">
+<VertexList>13 15 11</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="7">
+<VertexList>8 11 14</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="8">
+<VertexList>3 5 4</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="9">
+<VertexList>18 16 13</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="10">
+<VertexList>9 7 5</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="11">
+<VertexList>4 5 7</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="12">
+<VertexList>18 13 17</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="13">
+<VertexList>12 10 9</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="14">
+<VertexList>7 9 10</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="15">
+<VertexList>12 13 10</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="16">
+<VertexList>12 17 13</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+</Triangles>
+</GeoTin>
+</Shape>
+<Propertymodels>
+<Description>Propertymodel</Description>
+</Propertymodels>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="Model-3-Marks-10">
+<gml:name>Model-3-Marks-10</gml:name>
+<Fields>
+<Field Name="Front_Attribute">
+<swe:Text>
+<swe:value>-5</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Back_Attribute">
+<swe:Text>
+<swe:value>C</swe:value>
+</swe:Text>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<GeoTin gml:id="Model-3-Marks-10-Geo">
+<Vertices>
+<Vertex IndexNo="0" srsDimension="3">277.526276   155.699280  64.658592</Vertex>
+<Vertex IndexNo="1" srsDimension="3">289.179291   149.040405  50.791847</Vertex>
+<Vertex IndexNo="2" srsDimension="3">311.642120   136.204498  24.061794</Vertex>
+<Vertex IndexNo="3" srsDimension="3">317.414001   132.906296  16.233097</Vertex>
+<Vertex IndexNo="4" srsDimension="3">457.738251   52.721004  12.607015</Vertex>
+<Vertex IndexNo="5" srsDimension="3">463.009979   49.708580  32.394903</Vertex>
+</Vertices>
+<Triangles>
+<Triangle IndexNo="0">
+<VertexList>5 2 1</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="1">
+<VertexList>3 5 4</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="2">
+<VertexList>1 0 5</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="3">
+<VertexList>3 2 5</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+</Triangles>
+</GeoTin>
+</Shape>
+<Propertymodels>
+<Description>Propertymodel</Description>
+</Propertymodels>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="Model-3-Marks-11">
+<gml:name>Model-3-Marks-11</gml:name>
+<Fields>
+<Field Name="Front_Attribute">
+<swe:Text>
+<swe:value>-5</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Back_Attribute">
+<swe:Text>
+<swe:value>C</swe:value>
+</swe:Text>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<GeoTin gml:id="Model-3-Marks-11-Geo">
+<Vertices>
+<Vertex IndexNo="0" srsDimension="3">474.294586   150.470276  64.658592</Vertex>
+<Vertex IndexNo="1" srsDimension="3">485.461853   143.025436  50.791847</Vertex>
+<Vertex IndexNo="2" srsDimension="3">506.988312   128.674469  24.061794</Vertex>
+<Vertex IndexNo="3" srsDimension="3">512.519592   124.986954  16.233097</Vertex>
+<Vertex IndexNo="4" srsDimension="3">646.994385   35.337078  12.607015</Vertex>
+<Vertex IndexNo="5" srsDimension="3">652.046387   31.969084  32.394903</Vertex>
+</Vertices>
+<Triangles>
+<Triangle IndexNo="0">
+<VertexList>1 5 2</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="1">
+<VertexList>3 5 4</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="2">
+<VertexList>1 0 5</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="3">
+<VertexList>3 2 5</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+</Triangles>
+</GeoTin>
+</Shape>
+<Propertymodels>
+<Description>Propertymodel</Description>
+</Propertymodels>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="Model-3-Marks-12">
+<gml:name>Model-3-Marks-12</gml:name>
+<Fields>
+<Field Name="Front_Attribute">
+<swe:Text>
+<swe:value>-5</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Back_Attribute">
+<swe:Text>
+<swe:value>B</swe:value>
+</swe:Text>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<GeoTin gml:id="Model-3-Marks-12-Geo">
+<Vertices>
+<Vertex IndexNo="0" srsDimension="3">44.623280   533.065063  62.634117</Vertex>
+<Vertex IndexNo="1" srsDimension="3">58.726456   511.910309  33.532700</Vertex>
+<Vertex IndexNo="2" srsDimension="3">62.829197   505.756195  26.341223</Vertex>
+<Vertex IndexNo="3" srsDimension="3">80.000000   480.000000  60.787197</Vertex>
+<Vertex IndexNo="4" srsDimension="3">80.000000   480.000000  80.325089</Vertex>
+<Vertex IndexNo="5" srsDimension="3">108.913857   412.534332  89.498428</Vertex>
+<Vertex IndexNo="6" srsDimension="3">142.899979   333.233398  90.211334</Vertex>
+</Vertices>
+<Triangles>
+<Triangle IndexNo="0">
+<VertexList>3 5 6</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="1">
+<VertexList>5 3 4</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="2">
+<VertexList>1 3 2</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="3">
+<VertexList>3 0 4</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="4">
+<VertexList>0 3 1</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+</Triangles>
+</GeoTin>
+</Shape>
+<Propertymodels>
+<Description>Propertymodel</Description>
+</Propertymodels>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="Model-3-Marks-13">
+<gml:name>Model-3-Marks-13</gml:name>
+<Fields>
+<Field Name="Front_Attribute">
+<swe:Text>
+<swe:value>-5</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Back_Attribute">
+<swe:Text>
+<swe:value>B</swe:value>
+</swe:Text>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<GeoTin gml:id="Model-3-Marks-13-Geo">
+<Vertices>
+<Vertex IndexNo="0" srsDimension="3">133.012100   526.639771  62.634117</Vertex>
+<Vertex IndexNo="1" srsDimension="3">143.445557   503.454315  33.532700</Vertex>
+<Vertex IndexNo="2" srsDimension="3">146.480759   496.709442  26.341223</Vertex>
+<Vertex IndexNo="3" srsDimension="3">176.642960   429.682312  54.294891</Vertex>
+<Vertex IndexNo="4" srsDimension="3">190.000000   400.000000  60.787197</Vertex>
+<Vertex IndexNo="5" srsDimension="3">190.000000   400.000000  80.325089</Vertex>
+<Vertex IndexNo="6" srsDimension="3">243.152054   349.378998  89.498428</Vertex>
+<Vertex IndexNo="7" srsDimension="3">305.628418   289.877716  90.211334</Vertex>
+</Vertices>
+<Triangles>
+<Triangle IndexNo="0">
+<VertexList>6 7 4</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="1">
+<VertexList>5 6 4</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="2">
+<VertexList>3 5 4</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="3">
+<VertexList>1 3 2</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="4">
+<VertexList>3 1 0</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="5">
+<VertexList>5 3 0</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+</Triangles>
+</GeoTin>
+</Shape>
+<Propertymodels>
+<Description>Propertymodel</Description>
+</Propertymodels>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="Model-3-Marks-14">
+<gml:name>Model-3-Marks-14</gml:name>
+<Fields>
+<Field Name="Front_Attribute">
+<swe:Text>
+<swe:value>-5</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Back_Attribute">
+<swe:Text>
+<swe:value>T</swe:value>
+</swe:Text>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<GeoTin gml:id="Model-3-Marks-14-Geo">
+<Vertices>
+<Vertex IndexNo="0" srsDimension="3">-0.250466   600.375671  86.763878</Vertex>
+<Vertex IndexNo="1" srsDimension="3">0.518799   599.221802  59.058310</Vertex>
+<Vertex IndexNo="2" srsDimension="3">42.571907   536.142151  66.867050</Vertex>
+<Vertex IndexNo="3" srsDimension="3">44.623280   533.065063  62.634117</Vertex>
+<Vertex IndexNo="4" srsDimension="3">80.000000   480.000000  80.325089</Vertex>
+<Vertex IndexNo="5" srsDimension="3">80.000000   480.000000  88.890251</Vertex>
+<Vertex IndexNo="6" srsDimension="3">80.507080   478.816833  88.902557</Vertex>
+<Vertex IndexNo="7" srsDimension="3">108.913857   412.534332  89.498428</Vertex>
+</Vertices>
+<Triangles>
+<Triangle IndexNo="0">
+<VertexList>6 4 5</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="1">
+<VertexList>6 7 4</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="2">
+<VertexList>4 2 5</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="3">
+<VertexList>4 3 2</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="4">
+<VertexList>2 0 5</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="5">
+<VertexList>1 0 2</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+</Triangles>
+</GeoTin>
+</Shape>
+<Propertymodels>
+<Description>Propertymodel</Description>
+</Propertymodels>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="Model-3-Marks-15">
+<gml:name>Model-3-Marks-15</gml:name>
+<Fields>
+<Field Name="Front_Attribute">
+<swe:Text>
+<swe:value>-5</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Back_Attribute">
+<swe:Text>
+<swe:value>T</swe:value>
+</swe:Text>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<GeoTin gml:id="Model-3-Marks-15-Geo">
+<Vertices>
+<Vertex IndexNo="0" srsDimension="3">99.814705   600.411743  86.763878</Vertex>
+<Vertex IndexNo="1" srsDimension="3">100.383804   599.147095  59.058308</Vertex>
+<Vertex IndexNo="2" srsDimension="3">131.494507   530.012207  66.867050</Vertex>
+<Vertex IndexNo="3" srsDimension="3">133.012100   526.639771  62.634117</Vertex>
+<Vertex IndexNo="4" srsDimension="3">190.000000   400.000000  80.325089</Vertex>
+<Vertex IndexNo="5" srsDimension="3">190.000000   400.000000  88.890251</Vertex>
+<Vertex IndexNo="6" srsDimension="3">190.932159   399.112244  88.902557</Vertex>
+<Vertex IndexNo="7" srsDimension="3">243.152054   349.378998  89.498428</Vertex>
+</Vertices>
+<Triangles>
+<Triangle IndexNo="0">
+<VertexList>6 4 5</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="1">
+<VertexList>7 4 6</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="2">
+<VertexList>4 3 5</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="3">
+<VertexList>3 2 5</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="4">
+<VertexList>0 5 2</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="5">
+<VertexList>1 0 2</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+</Triangles>
+</GeoTin>
+</Shape>
+<Propertymodels>
+<Description>Propertymodel</Description>
+</Propertymodels>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="Model-3-Marks-16">
+<gml:name>Model-3-Marks-16</gml:name>
+<Fields>
+<Field Name="Front_Attribute">
+<swe:Text>
+<swe:value>-5</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Back_Attribute">
+<swe:Text>
+<swe:value>F</swe:value>
+</swe:Text>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<GeoTin gml:id="Model-3-Marks-16-Geo">
+<Vertices>
+<Vertex IndexNo="0" srsDimension="3">105.454391   420.606415  10.452041</Vertex>
+<Vertex IndexNo="1" srsDimension="3">128.398636   367.069855  34.366325</Vertex>
+<Vertex IndexNo="2" srsDimension="3">149.071930   318.832184  10.000000</Vertex>
+<Vertex IndexNo="3" srsDimension="3">150.250290   316.082642  52.447853</Vertex>
+<Vertex IndexNo="4" srsDimension="3">161.722412   289.314362  29.019634</Vertex>
+<Vertex IndexNo="5" srsDimension="3">164.271774   283.365875  55.947506</Vertex>
+<Vertex IndexNo="6" srsDimension="3">168.642105   273.168427  38.935314</Vertex>
+<Vertex IndexNo="7" srsDimension="3">176.108093   255.747787  54.003254</Vertex>
+</Vertices>
+<Triangles>
+<Triangle IndexNo="0">
+<VertexList>2 3 4</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="1">
+<VertexList>6 5 7</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="2">
+<VertexList>4 3 5</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="3">
+<VertexList>4 5 6</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="4">
+<VertexList>1 3 2</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="5">
+<VertexList>1 2 0</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+</Triangles>
+</GeoTin>
+</Shape>
+<Propertymodels>
+<Description>Propertymodel</Description>
+</Propertymodels>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="Model-3-Marks-17">
+<gml:name>Model-3-Marks-17</gml:name>
+<Fields>
+<Field Name="Front_Attribute">
+<swe:Text>
+<swe:value>-5</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Back_Attribute">
+<swe:Text>
+<swe:value>F</swe:value>
+</swe:Text>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<GeoTin gml:id="Model-3-Marks-17-Geo">
+<Vertices>
+<Vertex IndexNo="0" srsDimension="3">236.792557   355.435669  10.452041</Vertex>
+<Vertex IndexNo="1" srsDimension="3">278.970734   315.265991  34.366325</Vertex>
+<Vertex IndexNo="2" srsDimension="3">316.974243   279.072144  10.000000</Vertex>
+<Vertex IndexNo="3" srsDimension="3">319.140411   277.009125  52.447853</Vertex>
+<Vertex IndexNo="4" srsDimension="3">340.229492   256.924286  29.019634</Vertex>
+<Vertex IndexNo="5" srsDimension="3">344.915955   252.460983  55.947506</Vertex>
+<Vertex IndexNo="6" srsDimension="3">352.949890   244.809616  38.935314</Vertex>
+<Vertex IndexNo="7" srsDimension="3">366.674561   231.738525  54.003254</Vertex>
+</Vertices>
+<Triangles>
+<Triangle IndexNo="0">
+<VertexList>2 0 1</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="1">
+<VertexList>1 3 2</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="2">
+<VertexList>4 2 3</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="3">
+<VertexList>6 4 5</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="4">
+<VertexList>6 5 7</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="5">
+<VertexList>4 3 5</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+</Triangles>
+</GeoTin>
+</Shape>
+<Propertymodels>
+<Description>Propertymodel</Description>
+</Propertymodels>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="Model-3-Marks-18">
+<gml:name>Model-3-Marks-18</gml:name>
+<Fields>
+<Field Name="Front_Attribute">
+<swe:Text>
+<swe:value>-5</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Back_Attribute">
+<swe:Text>
+<swe:value>N</swe:value>
+</swe:Text>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<GeoTin gml:id="Model-3-Marks-18-Geo">
+<Vertices>
+<Vertex IndexNo="0" srsDimension="3">457.738251   52.721004  12.607013</Vertex>
+<Vertex IndexNo="1" srsDimension="3">463.009979   49.708580  32.394901</Vertex>
+<Vertex IndexNo="2" srsDimension="3">466.247894   47.858341  46.797615</Vertex>
+<Vertex IndexNo="3" srsDimension="3">473.226166   43.870762  58.324112</Vertex>
+<Vertex IndexNo="4" srsDimension="3">550.000000   0.000000  10.000000</Vertex>
+<Vertex IndexNo="5" srsDimension="3">550.000000   0.000000  40.000000</Vertex>
+</Vertices>
+<Triangles>
+<Triangle IndexNo="0">
+<VertexList>4 0 1</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="1">
+<VertexList>4 1 5</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="2">
+<VertexList>1 2 3</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="3">
+<VertexList>5 1 3</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+</Triangles>
+</GeoTin>
+</Shape>
+<Propertymodels>
+<Description>Propertymodel</Description>
+</Propertymodels>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="Model-3-Marks-19">
+<gml:name>Model-3-Marks-19</gml:name>
+<Fields>
+<Field Name="Front_Attribute">
+<swe:Text>
+<swe:value>-5</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Back_Attribute">
+<swe:Text>
+<swe:value>N</swe:value>
+</swe:Text>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<GeoTin gml:id="Model-3-Marks-19-Geo">
+<Vertices>
+<Vertex IndexNo="0" srsDimension="3">646.994385   35.337078  12.607013</Vertex>
+<Vertex IndexNo="1" srsDimension="3">652.046387   31.969084  32.394901</Vertex>
+<Vertex IndexNo="2" srsDimension="3">655.149292   29.900455  46.797615</Vertex>
+<Vertex IndexNo="3" srsDimension="3">661.836670   25.442204  58.324112</Vertex>
+<Vertex IndexNo="4" srsDimension="3">700.000000   0.000000  10.000000</Vertex>
+<Vertex IndexNo="5" srsDimension="3">700.000000   0.000000  40.000000</Vertex>
+</Vertices>
+<Triangles>
+<Triangle IndexNo="0">
+<VertexList>4 0 1</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="1">
+<VertexList>5 4 1</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="2">
+<VertexList>2 3 5</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="3">
+<VertexList>2 5 1</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+</Triangles>
+</GeoTin>
+</Shape>
+<Propertymodels>
+<Description>Propertymodel</Description>
+</Propertymodels>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="Model-3-Marks-20">
+<gml:name>Model-3-Marks-20</gml:name>
+<Fields>
+<Field Name="Front_Attribute">
+<swe:Text>
+<swe:value>-5</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Back_Attribute">
+<swe:Text>
+<swe:value>C</swe:value>
+</swe:Text>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<GeoTin gml:id="Model-3-Marks-20-Geo">
+<Vertices>
+<Vertex IndexNo="0" srsDimension="3">0.518799   599.221802  59.058308</Vertex>
+<Vertex IndexNo="1" srsDimension="3">8.211440   587.682861  10.160403</Vertex>
+<Vertex IndexNo="2" srsDimension="3">42.571907   536.142151  66.867050</Vertex>
+<Vertex IndexNo="3" srsDimension="3">44.623280   533.065063  62.634117</Vertex>
+<Vertex IndexNo="4" srsDimension="3">58.726456   511.910309  33.532700</Vertex>
+</Vertices>
+<Triangles>
+<Triangle IndexNo="0">
+<VertexList>3 4 1</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="1">
+<VertexList>0 2 3</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="2">
+<VertexList>0 3 1</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+</Triangles>
+</GeoTin>
+</Shape>
+<Propertymodels>
+<Description>Propertymodel</Description>
+</Propertymodels>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="Model-3-Marks-21">
+<gml:name>Model-3-Marks-21</gml:name>
+<Fields>
+<Field Name="Front_Attribute">
+<swe:Text>
+<swe:value>-5</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Back_Attribute">
+<swe:Text>
+<swe:value>C</swe:value>
+</swe:Text>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<GeoTin gml:id="Model-3-Marks-21-Geo">
+<Vertices>
+<Vertex IndexNo="0" srsDimension="3">100.383804   599.147095  59.058308</Vertex>
+<Vertex IndexNo="1" srsDimension="3">106.074783   586.500488  10.160403</Vertex>
+<Vertex IndexNo="2" srsDimension="3">131.494507   530.012207  66.867050</Vertex>
+<Vertex IndexNo="3" srsDimension="3">133.012100   526.639771  62.634117</Vertex>
+<Vertex IndexNo="4" srsDimension="3">143.445557   503.454315  33.532700</Vertex>
+</Vertices>
+<Triangles>
+<Triangle IndexNo="0">
+<VertexList>4 1 3</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="1">
+<VertexList>1 0 2</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="2">
+<VertexList>2 3 1</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+</Triangles>
+</GeoTin>
+</Shape>
+<Propertymodels>
+<Description>Propertymodel</Description>
+</Propertymodels>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="Model-3-Marks-22">
+<gml:name>Model-3-Marks-22</gml:name>
+<Fields>
+<Field Name="Front_Attribute">
+<swe:Text>
+<swe:value>-5</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Back_Attribute">
+<swe:Text>
+<swe:value>T</swe:value>
+</swe:Text>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<GeoTin gml:id="Model-3-Marks-22-Geo">
+<Vertices>
+<Vertex IndexNo="0" srsDimension="3">200.865952   199.505173  90.944016</Vertex>
+<Vertex IndexNo="1" srsDimension="3">255.852676   168.084183  90.457954</Vertex>
+<Vertex IndexNo="2" srsDimension="3">265.485382   162.579788  78.986877</Vertex>
+<Vertex IndexNo="3" srsDimension="3">497.071808   30.244678  73.681154</Vertex>
+<Vertex IndexNo="4" srsDimension="3">550.000000   0.000000  70.000000</Vertex>
+<Vertex IndexNo="5" srsDimension="3">550.000000   0.000000  88.034760</Vertex>
+<Vertex IndexNo="6" srsDimension="3">550.854431   -0.488257  88.027643</Vertex>
+</Vertices>
+<Triangles>
+<Triangle IndexNo="0">
+<VertexList>5 1 0</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="1">
+<VertexList>6 4 5</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="2">
+<VertexList>1 5 3</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="3">
+<VertexList>4 3 5</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="4">
+<VertexList>1 2 0</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+</Triangles>
+</GeoTin>
+</Shape>
+<Propertymodels>
+<Description>Propertymodel</Description>
+</Propertymodels>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="Model-3-Marks-23">
+<gml:name>Model-3-Marks-23</gml:name>
+<Fields>
+<Field Name="Front_Attribute">
+<swe:Text>
+<swe:value>-5</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Back_Attribute">
+<swe:Text>
+<swe:value>T</swe:value>
+</swe:Text>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<GeoTin gml:id="Model-3-Marks-23-Geo">
+<Vertices>
+<Vertex IndexNo="0" srsDimension="3">400.829834   199.446762  90.944016</Vertex>
+<Vertex IndexNo="1" srsDimension="3">453.524445   164.317032  90.457954</Vertex>
+<Vertex IndexNo="2" srsDimension="3">453.545837   164.317001  90.431381</Vertex>
+<Vertex IndexNo="3" srsDimension="3">453.943878   164.312088  90.427513</Vertex>
+<Vertex IndexNo="4" srsDimension="3">462.755615   158.162918  78.986877</Vertex>
+<Vertex IndexNo="5" srsDimension="3">684.688354   10.207781  73.681154</Vertex>
+<Vertex IndexNo="6" srsDimension="3">700.000000   0.000000  70.000000</Vertex>
+<Vertex IndexNo="7" srsDimension="3">700.000000   0.000000  88.034760</Vertex>
+<Vertex IndexNo="8" srsDimension="3">700.818848   -0.545888  88.027643</Vertex>
+</Vertices>
+<Triangles>
+<Triangle IndexNo="0">
+<VertexList>7 5 3</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="1">
+<VertexList>2 1 3</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="2">
+<VertexList>7 6 5</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="3">
+<VertexList>6 7 8</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="4">
+<VertexList>4 0 2</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+</Triangles>
+</GeoTin>
+</Shape>
+<Propertymodels>
+<Description>Propertymodel</Description>
+</Propertymodels>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="Model-3-Marks-24">
+<gml:name>Model-3-Marks-24</gml:name>
+<Fields>
+<Field Name="Front_Attribute">
+<swe:Text>
+<swe:value>-5</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Back_Attribute">
+<swe:Text>
+<swe:value>B</swe:value>
+</swe:Text>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<GeoTin gml:id="Model-3-Marks-24-Geo">
+<Vertices>
+<Vertex IndexNo="0" srsDimension="3">194.135712   213.683350  91.332870</Vertex>
+<Vertex IndexNo="1" srsDimension="3">200.000000   200.000000  76.235352</Vertex>
+<Vertex IndexNo="2" srsDimension="3">200.000000   200.000000  90.950279</Vertex>
+<Vertex IndexNo="3" srsDimension="3">200.865952   199.505173  90.944016</Vertex>
+<Vertex IndexNo="4" srsDimension="3">265.485382   162.579788  78.986877</Vertex>
+<Vertex IndexNo="5" srsDimension="3">277.526276   155.699280  64.658592</Vertex>
+<Vertex IndexNo="6" srsDimension="3">289.179291   149.040405  50.791847</Vertex>
+</Vertices>
+<Triangles>
+<Triangle IndexNo="0">
+<VertexList>3 4 1</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="1">
+<VertexList>6 1 5</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="2">
+<VertexList>0 2 1</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="3">
+<VertexList>3 1 2</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="4">
+<VertexList>5 1 4</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+</Triangles>
+</GeoTin>
+</Shape>
+<Propertymodels>
+<Description>Propertymodel</Description>
+</Propertymodels>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="Model-3-Marks-25">
+<gml:name>Model-3-Marks-25</gml:name>
+<Fields>
+<Field Name="Front_Attribute">
+<swe:Text>
+<swe:value>-5</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Back_Attribute">
+<swe:Text>
+<swe:value>B</swe:value>
+</swe:Text>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<GeoTin gml:id="Model-3-Marks-25-Geo">
+<Vertices>
+<Vertex IndexNo="0" srsDimension="3">399.814545   200.176620  91.332870</Vertex>
+<Vertex IndexNo="1" srsDimension="3">400.000000   200.000000  76.235352</Vertex>
+<Vertex IndexNo="2" srsDimension="3">400.000000   200.000000  90.950279</Vertex>
+<Vertex IndexNo="3" srsDimension="3">400.829834   199.446762  90.944016</Vertex>
+<Vertex IndexNo="4" srsDimension="3">462.755615   158.162918  78.986877</Vertex>
+<Vertex IndexNo="5" srsDimension="3">474.294586   150.470276  64.658592</Vertex>
+<Vertex IndexNo="6" srsDimension="3">485.461853   143.025436  50.791847</Vertex>
+</Vertices>
+<Triangles>
+<Triangle IndexNo="0">
+<VertexList>1 4 5</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="1">
+<VertexList>5 6 1</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="2">
+<VertexList>4 1 3</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="3">
+<VertexList>2 1 0</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="4">
+<VertexList>1 2 3</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+</Triangles>
+</GeoTin>
+</Shape>
+<Propertymodels>
+<Description>Propertymodel</Description>
+</Propertymodels>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="Model-3-Marks-26">
+<gml:name>Model-3-Marks-26</gml:name>
+<Fields>
+<Field Name="Front_Attribute">
+<swe:Text>
+<swe:value>-5</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Back_Attribute">
+<swe:Text>
+<swe:value>F</swe:value>
+</swe:Text>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<GeoTin gml:id="Model-3-Marks-26-Geo">
+<Vertices>
+<Vertex IndexNo="0" srsDimension="3">473.226166   43.870762  58.324112</Vertex>
+<Vertex IndexNo="1" srsDimension="3">497.071808   30.244678  73.681152</Vertex>
+<Vertex IndexNo="2" srsDimension="3">550.000000   0.000000  40.000000</Vertex>
+<Vertex IndexNo="3" srsDimension="3">550.000000   0.000000  70.000000</Vertex>
+</Vertices>
+<Triangles>
+<Triangle IndexNo="0">
+<VertexList>2 1 3</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="1">
+<VertexList>0 1 2</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+</Triangles>
+</GeoTin>
+</Shape>
+<Propertymodels>
+<Description>Propertymodel</Description>
+</Propertymodels>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="Model-3-Marks-27">
+<gml:name>Model-3-Marks-27</gml:name>
+<Fields>
+<Field Name="Front_Attribute">
+<swe:Text>
+<swe:value>-5</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Back_Attribute">
+<swe:Text>
+<swe:value>F</swe:value>
+</swe:Text>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<GeoTin gml:id="Model-3-Marks-27-Geo">
+<Vertices>
+<Vertex IndexNo="0" srsDimension="3">661.836670   25.442204  58.324112</Vertex>
+<Vertex IndexNo="1" srsDimension="3">684.688354   10.207781  73.681152</Vertex>
+<Vertex IndexNo="2" srsDimension="3">700.000000   0.000000  40.000000</Vertex>
+<Vertex IndexNo="3" srsDimension="3">700.000000   0.000000  70.000000</Vertex>
+</Vertices>
+<Triangles>
+<Triangle IndexNo="0">
+<VertexList>1 2 0</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+<Triangle IndexNo="1">
+<VertexList>3 2 1</VertexList>
+<NeighborList>-1 -1 -1</NeighborList>
+</Triangle>
+</Triangles>
+</GeoTin>
+</Shape>
+<Propertymodels>
+<Description>Propertymodel</Description>
+</Propertymodels>
+</Geometry>
+</GeoFeature>
+</Feature>
+</Features>
+</GeoFeatureClass></FeatureClass>
+</FeatureClasses>
+<FeatureRelationship>
+</FeatureRelationship>
+</GeoModel>

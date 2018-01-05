@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Geo3DMap xmlns:geo3dml="http://www.cgs.gov.cn/GMML" xmlns="http://www.cgs.gov.cn/GMML"
+	xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:gmlcov="http://www.opengis.net/gml/3.2"
+	xmlns:swe="http://www.opengis.net/swe/2.0"
+	xmlns:ogc="http://www.opengis.net/ogc"
+	xmlns:se="http://www.opengis.net/se"
+	xmlns:gsml="http://xmlns.geosciml.org/GeoSciML-Core/3.0"
+	xmlns:gsmlst="http://xmlns.geosciml.org/GeologicStructure/3.0"
+	xmlns:gsmlgu="http://xmlns.geosciml.org/GeologicUnit/3.0"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns:GMML="http://www.cgs.gov.cn/GeoGML"
+	xsi:schemaLocation="http://www.cgs.gov.cn/GMML file:/E:/GMML/docs/schema/gmml.xsd">
+<Name>ZK5</Name>
+<Description>ZK5</Description>
+<Layers>
+<Layer>
+<gml:name>Drill Mark</gml:name>
+<FeatureClass xlink:type="simple" xlink:href="#ZK5-Mark" />
+<Styles>
+<Style>
+<Geo3DStyle gml:id="ZK5-Mark-Style">
+<gml:name>ZK5-Mark-Style</gml:name>
+<se:FeatureTypeStyle>
+<se:Rule>
+<GeoPointSymbolizer>
+<se:Graphic>
+<se:Size>1</se:Size>
+</se:Graphic>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.255763 0.515084 0.051611</DiffuseColor>
+<EmissiveColor>0.255763 0.515084 0.051611</EmissiveColor>
+<SpecularColor>0.255763 0.515084 0.051611</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoPointSymbolizer>
+</se:Rule>
+</se:FeatureTypeStyle>
+</Geo3DStyle>
+</Style>
+</Styles>
+</Layer>
+<Layer>
+<gml:name>Stratum</gml:name>
+<FeatureClass xlink:type="simple" xlink:href="#ZK5-Stratum" />
+<Styles>
+<Style>
+<Geo3DStyle gml:id="ZK5-Stratum-Style">
+<gml:name>ZK5-Stratum-Style</gml:name>
+<se:FeatureTypeStyle>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>stratigraphical_name</ogc:PropertyName>
+<ogc:Literal>A</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.59283 0.647857 0.238937</DiffuseColor>
+<EmissiveColor>0.59283 0.647857 0.238937</EmissiveColor>
+<SpecularColor>0.59283 0.647857 0.238937</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>stratigraphical_name</ogc:PropertyName>
+<ogc:Literal>C</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.549133 0.674388 0.558253</DiffuseColor>
+<EmissiveColor>0.549133 0.674388 0.558253</EmissiveColor>
+<SpecularColor>0.549133 0.674388 0.558253</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>stratigraphical_name</ogc:PropertyName>
+<ogc:Literal>M</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.344745 0.542289 0.491547</DiffuseColor>
+<EmissiveColor>0.344745 0.542289 0.491547</EmissiveColor>
+<SpecularColor>0.344745 0.542289 0.491547</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>stratigraphical_name</ogc:PropertyName>
+<ogc:Literal>Default</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoLineSymbolizer>
+<se:Stroke>
+<se:SvgParameter name="stroke-width">2</se:SvgParameter>
+</se:Stroke>
+<Material>
+<AmbientIntensity>0</AmbientIntensity>
+<Shininess>0</Shininess>
+<DiffuseColor>0.803097 0.435142 0.656292</DiffuseColor>
+<EmissiveColor>0.803097 0.435142 0.656292</EmissiveColor>
+<SpecularColor>0.803097 0.435142 0.656292</SpecularColor>
+<Transparency>1</Transparency>
+</Material>
+</GeoLineSymbolizer>
+</se:Rule>
+</se:FeatureTypeStyle>
+</Geo3DStyle>
+</Style>
+</Styles>
+</Layer>
+</Layers>
+</Geo3DMap>

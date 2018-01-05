@@ -1,0 +1,1706 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GeoModel xmlns:geo3dml="http://www.cgs.gov.cn/GMML" xmlns="http://www.cgs.gov.cn/GMML"
+	xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:gmlcov="http://www.opengis.net/gml/3.2"
+	xmlns:swe="http://www.opengis.net/swe/2.0"
+	xmlns:ogc="http://www.opengis.net/ogc"
+	xmlns:se="http://www.opengis.net/se"
+	xmlns:gsml="http://xmlns.geosciml.org/GeoSciML-Core/3.0"
+	xmlns:gsmlst="http://xmlns.geosciml.org/GeologicStructure/3.0"
+	xmlns:gsmlgu="http://xmlns.geosciml.org/GeologicUnit/3.0"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns:GMML="http://www.cgs.gov.cn/GeoGML"
+	xsi:schemaLocation="http://www.cgs.gov.cn/GMML file:/E:/GMML/docs/schema/gmml.xsd">
+<Name>m1-1</Name>
+<Type>Section</Type>
+<Metadata>
+</Metadata>
+<FeatureClasses>
+<FeatureClass ><GeoFeatureClass gml:id="m1-1-GeoBoundary">
+<gml:name>Geological Boundary</gml:name>
+<Schema>
+<swe:field name="Up_Attribute">
+<swe:Text>
+</swe:Text>
+</swe:field>
+<swe:field name="Down_Attribute">
+<swe:Text>
+</swe:Text>
+</swe:field>
+<swe:field name="Fault_No">
+<swe:Count>
+</swe:Count>
+</swe:field>
+<swe:field name="Shape">
+</swe:field>
+</Schema>
+<Features>
+<Feature>
+<GeoFeature gml:id="m1-1-GeoBoundary-0">
+<gml:name>m1-1-GeoBoundary-0</gml:name>
+<Fields>
+<Field Name="Up_Attribute">
+<swe:Text>
+<swe:value>-1</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Down_Attribute">
+<swe:Text>
+<swe:value>F</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Fault_No">
+<swe:Count>
+<swe:value>0</swe:value>
+</swe:Count>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:LineString gml:id="m1-1-GeoBoundary-Geo-0">
+<gml:posList srsDimension="3" count="95">
+200.000000   200.000000  94.000000
+198.500000   200.000000  94.007400
+197.000000   200.000000  94.014100
+195.500000   200.000000  94.020200
+194.000000   200.000000  94.026000
+192.500000   200.000000  94.031600
+191.000000   200.000000  94.037000
+189.500000   200.000000  94.042600
+188.000000   200.000000  94.048300
+186.500000   200.000000  94.054300
+185.000000   200.000000  94.060900
+183.500000   200.000000  94.068100
+182.000000   200.000000  94.076100
+180.500000   200.000000  94.085100
+179.000000   200.000000  94.095300
+177.500000   200.000000  94.106900
+175.098000   200.000000  94.128900
+173.598000   200.000000  94.145200
+172.098000   200.000000  94.163300
+170.598000   200.000000  94.183200
+169.098000   200.000000  94.204700
+167.598000   200.000000  94.227700
+166.098000   200.000000  94.252300
+164.599000   200.000000  94.278300
+163.099000   200.000000  94.305800
+161.599000   200.000000  94.334700
+160.099000   200.000000  94.365100
+158.600000   200.000000  94.397000
+155.469000   200.000000  94.468800
+153.969000   200.000000  94.506200
+152.470000   200.000000  94.545200
+150.970000   200.000000  94.585900
+149.471000   200.000000  94.628000
+147.971000   200.000000  94.671600
+146.472000   200.000000  94.716500
+144.973000   200.000000  94.762900
+143.474000   200.000000  94.810600
+141.974000   200.000000  94.859800
+139.355000   200.000000  94.949200
+137.856000   200.000000  95.002800
+136.357000   200.000000  95.057800
+134.858000   200.000000  95.114000
+133.360000   200.000000  95.171100
+131.861000   200.000000  95.229000
+130.362000   200.000000  95.287600
+128.863000   200.000000  95.346600
+127.364000   200.000000  95.406000
+125.000000   200.000000  95.500000
+123.501000   200.000000  95.559800
+122.002000   200.000000  95.619400
+120.504000   200.000000  95.678700
+119.005000   200.000000  95.737600
+117.506000   200.000000  95.795900
+116.007000   200.000000  95.853500
+114.508000   200.000000  95.910200
+113.009000   200.000000  95.965800
+110.645000   200.000000  96.050800
+109.145000   200.000000  96.102700
+107.646000   200.000000  96.153100
+106.147000   200.000000  96.202000
+104.648000   200.000000  96.249500
+103.149000   200.000000  96.295600
+101.649000   200.000000  96.340200
+100.150000   200.000000  96.383400
+98.650400   200.000000  96.425100
+97.150900   200.000000  96.465200
+94.531300   200.000000  96.531300
+93.031700   200.000000  96.566800
+91.532000   200.000000  96.600600
+90.032400   200.000000  96.632700
+88.532700   200.000000  96.663300
+87.032900   200.000000  96.692400
+85.533200   200.000000  96.720000
+84.033400   200.000000  96.746100
+82.533600   200.000000  96.770800
+81.033700   200.000000  96.793900
+79.533900   200.000000  96.815400
+78.034000   200.000000  96.835300
+74.902300   200.000000  96.871100
+73.402400   200.000000  96.885600
+71.902500   200.000000  96.898300
+70.402500   200.000000  96.909400
+68.902600   200.000000  96.919300
+67.402600   200.000000  96.928000
+65.902600   200.000000  96.935800
+64.402600   200.000000  96.942800
+62.902600   200.000000  96.949200
+61.402600   200.000000  96.955100
+59.902600   200.000000  96.960800
+58.402600   200.000000  96.966200
+56.902600   200.000000  96.971600
+55.402600   200.000000  96.977200
+53.902700   200.000000  96.982900
+52.402700   200.000000  96.989000
+50.000000   200.000000  97.000000
+</gml:posList>
+</gml:LineString>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-GeoBoundary-1">
+<gml:name>m1-1-GeoBoundary-1</gml:name>
+<Fields>
+<Field Name="Up_Attribute">
+<swe:Text>
+<swe:value>D</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Down_Attribute">
+<swe:Text>
+<swe:value>-2</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Fault_No">
+<swe:Count>
+<swe:value>0</swe:value>
+</swe:Count>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:LineString gml:id="m1-1-GeoBoundary-Geo-1">
+<gml:posList srsDimension="3" count="2">
+200.000000   200.000000  10.000000
+125.000000   200.000000  10.000000
+</gml:posList>
+</gml:LineString>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-GeoBoundary-2">
+<gml:name>m1-1-GeoBoundary-2</gml:name>
+<Fields>
+<Field Name="Up_Attribute">
+<swe:Text>
+<swe:value>D</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Down_Attribute">
+<swe:Text>
+<swe:value>-2</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Fault_No">
+<swe:Count>
+<swe:value>0</swe:value>
+</swe:Count>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:LineString gml:id="m1-1-GeoBoundary-Geo-2">
+<gml:posList srsDimension="3" count="9">
+125.000000   200.000000  10.000000
+118.767000   200.000000  10.000800
+113.853000   200.000000  10.002900
+109.820000   200.000000  10.005900
+106.226000   200.000000  10.009300
+102.633000   200.000000  10.012800
+98.599400   200.000000  10.015800
+93.686000   200.000000  10.017900
+87.452500   200.000000  10.018700
+</gml:posList>
+</gml:LineString>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-GeoBoundary-3">
+<gml:name>m1-1-GeoBoundary-3</gml:name>
+<Fields>
+<Field Name="Up_Attribute">
+<swe:Text>
+<swe:value>-1</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Down_Attribute">
+<swe:Text>
+<swe:value>A</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Fault_No">
+<swe:Count>
+<swe:value>0</swe:value>
+</swe:Count>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:LineString gml:id="m1-1-GeoBoundary-Geo-3">
+<gml:posList srsDimension="3" count="41">
+50.000000   200.000000  97.000000
+49.250100   200.000000  97.010800
+48.500100   200.000000  97.020200
+47.750100   200.000000  97.028800
+47.000100   200.000000  97.037000
+46.250100   200.000000  97.045400
+45.500200   200.000000  97.054400
+44.750200   200.000000  97.064400
+44.000300   200.000000  97.076100
+43.250400   200.000000  97.090100
+41.699200   200.000000  97.128900
+40.949600   200.000000  97.154000
+40.200200   200.000000  97.183100
+39.450900   200.000000  97.216000
+38.701700   200.000000  97.252200
+37.952700   200.000000  97.291700
+37.203800   200.000000  97.334500
+36.455100   200.000000  97.380500
+35.156300   200.000000  97.468800
+34.408300   200.000000  97.525300
+33.660700   200.000000  97.585500
+32.913400   200.000000  97.649100
+32.166300   200.000000  97.715700
+31.419500   200.000000  97.785500
+29.785200   200.000000  97.949200
+29.039500   200.000000  98.029700
+28.294200   200.000000  98.113100
+27.549000   200.000000  98.198500
+26.804100   200.000000  98.285600
+25.000000   200.000000  98.500000
+24.255300   200.000000  98.589100
+23.510500   200.000000  98.677600
+22.765600   200.000000  98.765200
+22.020600   200.000000  98.851400
+20.214800   200.000000  99.050800
+18.875800   200.000000  99.257000
+7.986170   200.000000  102.040000
+6.991460   200.000000  102.342000
+3.829040   200.000000  105.808000
+0.000000   200.000000  108.990000
+-0.913390   200.000000  109.750000
+</gml:posList>
+</gml:LineString>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-GeoBoundary-4">
+<gml:name>m1-1-GeoBoundary-4</gml:name>
+<Fields>
+<Field Name="Up_Attribute">
+<swe:Text>
+<swe:value>D</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Down_Attribute">
+<swe:Text>
+<swe:value>-2</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Fault_No">
+<swe:Count>
+<swe:value>0</swe:value>
+</swe:Count>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:LineString gml:id="m1-1-GeoBoundary-Geo-4">
+<gml:posList srsDimension="3" count="2">
+50.000000   200.000000  10.000000
+25.000000   200.000000  10.000000
+</gml:posList>
+</gml:LineString>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-GeoBoundary-5">
+<gml:name>m1-1-GeoBoundary-5</gml:name>
+<Fields>
+<Field Name="Up_Attribute">
+<swe:Text>
+<swe:value>D</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Down_Attribute">
+<swe:Text>
+<swe:value>-2</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Fault_No">
+<swe:Count>
+<swe:value>0</swe:value>
+</swe:Count>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:LineString gml:id="m1-1-GeoBoundary-Geo-5">
+<gml:posList srsDimension="3" count="2">
+25.000000   200.000000  10.000000
+0.000000   200.000000  10.000000
+</gml:posList>
+</gml:LineString>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-GeoBoundary-7">
+<gml:name>m1-1-GeoBoundary-7</gml:name>
+<Fields>
+<Field Name="Up_Attribute">
+<swe:Text>
+<swe:value>A</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Down_Attribute">
+<swe:Text>
+<swe:value>F</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Fault_No">
+<swe:Count>
+<swe:value>0</swe:value>
+</swe:Count>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:LineString gml:id="m1-1-GeoBoundary-Geo-7">
+<gml:posList srsDimension="3" count="25">
+50.000000   200.000000  97.000000
+50.464100   200.000000  96.410500
+50.931500   200.000000  95.823100
+51.401900   200.000000  95.237600
+51.875100   200.000000  94.653700
+52.350600   200.000000  94.071400
+52.828300   200.000000  93.490400
+53.307900   200.000000  92.910500
+53.789000   200.000000  92.331600
+54.271500   200.000000  91.753500
+54.755000   200.000000  91.176100
+55.239300   200.000000  90.599200
+55.724100   200.000000  90.022500
+56.209100   200.000000  89.446100
+56.694200   200.000000  88.869600
+57.179000   200.000000  88.292900
+57.663200   200.000000  87.716000
+58.146600   200.000000  87.138500
+58.628900   200.000000  86.560300
+59.110000   200.000000  85.981400
+59.589300   200.000000  85.401400
+60.066900   200.000000  84.820200
+60.542200   200.000000  84.237700
+61.015100   200.000000  83.653700
+61.261100   200.000000  83.347300
+</gml:posList>
+</gml:LineString>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-GeoBoundary-8">
+<gml:name>m1-1-GeoBoundary-8</gml:name>
+<Fields>
+<Field Name="Up_Attribute">
+<swe:Text>
+<swe:value>D</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Down_Attribute">
+<swe:Text>
+<swe:value>-2</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Fault_No">
+<swe:Count>
+<swe:value>0</swe:value>
+</swe:Count>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:LineString gml:id="m1-1-GeoBoundary-Geo-8">
+<gml:posList srsDimension="3" count="9">
+87.452500   200.000000  10.018700
+81.234800   200.000000  10.017900
+76.333800   200.000000  10.015800
+72.310600   200.000000  10.012800
+68.726200   200.000000  10.009300
+65.141900   200.000000  10.005900
+61.118700   200.000000  10.002900
+56.217700   200.000000  10.000800
+50.000000   200.000000  10.000000
+</gml:posList>
+</gml:LineString>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-GeoBoundary-10">
+<gml:name>m1-1-GeoBoundary-10</gml:name>
+<Fields>
+<Field Name="Up_Attribute">
+<swe:Text>
+<swe:value>B</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Down_Attribute">
+<swe:Text>
+<swe:value>A</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Fault_No">
+<swe:Count>
+<swe:value>0</swe:value>
+</swe:Count>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:LineString gml:id="m1-1-GeoBoundary-Geo-10">
+<gml:posList srsDimension="3" count="7">
+-0.081992   200.000000  84.555900
+0.000000   200.000000  84.536200
+13.407600   200.000000  81.306600
+26.011000   200.000000  81.306600
+44.916000   200.000000  77.565000
+50.000000   200.000000  76.841800
+67.759700   200.000000  74.315700
+</gml:posList>
+</gml:LineString>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-GeoBoundary-11">
+<gml:name>m1-1-GeoBoundary-11</gml:name>
+<Fields>
+<Field Name="Up_Attribute">
+<swe:Text>
+<swe:value>C</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Down_Attribute">
+<swe:Text>
+<swe:value>B</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Fault_No">
+<swe:Count>
+<swe:value>0</swe:value>
+</swe:Count>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:LineString gml:id="m1-1-GeoBoundary-Geo-11">
+<gml:posList srsDimension="3" count="7">
+-0.081992   200.000000  61.909200
+0.000000   200.000000  61.910500
+18.527700   200.000000  62.204600
+33.592700   200.000000  58.463000
+46.786900   200.000000  51.669000
+50.000000   200.000000  51.557500
+77.999900   200.000000  50.585900
+</gml:posList>
+</gml:LineString>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-GeoBoundary-12">
+<gml:name>m1-1-GeoBoundary-12</gml:name>
+<Fields>
+<Field Name="Up_Attribute">
+<swe:Text>
+<swe:value>D</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Down_Attribute">
+<swe:Text>
+<swe:value>C</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Fault_No">
+<swe:Count>
+<swe:value>0</swe:value>
+</swe:Count>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:LineString gml:id="m1-1-GeoBoundary-Geo-12">
+<gml:posList srsDimension="3" count="6">
+0.213400   200.000000  33.157700
+21.186200   200.000000  33.945400
+37.334300   200.000000  27.742200
+50.000000   200.000000  27.060200
+62.935000   200.000000  26.363700
+84.498600   200.000000  27.151400
+</gml:posList>
+</gml:LineString>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-GeoBoundary-13">
+<gml:name>m1-1-GeoBoundary-13</gml:name>
+<Fields>
+<Field Name="Up_Attribute">
+<swe:Text>
+<swe:value>F</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Down_Attribute">
+<swe:Text>
+<swe:value>-3</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Fault_No">
+<swe:Count>
+<swe:value>0</swe:value>
+</swe:Count>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:LineString gml:id="m1-1-GeoBoundary-Geo-13">
+<gml:posList srsDimension="3" count="2">
+200.000000   200.000000  94.000000
+199.997000   200.000000  39.262500
+</gml:posList>
+</gml:LineString>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-GeoBoundary-14">
+<gml:name>m1-1-GeoBoundary-14</gml:name>
+<Fields>
+<Field Name="Up_Attribute">
+<swe:Text>
+<swe:value>D</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Down_Attribute">
+<swe:Text>
+<swe:value>D</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Fault_No">
+<swe:Count>
+<swe:value>0</swe:value>
+</swe:Count>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:LineString gml:id="m1-1-GeoBoundary-Geo-14">
+<gml:posList srsDimension="3" count="11">
+86.200700   200.000000  17.618700
+86.214300   200.000000  17.556000
+86.335900   200.000000  16.815400
+86.457400   200.000000  16.074900
+86.579200   200.000000  15.334300
+86.701600   200.000000  14.594000
+86.824700   200.000000  13.853800
+86.949000   200.000000  13.113800
+87.074600   200.000000  12.374200
+87.201900   200.000000  11.635000
+87.452500   200.000000  10.215600
+</gml:posList>
+</gml:LineString>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-GeoBoundary-15">
+<gml:name>m1-1-GeoBoundary-15</gml:name>
+<Fields>
+<Field Name="Up_Attribute">
+<swe:Text>
+<swe:value>D</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Down_Attribute">
+<swe:Text>
+<swe:value>D</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Fault_No">
+<swe:Count>
+<swe:value>0</swe:value>
+</swe:Count>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:LineString gml:id="m1-1-GeoBoundary-Geo-15">
+<gml:posList srsDimension="3" count="2">
+86.200700   200.000000  17.618700
+199.997000   200.000000  23.409800
+</gml:posList>
+</gml:LineString>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-GeoBoundary-16">
+<gml:name>m1-1-GeoBoundary-16</gml:name>
+<Fields>
+<Field Name="Up_Attribute">
+<swe:Text>
+<swe:value>D</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Down_Attribute">
+<swe:Text>
+<swe:value>-3</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Fault_No">
+<swe:Count>
+<swe:value>0</swe:value>
+</swe:Count>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:LineString gml:id="m1-1-GeoBoundary-Geo-16">
+<gml:posList srsDimension="3" count="2">
+199.997000   200.000000  23.409800
+200.000000   200.000000  10.000000
+</gml:posList>
+</gml:LineString>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-GeoBoundary-17">
+<gml:name>m1-1-GeoBoundary-17</gml:name>
+<Fields>
+<Field Name="Up_Attribute">
+<swe:Text>
+<swe:value>D</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Down_Attribute">
+<swe:Text>
+<swe:value>-3</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Fault_No">
+<swe:Count>
+<swe:value>0</swe:value>
+</swe:Count>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:LineString gml:id="m1-1-GeoBoundary-Geo-17">
+<gml:posList srsDimension="3" count="2">
+199.997000   200.000000  39.262500
+199.997000   200.000000  23.409800
+</gml:posList>
+</gml:LineString>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-GeoBoundary-18">
+<gml:name>m1-1-GeoBoundary-18</gml:name>
+<Fields>
+<Field Name="Up_Attribute">
+<swe:Text>
+<swe:value>C</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Down_Attribute">
+<swe:Text>
+<swe:value>D</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Fault_No">
+<swe:Count>
+<swe:value>0</swe:value>
+</swe:Count>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:LineString gml:id="m1-1-GeoBoundary-Geo-18">
+<gml:posList srsDimension="3" count="2">
+82.037000   200.000000  37.329600
+84.498600   200.000000  27.151400
+</gml:posList>
+</gml:LineString>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-GeoBoundary-20">
+<gml:name>m1-1-GeoBoundary-20</gml:name>
+<Fields>
+<Field Name="Up_Attribute">
+<swe:Text>
+<swe:value>D</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Down_Attribute">
+<swe:Text>
+<swe:value>E</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Fault_No">
+<swe:Count>
+<swe:value>0</swe:value>
+</swe:Count>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:LineString gml:id="m1-1-GeoBoundary-Geo-20">
+<gml:posList srsDimension="3" count="2">
+82.037000   200.000000  37.329600
+166.816000   200.000000  38.718800
+</gml:posList>
+</gml:LineString>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-GeoBoundary-21">
+<gml:name>m1-1-GeoBoundary-21</gml:name>
+<Fields>
+<Field Name="Up_Attribute">
+<swe:Text>
+<swe:value>E</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Down_Attribute">
+<swe:Text>
+<swe:value>F</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Fault_No">
+<swe:Count>
+<swe:value>0</swe:value>
+</swe:Count>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:LineString gml:id="m1-1-GeoBoundary-Geo-21">
+<gml:posList srsDimension="3" count="8">
+61.261100   200.000000  83.347300
+93.655700   200.000000  82.340500
+104.684000   200.000000  78.598900
+94.738800   200.000000  73.774100
+119.158000   200.000000  69.146300
+109.508000   200.000000  66.980100
+143.183000   200.000000  54.869000
+166.816000   200.000000  38.718800
+</gml:posList>
+</gml:LineString>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-GeoBoundary-22">
+<gml:name>m1-1-GeoBoundary-22</gml:name>
+<Fields>
+<Field Name="Up_Attribute">
+<swe:Text>
+<swe:value>D</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Down_Attribute">
+<swe:Text>
+<swe:value>F</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Fault_No">
+<swe:Count>
+<swe:value>0</swe:value>
+</swe:Count>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:LineString gml:id="m1-1-GeoBoundary-Geo-22">
+<gml:posList srsDimension="3" count="2">
+166.816000   200.000000  38.718800
+199.997000   200.000000  39.262500
+</gml:posList>
+</gml:LineString>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-GeoBoundary-23">
+<gml:name>m1-1-GeoBoundary-23</gml:name>
+<Fields>
+<Field Name="Up_Attribute">
+<swe:Text>
+<swe:value>D</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Down_Attribute">
+<swe:Text>
+<swe:value>D</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Fault_No">
+<swe:Count>
+<swe:value>0</swe:value>
+</swe:Count>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:LineString gml:id="m1-1-GeoBoundary-Geo-23">
+<gml:posList srsDimension="3" count="2">
+84.498600   200.000000  27.151400
+86.200700   200.000000  17.618700
+</gml:posList>
+</gml:LineString>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-GeoBoundary-24">
+<gml:name>m1-1-GeoBoundary-24</gml:name>
+<Fields>
+<Field Name="Up_Attribute">
+<swe:Text>
+<swe:value>F</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Down_Attribute">
+<swe:Text>
+<swe:value>M</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Fault_No">
+<swe:Count>
+<swe:value>0</swe:value>
+</swe:Count>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:LineString gml:id="m1-1-GeoBoundary-Geo-24">
+<gml:posList srsDimension="3" count="6">
+195.369000   200.000000  66.487800
+189.166000   200.000000  69.146300
+176.562000   200.000000  74.758800
+166.618000   200.000000  76.432700
+156.082000   200.000000  76.432700
+147.220000   200.000000  75.841900
+</gml:posList>
+</gml:LineString>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-GeoBoundary-25">
+<gml:name>m1-1-GeoBoundary-25</gml:name>
+<Fields>
+<Field Name="Up_Attribute">
+<swe:Text>
+<swe:value>F</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Down_Attribute">
+<swe:Text>
+<swe:value>M</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Fault_No">
+<swe:Count>
+<swe:value>0</swe:value>
+</swe:Count>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:LineString gml:id="m1-1-GeoBoundary-Geo-25">
+<gml:posList srsDimension="3" count="6">
+147.220000   200.000000  75.841900
+156.377000   200.000000  72.395600
+169.571000   200.000000  69.146300
+179.516000   200.000000  67.275500
+190.544000   200.000000  66.487800
+195.369000   200.000000  66.487800
+</gml:posList>
+</gml:LineString>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-GeoBoundary-26">
+<gml:name>m1-1-GeoBoundary-26</gml:name>
+<Fields>
+<Field Name="Up_Attribute">
+<swe:Text>
+<swe:value>D</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Down_Attribute">
+<swe:Text>
+<swe:value>D</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Fault_No">
+<swe:Count>
+<swe:value>0</swe:value>
+</swe:Count>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:LineString gml:id="m1-1-GeoBoundary-Geo-26">
+<gml:posList srsDimension="3" count="2">
+87.452500   200.000000  10.215600
+87.452500   200.000000  10.018700
+</gml:posList>
+</gml:LineString>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-GeoBoundary-28">
+<gml:name>m1-1-GeoBoundary-28</gml:name>
+<Fields>
+<Field Name="Up_Attribute">
+<swe:Text>
+<swe:value>-4</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Down_Attribute">
+<swe:Text>
+<swe:value>A</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Fault_No">
+<swe:Count>
+<swe:value>0</swe:value>
+</swe:Count>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:LineString gml:id="m1-1-GeoBoundary-Geo-28">
+<gml:posList srsDimension="3" count="21">
+-0.913390   200.000000  109.750000
+-0.004008   200.000000  99.250000
+-0.008062   200.000000  98.500000
+-0.012154   200.000000  97.750000
+-0.016277   200.000000  97.000000
+-0.020422   200.000000  96.250100
+-0.024583   200.000000  95.500100
+-0.028750   200.000000  94.750100
+-0.032916   200.000000  94.000100
+-0.037073   200.000000  93.250100
+-0.041215   200.000000  92.500100
+-0.045332   200.000000  91.750100
+-0.049416   200.000000  91.000100
+-0.053461   200.000000  90.250200
+-0.057457   200.000000  89.500200
+-0.061397   200.000000  88.750200
+-0.065272   200.000000  88.000200
+-0.069074   200.000000  87.250200
+-0.072794   200.000000  86.500200
+-0.076423   200.000000  85.750200
+-0.081992   200.000000  84.555900
+</gml:posList>
+</gml:LineString>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-GeoBoundary-30">
+<gml:name>m1-1-GeoBoundary-30</gml:name>
+<Fields>
+<Field Name="Up_Attribute">
+<swe:Text>
+<swe:value>A</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Down_Attribute">
+<swe:Text>
+<swe:value>E</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Fault_No">
+<swe:Count>
+<swe:value>0</swe:value>
+</swe:Count>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:LineString gml:id="m1-1-GeoBoundary-Geo-30">
+<gml:posList srsDimension="3" count="15">
+61.261100   200.000000  83.347300
+61.485200   200.000000  83.068000
+61.952300   200.000000  82.480400
+62.416100   200.000000  81.890800
+62.876200   200.000000  81.298800
+63.332300   200.000000  80.704500
+63.784200   200.000000  80.107400
+64.231400   200.000000  79.507500
+64.673600   200.000000  78.904500
+65.110500   200.000000  78.298200
+65.541700   200.000000  77.688400
+65.966900   200.000000  77.074800
+66.385500   200.000000  76.457100
+66.797200   200.000000  75.835200
+67.759700   200.000000  74.315700
+</gml:posList>
+</gml:LineString>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-GeoBoundary-32">
+<gml:name>m1-1-GeoBoundary-32</gml:name>
+<Fields>
+<Field Name="Up_Attribute">
+<swe:Text>
+<swe:value>-4</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Down_Attribute">
+<swe:Text>
+<swe:value>B</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Fault_No">
+<swe:Count>
+<swe:value>0</swe:value>
+</swe:Count>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:LineString gml:id="m1-1-GeoBoundary-Geo-32">
+<gml:posList srsDimension="3" count="30">
+-0.081992   200.000000  84.555900
+-0.085342   200.000000  83.805900
+-0.088570   200.000000  83.055900
+-0.091667   200.000000  82.305900
+-0.094624   200.000000  81.555900
+-0.097432   200.000000  80.805900
+-0.100083   200.000000  80.055900
+-0.102566   200.000000  79.305900
+-0.104872   200.000000  78.555900
+-0.106990   200.000000  77.805900
+-0.108909   200.000000  77.055900
+-0.110618   200.000000  76.305900
+-0.112104   200.000000  75.555900
+-0.113356   200.000000  74.805900
+-0.114359   200.000000  74.055900
+-0.115101   200.000000  73.305900
+-0.115566   200.000000  72.555900
+-0.115740   200.000000  71.805900
+-0.115608   200.000000  71.055900
+-0.115151   200.000000  70.305900
+-0.114353   200.000000  69.555900
+-0.113196   200.000000  68.805900
+-0.111660   200.000000  68.055900
+-0.109726   200.000000  67.305900
+-0.107372   200.000000  66.555900
+-0.104576   200.000000  65.805900
+-0.101315   200.000000  65.055900
+-0.097565   200.000000  64.305900
+-0.093299   200.000000  63.555900
+-0.081992   200.000000  61.909200
+</gml:posList>
+</gml:LineString>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-GeoBoundary-34">
+<gml:name>m1-1-GeoBoundary-34</gml:name>
+<Fields>
+<Field Name="Up_Attribute">
+<swe:Text>
+<swe:value>B</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Down_Attribute">
+<swe:Text>
+<swe:value>E</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Fault_No">
+<swe:Count>
+<swe:value>0</swe:value>
+</swe:Count>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:LineString gml:id="m1-1-GeoBoundary-Geo-34">
+<gml:posList srsDimension="3" count="34">
+67.759700   200.000000  74.315700
+68.144800   200.000000  73.677300
+68.521900   200.000000  73.033900
+68.891300   200.000000  72.385900
+69.253400   200.000000  71.733300
+69.608400   200.000000  71.076500
+69.956800   200.000000  70.415700
+70.298900   200.000000  69.751000
+70.634800   200.000000  69.082600
+70.964800   200.000000  68.410800
+71.289300   200.000000  67.735700
+71.608400   200.000000  67.057500
+71.922500   200.000000  66.376400
+72.231600   200.000000  65.692400
+72.536100   200.000000  65.005800
+72.836100   200.000000  64.316800
+73.131800   200.000000  63.625400
+73.423400   200.000000  62.931700
+73.711100   200.000000  62.236000
+73.995000   200.000000  61.538400
+74.275200   200.000000  60.838900
+74.552100   200.000000  60.137700
+74.825500   200.000000  59.434900
+75.095800   200.000000  58.730600
+75.363100   200.000000  58.025000
+75.627300   200.000000  57.318000
+75.888700   200.000000  56.609900
+76.147400   200.000000  55.900800
+76.403500   200.000000  55.190600
+76.657000   200.000000  54.479600
+76.908000   200.000000  53.767800
+77.156700   200.000000  53.055300
+77.403100   200.000000  52.342200
+77.999900   200.000000  50.585900
+</gml:posList>
+</gml:LineString>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-GeoBoundary-35">
+<gml:name>m1-1-GeoBoundary-35</gml:name>
+<Fields>
+<Field Name="Up_Attribute">
+<swe:Text>
+<swe:value>C</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Down_Attribute">
+<swe:Text>
+<swe:value>E</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Fault_No">
+<swe:Count>
+<swe:value>0</swe:value>
+</swe:Count>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:LineString gml:id="m1-1-GeoBoundary-Geo-35">
+<gml:posList srsDimension="3" count="18">
+77.999900   200.000000  50.585900
+78.237000   200.000000  49.870100
+78.472000   200.000000  49.154100
+78.705000   200.000000  48.437800
+78.935900   200.000000  47.721100
+79.164800   200.000000  47.004100
+79.391700   200.000000  46.286700
+79.616400   200.000000  45.569100
+79.839100   200.000000  44.851000
+80.059700   200.000000  44.132600
+80.278200   200.000000  43.413700
+80.494600   200.000000  42.694500
+80.708700   200.000000  41.974900
+80.920600   200.000000  41.254800
+81.130300   200.000000  40.534300
+81.337600   200.000000  39.813300
+81.542600   200.000000  39.091800
+82.037000   200.000000  37.329600
+</gml:posList>
+</gml:LineString>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-GeoBoundary-36">
+<gml:name>m1-1-GeoBoundary-36</gml:name>
+<Fields>
+<Field Name="Up_Attribute">
+<swe:Text>
+<swe:value>-4</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Down_Attribute">
+<swe:Text>
+<swe:value>C</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Fault_No">
+<swe:Count>
+<swe:value>0</swe:value>
+</swe:Count>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:LineString gml:id="m1-1-GeoBoundary-Geo-36">
+<gml:posList srsDimension="3" count="39">
+-0.081992   200.000000  61.909200
+-0.076009   200.000000  61.159200
+-0.069466   200.000000  60.409300
+-0.062407   200.000000  59.659300
+-0.054874   200.000000  58.909300
+-0.046909   200.000000  58.159300
+-0.038554   200.000000  57.409400
+-0.029847   200.000000  56.659400
+-0.020827   200.000000  55.909400
+-0.011532   200.000000  55.159500
+-0.002000   200.000000  54.409500
+0.000000   200.000000  54.255400
+0.007732   200.000000  53.659500
+0.017630   200.000000  52.909600
+0.027656   200.000000  52.159600
+0.037775   200.000000  51.409700
+0.047952   200.000000  50.659700
+0.058152   200.000000  49.909700
+0.068340   200.000000  49.159800
+0.078481   200.000000  48.409800
+0.088540   200.000000  47.659900
+0.098480   200.000000  46.909900
+0.108268   200.000000  46.160000
+0.117866   200.000000  45.410000
+0.127237   200.000000  44.660000
+0.136346   200.000000  43.910100
+0.145154   200.000000  43.160100
+0.153623   200.000000  42.410200
+0.161712   200.000000  41.660200
+0.169383   200.000000  40.910300
+0.176593   200.000000  40.160300
+0.183300   200.000000  39.410400
+0.189461   200.000000  38.660400
+0.195029   200.000000  37.910500
+0.199959   200.000000  37.160500
+0.204203   200.000000  36.410500
+0.207710   200.000000  35.660600
+0.210428   200.000000  34.910600
+0.213400   200.000000  33.157700
+</gml:posList>
+</gml:LineString>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-GeoBoundary-37">
+<gml:name>m1-1-GeoBoundary-37</gml:name>
+<Fields>
+<Field Name="Up_Attribute">
+<swe:Text>
+<swe:value>-4</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Down_Attribute">
+<swe:Text>
+<swe:value>D</swe:value>
+</swe:Text>
+</Field>
+<Field Name="Fault_No">
+<swe:Count>
+<swe:value>0</swe:value>
+</swe:Count>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:LineString gml:id="m1-1-GeoBoundary-Geo-37">
+<gml:posList srsDimension="3" count="31">
+0.213400   200.000000  33.157700
+0.212825   200.000000  32.407800
+0.211337   200.000000  31.657800
+0.208996   200.000000  30.907800
+0.205861   200.000000  30.157900
+0.201990   200.000000  29.407900
+0.197436   200.000000  28.658000
+0.192253   200.000000  27.908000
+0.186493   200.000000  27.158000
+0.180205   200.000000  26.408100
+0.173438   200.000000  25.658100
+0.166240   200.000000  24.908100
+0.158658   200.000000  24.158100
+0.150736   200.000000  23.408200
+0.142520   200.000000  22.658200
+0.134054   200.000000  21.908200
+0.125381   200.000000  21.158300
+0.116543   200.000000  20.408300
+0.107583   200.000000  19.658300
+0.098544   200.000000  18.908400
+0.089467   200.000000  18.158400
+0.080393   200.000000  17.408400
+0.071366   200.000000  16.658400
+0.062425   200.000000  15.908500
+0.053615   200.000000  15.158500
+0.044977   200.000000  14.408500
+0.036554   200.000000  13.658600
+0.028390   200.000000  12.908600
+0.020528   200.000000  12.158600
+0.013014   200.000000  11.408700
+0.000000   200.000000  10.000000
+</gml:posList>
+</gml:LineString>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-GeoBoundary-27">
+<gml:name>m1-1-GeoBoundary-27</gml:name>
+<Fields>
+<Field Name="Up_Attribute">
+<swe:Text>
+<swe:value></swe:value>
+</swe:Text>
+</Field>
+<Field Name="Down_Attribute">
+<swe:Text>
+<swe:value></swe:value>
+</swe:Text>
+</Field>
+<Field Name="Fault_No">
+<swe:Count>
+<swe:value>0</swe:value>
+</swe:Count>
+</Field>
+</Fields>
+<Geometry>
+<Shape>
+<gml:LineString gml:id="m1-1-GeoBoundary-Geo-27">
+<gml:posList srsDimension="3" count="2">
+87.452500   200.000000  10.018700
+87.452500   200.000000  9.920230
+</gml:posList>
+</gml:LineString>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+</Features>
+</GeoFeatureClass></GeoFeatureClass></FeatureClass >
+<FeatureClass ><GeoFeatureClass gml:id="m1-1-Stratum">
+<gml:name>Stratum</gml:name>
+<Schema>
+<swe:field name="stratigraphical_name">
+<swe:Text>
+</swe:Text>
+</swe:field>
+<swe:field name="Shape">
+</swe:field>
+</Schema>
+<Features>
+<Feature>
+<GeoFeature gml:id="m1-1-Stratum-0">
+<gml:name>m1-1-Stratum-0</gml:name>
+<Fields>
+<Field Name="stratigraphical_name">
+<swe:Text>
+<swe:value></swe:value>
+</swe:Text>
+</Field>
+</Fields>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-Stratum-1">
+<gml:name>m1-1-Stratum-1</gml:name>
+<Fields>
+<Field Name="stratigraphical_name">
+<swe:Text>
+<swe:value></swe:value>
+</swe:Text>
+</Field>
+</Fields>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-Stratum-2">
+<gml:name>m1-1-Stratum-2</gml:name>
+<Fields>
+<Field Name="stratigraphical_name">
+<swe:Text>
+<swe:value></swe:value>
+</swe:Text>
+</Field>
+</Fields>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-Stratum-3">
+<gml:name>m1-1-Stratum-3</gml:name>
+<Fields>
+<Field Name="stratigraphical_name">
+<swe:Text>
+<swe:value></swe:value>
+</swe:Text>
+</Field>
+</Fields>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-Stratum-4">
+<gml:name>m1-1-Stratum-4</gml:name>
+<Fields>
+<Field Name="stratigraphical_name">
+<swe:Text>
+<swe:value></swe:value>
+</swe:Text>
+</Field>
+</Fields>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-Stratum-5">
+<gml:name>m1-1-Stratum-5</gml:name>
+<Fields>
+<Field Name="stratigraphical_name">
+<swe:Text>
+<swe:value></swe:value>
+</swe:Text>
+</Field>
+</Fields>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-Stratum-6">
+<gml:name>m1-1-Stratum-6</gml:name>
+<Fields>
+<Field Name="stratigraphical_name">
+<swe:Text>
+<swe:value></swe:value>
+</swe:Text>
+</Field>
+</Fields>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-Stratum-7">
+<gml:name>m1-1-Stratum-7</gml:name>
+<Fields>
+<Field Name="stratigraphical_name">
+<swe:Text>
+<swe:value></swe:value>
+</swe:Text>
+</Field>
+</Fields>
+</GeoFeature>
+</Feature>
+<Feature>
+<GeoFeature gml:id="m1-1-Stratum-8">
+<gml:name>m1-1-Stratum-8</gml:name>
+<Fields>
+<Field Name="stratigraphical_name">
+<swe:Text>
+<swe:value></swe:value>
+</swe:Text>
+</Field>
+</Fields>
+</GeoFeature>
+</Feature>
+</Features>
+</GeoFeatureClass></GeoFeatureClass></FeatureClass >
+</FeatureClasses>
+<FeatureRelationship>
+<Relation>
+<BoundaryRelationship gml:id="m1-1-Stratum-0_Boundaries">
+<gml:name>m1-1-Stratum-0_Boundaries</gml:name>
+<Source>
+<Feature xlink:type="simple" xlink:href="#m1-1-Stratum-0" />
+</Source>
+<Targets>
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-0" />
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-13" />
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-22" />
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-21" />
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-7" />
+</Targets>
+</BoundaryRelationship>
+</Relation>
+<Relation>
+<BoundaryRelationship gml:id="m1-1-Stratum-1_Boundaries">
+<gml:name>m1-1-Stratum-1_Boundaries</gml:name>
+<Source>
+<Feature xlink:type="simple" xlink:href="#m1-1-Stratum-1" />
+</Source>
+<Targets>
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-20" />
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-35" />
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-34" />
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-30" />
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-21" />
+</Targets>
+</BoundaryRelationship>
+</Relation>
+<Relation>
+<BoundaryRelationship gml:id="m1-1-Stratum-2_Boundaries">
+<gml:name>m1-1-Stratum-2_Boundaries</gml:name>
+<Source>
+<Feature xlink:type="simple" xlink:href="#m1-1-Stratum-2" />
+</Source>
+<Targets>
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-11" />
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-35" />
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-18" />
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-12" />
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-36" />
+</Targets>
+</BoundaryRelationship>
+</Relation>
+<Relation>
+<BoundaryRelationship gml:id="m1-1-Stratum-3_Boundaries">
+<gml:name>m1-1-Stratum-3_Boundaries</gml:name>
+<Source>
+<Feature xlink:type="simple" xlink:href="#m1-1-Stratum-3" />
+</Source>
+<Targets>
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-15" />
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-23" />
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-18" />
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-20" />
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-22" />
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-17" />
+</Targets>
+</BoundaryRelationship>
+</Relation>
+<Relation>
+<BoundaryRelationship gml:id="m1-1-Stratum-4_Boundaries">
+<gml:name>m1-1-Stratum-4_Boundaries</gml:name>
+<Source>
+<Feature xlink:type="simple" xlink:href="#m1-1-Stratum-4" />
+</Source>
+<Targets>
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-4" />
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-5" />
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-37" />
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-12" />
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-23" />
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-14" />
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-26" />
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-8" />
+</Targets>
+</BoundaryRelationship>
+</Relation>
+<Relation>
+<BoundaryRelationship gml:id="m1-1-Stratum-5_Boundaries">
+<gml:name>m1-1-Stratum-5_Boundaries</gml:name>
+<Source>
+<Feature xlink:type="simple" xlink:href="#m1-1-Stratum-5" />
+</Source>
+<Targets>
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-10" />
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-34" />
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-11" />
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-32" />
+</Targets>
+</BoundaryRelationship>
+</Relation>
+<Relation>
+<BoundaryRelationship gml:id="m1-1-Stratum-6_Boundaries">
+<gml:name>m1-1-Stratum-6_Boundaries</gml:name>
+<Source>
+<Feature xlink:type="simple" xlink:href="#m1-1-Stratum-6" />
+</Source>
+<Targets>
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-1" />
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-2" />
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-26" />
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-14" />
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-15" />
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-16" />
+</Targets>
+</BoundaryRelationship>
+</Relation>
+<Relation>
+<BoundaryRelationship gml:id="m1-1-Stratum-7_Boundaries">
+<gml:name>m1-1-Stratum-7_Boundaries</gml:name>
+<Source>
+<Feature xlink:type="simple" xlink:href="#m1-1-Stratum-7" />
+</Source>
+<Targets>
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-3" />
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-7" />
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-30" />
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-10" />
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-28" />
+</Targets>
+</BoundaryRelationship>
+</Relation>
+<Relation>
+<BoundaryRelationship gml:id="m1-1-Stratum-8_Boundaries">
+<gml:name>m1-1-Stratum-8_Boundaries</gml:name>
+<Source>
+<Feature xlink:type="simple" xlink:href="#m1-1-Stratum-8" />
+</Source>
+<Targets>
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-24" />
+<Feature xlink:type="simple" xlink:href="#m1-1-GeoBoundary-25" />
+</Targets>
+</BoundaryRelationship>
+</Relation>
+</FeatureRelationship>
+</GeoModel>
