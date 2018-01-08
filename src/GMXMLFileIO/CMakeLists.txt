@@ -43,7 +43,7 @@ SET(LIB_PUBLIC_HEADERS
 	MetaDataxmlReader.h
 	SpatialRelationXMLReader.h
 	XMLBase64.h
-	XMLMetaDataReader.h
+	#XMLMetaDataReader.h
 	XMLReader.h
 	XMLWriter.h
 )
@@ -73,7 +73,7 @@ SET(TARGET_SRC
 	MetaDataxmlReader.cpp
 	SpatialRelationXMLReader.cpp
 	xmlBase64.cpp
-	XMLMetaDataReader.cpp
+	#XMLMetaDataReader.cpp
 	XMLReader.cpp
 	XMLWriter.cpp
 )

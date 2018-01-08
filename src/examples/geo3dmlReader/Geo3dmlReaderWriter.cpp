@@ -1,6 +1,8 @@
 #include <osgDB/Registry>
 #include <osgDB/ReaderWriter>
+#include <osgDB/FileUtils>
 #include <osgDB/FileNameUtils>
+#include <osgDB/WriteFile>
 
 #include <GMLFeature/gmlFeatureCollection.h>
 #include <SaxReader/Geo3DProjectReader.h>
@@ -16,16 +18,6 @@
 
 namespace
 {
-	//osg::Geometry* createGeom(gmml::GeologicFeature* gf)
-	//{
-	//	osg::ref_ptr<osg::Vec3Array> va = new osg::Vec3Array;
-	//	osg::ref_ptr<osg::Geometry> geom = new osg::Geometry;
-	//	geom->setName(gf->getName());
-	//	geom->setVertexArray(va);
-
-	//	return geom.release();
-	//}
-
 	osg::Node* createFeatureNode(gmml::GeologicFeature* gf)
 	{
 		osg::ref_ptr<osg::Geode> geode = new osg::Geode;
@@ -44,6 +36,7 @@ namespace
 					vtkPoints* points = poly_data->GetPoints();
 					int pointNum = points->GetNumberOfPoints();
 					osg::ref_ptr<osg::Vec3Array> va = new osg::Vec3Array;
+					va->reserve(pointNum);
 					for (int i = 0; i < pointNum; i++)
 					{
 						osg::Vec3d p;
@@ -53,17 +46,18 @@ namespace
 
 					osg::ref_ptr<osg::DrawElementsUInt> de = new osg::DrawElementsUInt(osg::PrimitiveSet::TRIANGLES, 0);
 
-					vtkCellArray* line = poly_data->GetPolys();
-					int cellNum = line->GetNumberOfCells();
-					for (int i = 0; i < cellNum * 4; i = i + 4)
+					vtkCellArray* cellAry = poly_data->GetPolys();
+					int cellNum = cellAry->GetNumberOfCells();
+
+					for (int i = 0; i < cellNum * 4; i += 4)
 					{
 						vtkIdType counta;
 						vtkIdType *pts;
-						line->GetCell(i, counta, pts);
+						cellAry->GetCell(i, counta, pts);
+						de->push_back(pts[0]);
+						de->push_back(pts[1]);
+						de->push_back(pts[2]);
 					}
-
-
-
 
 					osg::ref_ptr<osg::Geometry> geom = new osg::Geometry;
 					geom->setName(shapeName);
@@ -75,6 +69,7 @@ namespace
 			}
 		}
 
+		//osgDB::writeNodeFile(*geode, "geo3dmltest.osgb");
 		return geode.release();
 	}
 
@@ -128,9 +123,13 @@ public:
 		if (!acceptsExtension(osgDB::getLowerCaseFileExtension(file)))
 			return ReadResult::FILE_NOT_HANDLED;
 
-		gmml::Geo3DProject* project = new gmml::Geo3DProject;
+		if (!osgDB::fileExists(file))
+		{
+			return ReadResult::FILE_NOT_HANDLED;
+		}
 
 #if 0
+		gmml::Geo3DProject* project;
 		int rs = ReadGeo3DProject(project, file.c_str());
 #else
 		Geo3DProjectXMLReader xmlreader;
@@ -139,37 +138,35 @@ public:
 			return ReadResult::FILE_NOT_HANDLED;
 		}
 #endif
-		if (!project)
-		{
-			return ReadResult::FILE_NOT_HANDLED;
-		}
+		gmml::Geo3DProject* project = dynamic_cast<gmml::Geo3DProject*>(xmlreader.GetGeoProject());
 
-		int model_count = project->GetGeoModelCount();
-		if (model_count < 1)
-		{
-			return ReadResult::FILE_NOT_HANDLED;
-		}
+		if (!project) return ReadResult(0L);
+		int modelNum = project->GetGeoModelCount();
+		if (modelNum < 1) return ReadResult(0L);
 
-		gmml::GeoModel* pModel = project->GetGeoModel(0);
-		if (!pModel)
+		osg::ref_ptr<osg::Group> projGroup = new osg::Group;
+		for (int mi = 0; mi < modelNum; ++mi)
 		{
-			return ReadResult::FILE_NOT_HANDLED;
-		}
+			gmml::GeoModel* pModel = project->GetGeoModel(mi);
+			if (!pModel) continue;
 
-		osg::ref_ptr<osg::Group> mgroup = new osg::Group;
+			osg::ref_ptr<osg::Group> mgroup = new osg::Group;
 
-		int fcNum = pModel->GetGeoFeatureClassCount();
-		for (int fci = 0; fci < fcNum; ++fci)
-		{
-			gmml::GeologicFeatureClass* fc = pModel->GetGeoFeatureClass(fci);
-			for (int fi = 0; fi < fc->GetGeologicFeatureCount(); ++fi)
+			int fcNum = pModel->GetGeoFeatureClassCount();
+			for (int fci = 0; fci < fcNum; ++fci)
 			{
-				gmml::GeologicFeature* geoFeature = fc->GetGeologicFeature(fi);
-				osg::ref_ptr<osg::Node> node = createFeatureNode(geoFeature);
-				mgroup->addChild(node);
+				gmml::GeologicFeatureClass* fc = pModel->GetGeoFeatureClass(fci);
+				for (int fi = 0; fi < fc->GetGeologicFeatureCount(); ++fi)
+				{
+					gmml::GeologicFeature* geoFeature = fc->GetGeologicFeature(fi);
+					osg::ref_ptr<osg::Node> node = createFeatureNode(geoFeature);
+					mgroup->addChild(node);
+				}
 			}
+			projGroup->addChild(mgroup);
 		}
-		return ReadResult(mgroup);
+
+		return projGroup;
 	}
 };
 

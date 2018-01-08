@@ -169,7 +169,7 @@ GMCornerPointGrid* GMCornerPointGrid::New(void)
 		if(i <  CellPropertyData.size())
 		return CellPropertyData[i];
 
-		//return 0;
+		return 0;
 	}
 
 	void GMCornerPointGrid::GetDimension(int dimension[3])

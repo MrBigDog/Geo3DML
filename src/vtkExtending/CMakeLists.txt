@@ -484,7 +484,7 @@ SET(TARGET_SRC
 	vtkEventForwarderCommand.cxx
 	vtkExecutive.cxx
 	vtkExplicitCell.cxx
-	vtkExtending.suo
+	#vtkExtending.suo
 	vtkExtentSplitter.cxx
 	vtkExtentTranslator.cxx
 	vtkFastNumericConversion.cxx
@@ -740,6 +740,8 @@ SET(TARGET_SRC
 	vtkWindowLevelLookupTable.cxx
 	vtkXMLFileOutputWindow.cxx
 	vtk__Int64Array.cxx
+	vtkDataArrayTemplate.txx
+	vtkDataArrayTemplateImplicit.txx
 )
 
 ADD_LIBRARY(
