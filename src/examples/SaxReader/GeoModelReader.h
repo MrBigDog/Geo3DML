@@ -1,7 +1,7 @@
 #ifndef GeoModelReader_h__
 #define GeoModelReader_h__
 
-#include "Export.h"
+//#include "Export.h"
 
 #include "global.h"
 #include "GeologicFeatureClassReader.h"
