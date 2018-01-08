@@ -5,7 +5,6 @@
 #include <osgDB/WriteFile>
 
 #include <GMLFeature/gmlFeatureCollection.h>
-//#include <SaxReader/Geo3DProjectReader.h>
 #include <GM_XML/Geo3DProject.h>
 #include <GM_XML/FeatureClass.h>
 #include <GM_XML/GeologicFeature.h>
@@ -16,6 +15,10 @@
 #include <vtkExtending/GMPolyData.h>
 #include <vtkExtending/vtkCellArray.h>
 #include <vtkExtending/GMUnstructuredGrid.h>
+#include <vtkExtending/vtkFieldData.h>
+#include <vtkExtending/vtkPointData.h>
+#include <vtkExtending/vtkDataArray.h>
+#include <vtkExtending/vtkDoubleArray.h>
 
 namespace
 {
@@ -90,7 +93,7 @@ namespace
 				}
 
 				vtkCellArray* cellAry = grid->GetCells();
-				if (grid->GetGeometryType() == 10)
+				if (grid->GetGeometryType() == 10)//四面体;
 				{
 					int tCount = grid->GetNumberOfCells();
 					for (int i = 0; i < tCount * 5; i = i + 5)
@@ -102,12 +105,9 @@ namespace
 						if (counta != 4) continue;
 					}
 				}
-				else if (grid->GetGeometryType() == 12)
+				else if (grid->GetGeometryType() == 12)//六面体;
 				{
-					osg::ref_ptr<osg::Vec3Array> cubeVa = new osg::Vec3Array;
-					osg::ref_ptr<osg::Vec3Array> cubeNa = new osg::Vec3Array;
-					osg::ref_ptr<osg::DrawElementsUInt> de = new osg::DrawElementsUInt(osg::PrimitiveSet::TRIANGLES, 0);
-
+					//osg::ref_ptr<osg::DrawElementsUInt> de = new osg::DrawElementsUInt(osg::PrimitiveSet::TRIANGLES, 0);
 					for (int i = 0; i < grid->GetNumberOfCells() * 9; i = i + 9)
 					{
 						vtkIdType counta;
@@ -116,15 +116,8 @@ namespace
 
 						if (counta != 8) continue;
 
-						//osg::Vec3d v1 = va->at(pts[0]);
-						//osg::Vec3d v2 = va->at(pts[1]);
-						//osg::Vec3d v3 = va->at(pts[2]);
-						//osg::Vec3d v4 = va->at(pts[3]);
-						//osg::Vec3d v5 = va->at(pts[4]);
-						//osg::Vec3d v6 = va->at(pts[5]);
-						//osg::Vec3d v7 = va->at(pts[6]);
-						//osg::Vec3d v8 = va->at(pts[7]);
-
+						osg::ref_ptr<osg::Vec3Array> cubeVa = new osg::Vec3Array;
+						osg::ref_ptr<osg::Vec3Array> cubeNa = new osg::Vec3Array;
 
 						cubeVa->push_back(va->at(pts[0]));
 						cubeVa->push_back(va->at(pts[1]));
@@ -179,22 +172,49 @@ namespace
 						cubeNa->push_back(osg::Vec3(-1, 0, 0));
 						cubeNa->push_back(osg::Vec3(-1, 0, 0));
 						cubeNa->push_back(osg::Vec3(-1, 0, 0));
+
+						osg::ref_ptr<osg::Vec4Array> ca = new osg::Vec4Array;
+						ca->push_back(osg::Vec4(1, 1, 1, 1));
+
+						osg::ref_ptr<osg::Geometry> geom = new osg::Geometry;
+						geom->setUseDisplayList(false);
+						geom->setUseVertexBufferObjects(true);
+						geom->setVertexArray(cubeVa);
+						geom->setNormalArray(cubeNa, osg::Array::BIND_PER_VERTEX);
+						geom->setColorArray(ca, osg::Array::BIND_OVERALL);
+						geom->addPrimitiveSet(new osg::DrawArrays(osg::PrimitiveSet::QUADS, 0, cubeVa->size()));
+						geode->addDrawable(geom);
 					}
 
-					osg::ref_ptr<osg::Vec4Array> ca = new osg::Vec4Array;
-					ca->push_back(osg::Vec4(1, 1, 1, 1));
-
-					osg::ref_ptr<osg::Geometry> geom = new osg::Geometry;
-					geom->setVertexArray(cubeVa);
-					geom->setNormalArray(cubeNa, osg::Array::BIND_PER_VERTEX);
-					geom->setColorArray(ca, osg::Array::BIND_OVERALL);
-					geom->addPrimitiveSet(new osg::DrawArrays(osg::PrimitiveSet::QUADS, 0, cubeVa->size()));
-					geode->addDrawable(geom);
+					////vertex_offset += 3 * sizeof(float);
+					int num1 = grid->GetPointData()->GetNumberOfArrays();
+					if (num1 > 0)
+					{
+						vtkDataArray * vPointData = grid->GetPointData()->GetArray(0);
+						if (0 == strcmp(vPointData->GetClassName(), "vtkDoubleArray"))
+						{
+							double dMin = 1E10, dMax = -1E10;
+							vtkDoubleArray* dataA = (vtkDoubleArray*)vPointData;
+							for (unsigned long i = 0; i < dataA->GetNumberOfTuples()*dataA->GetNumberOfComponents(); ++i)
+							{
+								double fValue = dataA->GetValue(i);
+								dMin = (fValue < dMin) ? fValue : dMin;
+								dMax = (fValue > dMax) ? fValue : dMax;
+							}
+							int nAllColorCount = 0x000000FF - 0;
+							double dStep = (dMax - dMin) / nAllColorCount;
+							for (unsigned long i = 0; i < dataA->GetNumberOfTuples()*dataA->GetNumberOfComponents(); ++i)
+							{
+								double fValue = dataA->GetValue(i);
+								//in_hardware_mesh->set_ulong(vertex_offset, i, ulong((fValue - dMin)*dStep));
+							}
+						}
+					}
 				}
 			}
 		}
 
-		osgDB::writeNodeFile(*geode, "geo3dmltest.osgb");
+		//osgDB::writeNodeFile(*geode, "geo3dmltest.osgb");
 		return geode.release();
 	}
 
@@ -241,7 +261,7 @@ public:
 	virtual ReadResult readImage(std::istream& fin, const Options* options) const
 	{
 		return ReadResult::FILE_NOT_HANDLED;
-}
+	}
 
 	ReadResult readNode(const std::string& file, const osgDB::Options* options) const
 	{

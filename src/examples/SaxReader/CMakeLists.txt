@@ -1,4 +1,4 @@
-SET(LIB_PUBLIC_HEADERS
+SET(TARGET_H
 	#Export.h
 	FeatureRelationReader.h
 	FieldReader.h
@@ -53,7 +53,7 @@ INCLUDE_DIRECTORIES(
 LINK_WITH_VARIABLES(${LIB_NAME} ICONV_LIBRARIES )
 
 
-SET(TARGET_COMMON_LIBRARIES  GMXMLFileIO GMLFeature GM_XML vtklibxml2 vtkExtending msvcprtd Wininet)
+SET(TARGET_COMMON_LIBRARIES  GMXMLFileIO GMLFeature GM_XML vtklibxml2 vtkExtending msvcprtd)
  
 #LINK_INTERNAL(${LIB_NAME} ICONV_LIBRARIES msvcprtd.lib)
 

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="gb2312"?>
+<GeoModel xmlns:geo3dml="http://www.cgs.gov.cn/GMML" xmlns="http://www.cgs.gov.cn/GMML"
+	xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:dt="http://www.opengis.net/gml/3.2"
+	xmlns:gmlcov="http://www.opengis.net/gml/3.2"
+	xmlns:swe="http://www.opengis.net/swe/2.0"
+	xmlns:ogc="http://www.opengis.net/ogc"
+	xmlns:se="http://www.opengis.net/se"
+	xmlns:gsml="http://xmlns.geosciml.org/GeoSciML-Core/3.0"
+	xmlns:gsmlst="http://xmlns.geosciml.org/GeologicStructure/3.0"
+	xmlns:gsmlgu="http://xmlns.geosciml.org/GeologicUnit/3.0"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns:GMML="http://www.cgs.gov.cn/GeoGML"
+	xsi:schemaLocation="http://www.cgs.gov.cn/GMML file:/E:/GMML/docs/schema/gmml.xsd">
+<Name>new Model</Name>
+<Type>Map3D</Type>
+<Metadata>
+</Metadata>
+<FeatureClasses>
+<FeatureClass>
+<GeoFeatureClass gml:id="new_group_ID_1">
+<gml:name>new group</gml:name>
+<Schema>
+</Schema>
+<Features>
+<Feature>
+<GeoFeature gml:id="cuboid_model">
+<gml:name>cuboid_model</gml:name>
+<Fields>
+</Fields>
+<Geometry>
+<Shape>
+</>
+</Shape>
+</Geometry>
+</GeoFeature>
+</Feature>
+</Features>
+</GeoFeatureClass>
+</FeatureClass>
+</FeatureClasses>
+<FeatureRelationship>
+</FeatureRelationship>
+</GeoModel>
