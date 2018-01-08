@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="gb2312"?>
+<Geo3DMap xmlns:geo3dml="http://www.cgs.gov.cn/GMML" xmlns="http://www.cgs.gov.cn/GMML"
+	xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:gmlcov="http://www.opengis.net/gml/3.2"
+	xmlns:swe="http://www.opengis.net/swe/2.0"
+	xmlns:ogc="http://www.opengis.net/ogc"
+	xmlns:se="http://www.opengis.net/se"
+	xmlns:gsml="http://xmlns.geosciml.org/GeoSciML-Core/3.0"
+	xmlns:gsmlst="http://xmlns.geosciml.org/GeologicStructure/3.0"
+	xmlns:gsmlgu="http://xmlns.geosciml.org/GeologicUnit/3.0"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns:GMML="http://www.cgs.gov.cn/GeoGML"
+	xsi:schemaLocation="http://www.cgs.gov.cn/GMML file:/E:/GMML/docs/schema/gmml.xsd">
+<Name>可变换格网数据</Name>
+<Description>uniformgrid Model</Description>
+<Layers>
+<Layer>
+<gml:name>数据集合</gml:name>
+<FeatureClass xlink:type="simple" xlink:href="#new_group_ID_1" />
+<Styles>
+<Style>
+<Geo3DStyle gml:id="1849">
+<gml:name>1849</gml:name>
+<se:CoverageType3DStyle>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>RectifiedGrid</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoDiscreteCoverageSymbolizer>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>SCALARS</ogc:PropertyName>
+<ogc:Literal>SCALARS</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<se:RasterSymbolizer>
+<ColorMap type="2">
+<se:Geometry>SCALARS</se:Geometry>
+<ColorMapEntry color="#2851CC" quantity="0" label="values" opacity="1"/>
+<ColorMapEntry color="#4eb748" quantity="20" label="label" opacity="1"/>
+<ColorMapEntry color="#EE0F0F" quantity="40" label="label" opacity="1"/>
+<ColorMapEntry color="#8ba8f3" quantity="60" label="label" opacity="1"/>
+<ColorMapEntry color="#6FEE4F" quantity="80" label="label" opacity="1"/>
+<ColorMapEntry color="#3ECC1B" quantity="100" label="label" opacity="1"/>
+<ColorMapEntry color="#886363" quantity="120" label="label" opacity="1"/>
+<ColorMapEntry color="#5194CC" quantity="140" label="label" opacity="1"/> 
+<ColorMapEntry color="#2C58DD" quantity="160" label="label" opacity="1"/>
+<ColorMapEntry color="#DDB02C" quantity="180" label="label" opacity="1"/>
+<ColorMapEntry color="#16ddf3" quantity="200" label="label" opacity="1"/>
+<ColorMapEntry color="#df2ba9" quantity="220" label="label" opacity="1"/>
+<ColorMapEntry color="#aabe4b" quantity="240" label="label" opacity="1"/>
+<ColorMapEntry color="#94768f" quantity="260" label="label" opacity="1"/>
+</ColorMap>
+</se:RasterSymbolizer>
+</se:Rule>
+</GeoDiscreteCoverageSymbolizer>
+</se:Rule>
+</se:CoverageType3DStyle>
+</Geo3DStyle>
+</Style>
+</Styles>
+</Layer>
+</Layers>
+</Geo3DMap>

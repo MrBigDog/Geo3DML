@@ -3,7 +3,6 @@ FOREACH( geo3dml_sdk
 		 GM_XML
 		 vtklibxml2
 		 vtkExtending
-		 SaxReader
 		 GMLFeature
 		 GMXMLFileIO
 		 )

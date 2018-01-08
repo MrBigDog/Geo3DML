@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="gb2312"?>
+<Geo3DMap xmlns:geo3dml="http://www.cgs.gov.cn/GMML" xmlns="http://www.cgs.gov.cn/GMML"
+	xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:gmlcov="http://www.opengis.net/gml/3.2"
+	xmlns:swe="http://www.opengis.net/swe/2.0"
+	xmlns:ogc="http://www.opengis.net/ogc"
+	xmlns:se="http://www.opengis.net/se"
+	xmlns:gsml="http://xmlns.geosciml.org/GeoSciML-Core/3.0"
+	xmlns:gsmlst="http://xmlns.geosciml.org/GeologicStructure/3.0"
+	xmlns:gsmlgu="http://xmlns.geosciml.org/GeologicUnit/3.0"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns:GMML="http://www.cgs.gov.cn/GeoGML"
+	xsi:schemaLocation="http://www.cgs.gov.cn/GMML file:/E:/GMML/docs/schema/gmml.xsd">
+<Name>Project_Point_map</Name>
+<Description>Project_Point_map</Description>
+<Layers>
+<Layer>
+<gml:name>Project_Point_map_layer</gml:name>
+<FeatureClass xlink:type="simple" xlink:href="#Project_Point_model_class" />
+<Styles>
+<Style>
+<Geo3DStyle gml:id="1849">
+<gml:name>1849</gml:name>
+<se:FeatureTypeStyle>
+</se:FeatureTypeStyle>
+<se:CoverageType3DStyle>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>cornerpoint_grid</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoDiscreteCoverageSymbolizer>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>SCALARS</ogc:PropertyName>
+<ogc:Literal>SCALARS</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<se:RasterSymbolizer>
+<ColorMap type="1">
+<se:Geometry>SCALARS</se:Geometry>
+<ColorMapEntry color="#8000ff" quantity="0" label="values" opacity="1"/>
+<ColorMapEntry color="#0000ff" quantity="4" label="label" opacity="1"/>
+<ColorMapEntry color="#EE0F0F" quantity="8" label="label" opacity="1"/>
+<ColorMapEntry color="#00ff00" quantity="12" label="label" opacity="1"/>
+<ColorMapEntry color="#00ffff" quantity="16" label="label" opacity="1"/>
+<ColorMapEntry color="#8000ff" quantity="20" label="label" opacity="1"/>
+<ColorMapEntry color="#00ff00" quantity="24" label="label" opacity="1"/>
+<ColorMapEntry color="#00ffff" quantity="28" label="label" opacity="1"/>
+<ColorMapEntry color="#ffff00" quantity="32" label="label" opacity="1"/>
+<ColorMapEntry color="#ff0000" quantity="36" label="label" opacity="1"/>
+<ColorMapEntry color="#ff0000" quantity="40" label="label" opacity="1"/>
+<ColorMapEntry color="#df2ba9" quantity="44" label="label" opacity="1"/>
+</ColorMap>
+</se:RasterSymbolizer>
+</se:Rule>
+</GeoDiscreteCoverageSymbolizer>
+</se:Rule>
+</se:CoverageType3DStyle>
+</Geo3DStyle>
+</Style>
+</Styles>
+</Layer>
+</Layers>
+</Geo3DMap>

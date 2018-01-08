@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="gb2312"?>
+<Geo3DMap xmlns:geo3dml="http://www.cgs.gov.cn/GMML" xmlns="http://www.cgs.gov.cn/GMML"
+	xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:gmlcov="http://www.opengis.net/gml/3.2"
+	xmlns:swe="http://www.opengis.net/swe/2.0"
+	xmlns:ogc="http://www.opengis.net/ogc"
+	xmlns:se="http://www.opengis.net/se"
+	xmlns:gsml="http://xmlns.geosciml.org/GeoSciML-Core/3.0"
+	xmlns:gsmlst="http://xmlns.geosciml.org/GeologicStructure/3.0"
+	xmlns:gsmlgu="http://xmlns.geosciml.org/GeologicUnit/3.0"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns:GMML="http://www.cgs.gov.cn/GeoGML"
+	xsi:schemaLocation="http://www.cgs.gov.cn/GMML file:/E:/GMML/docs/schema/gmml.xsd">
+<Name>包谷图三维地质模型0121</Name>
+<Description>包谷图三维地质模型0121</Description>
+<Layers>
+<Layer>
+<gml:name>视电阻率_SN3DTM_vol-Layer</gml:name>
+<FeatureClass xlink:type="simple" xlink:href="#视电阻率_SN3DTM_vol" />
+<Styles>
+<Style>
+<Geo3DStyle gml:id="视电阻率_SN3DTM_vol-Style">
+<gml:name>视电阻率_SN3DTM_vol-Style</gml:name>
+<se:CoverageType3DStyle>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>gml:id</ogc:PropertyName>
+<ogc:Literal>视电阻率_SN3DTM</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<GeoDiscreteCoverageSymbolizer>
+<se:Rule>
+<ogc:Filter>
+<ogc:PropertyIsEqualTo>
+<ogc:PropertyName>SN3DTM</ogc:PropertyName>
+<ogc:Literal>SN3DTM</ogc:Literal>
+</ogc:PropertyIsEqualTo>
+</ogc:Filter>
+<se:RasterSymbolizer>
+<ColorMap type="2">
+<se:Geometry>SN3DTM</se:Geometry>
+<ColorMapEntry color="#2851CC" quantity="0" label="values" opacity="1"/>
+<ColorMapEntry color="#4eb748" quantity="0.5" label="label" opacity="1"/>
+<ColorMapEntry color="#EE0F0F" quantity="1" label="label" opacity="1"/>
+<ColorMapEntry color="#8ba8f3" quantity="1.5" label="label" opacity="1"/>
+<ColorMapEntry color="#6FEE4F" quantity="2" label="label" opacity="1"/>
+<ColorMapEntry color="#3ECC1B" quantity="2.5" label="label" opacity="1"/>
+<ColorMapEntry color="#886363" quantity="3.0" label="label" opacity="1"/>
+<ColorMapEntry color="#5194CC" quantity="3.5" label="label" opacity="1"/> 
+<ColorMapEntry color="#2C58DD" quantity="4.0" label="label" opacity="1"/>
+<ColorMapEntry color="#DDB02C" quantity="4.5" label="label" opacity="1"/>
+<ColorMapEntry color="#16ddf3" quantity="5.0" label="label" opacity="1"/>
+<ColorMapEntry color="#df2ba9" quantity="5.5" label="label" opacity="1"/>
+<ColorMapEntry color="#aabe4b" quantity="6.0" label="label" opacity="1"/>
+</ColorMap>
+</se:RasterSymbolizer>
+</se:Rule>
+</GeoDiscreteCoverageSymbolizer>
+</se:Rule>
+</se:CoverageType3DStyle>
+</Geo3DStyle>
+</Style>
+</Styles>
+</Layer>
+</Layers>
+</Geo3DMap>

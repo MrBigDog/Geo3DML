@@ -5,7 +5,7 @@
 #include <osgDB/WriteFile>
 
 #include <GMLFeature/gmlFeatureCollection.h>
-#include <SaxReader/Geo3DProjectReader.h>
+//#include <SaxReader/Geo3DProjectReader.h>
 #include <GM_XML/Geo3DProject.h>
 #include <GM_XML/FeatureClass.h>
 #include <GM_XML/GeologicFeature.h>
@@ -15,6 +15,7 @@
 #include <vtkExtending/vtkObject.h>
 #include <vtkExtending/GMPolyData.h>
 #include <vtkExtending/vtkCellArray.h>
+#include <vtkExtending/GMUnstructuredGrid.h>
 
 namespace
 {
@@ -28,6 +29,8 @@ namespace
 			vtkObject* shape = mf->GetShape();
 
 			std::string shapeName = shape->GetClassName();
+
+			//TrangleMeshModel
 			if (shapeName == "GMPolyData")
 			{
 				GMPolyData* poly_data = (GMPolyData*)shape;
@@ -54,12 +57,16 @@ namespace
 						vtkIdType counta;
 						vtkIdType *pts;
 						cellAry->GetCell(i, counta, pts);
+						if (counta != 3) continue;
+
 						de->push_back(pts[0]);
 						de->push_back(pts[1]);
 						de->push_back(pts[2]);
 					}
 
 					osg::ref_ptr<osg::Geometry> geom = new osg::Geometry;
+					geom->setUseDisplayList(false);
+					geom->setUseVertexBufferObjects(true);
 					geom->setName(shapeName);
 					geom->setVertexArray(va);
 					geom->addPrimitiveSet(de);
@@ -67,9 +74,127 @@ namespace
 					geode->addDrawable(geom);
 				}
 			}
+			//VoxelModel
+			else if (shapeName == "GMUnstructuredGrid")
+			{
+				GMUnstructuredGrid* grid = (GMUnstructuredGrid*)shape;
+				vtkPoints* points = grid->GetPoints();
+				int pointNum = points->GetNumberOfPoints();
+				osg::ref_ptr<osg::Vec3Array> va = new osg::Vec3Array;
+				va->reserve(pointNum);
+				for (int i = 0; i < pointNum; i++)
+				{
+					osg::Vec3d p;
+					points->GetPoint(i, p.ptr());
+					va->push_back(p);
+				}
+
+				vtkCellArray* cellAry = grid->GetCells();
+				if (grid->GetGeometryType() == 10)
+				{
+					int tCount = grid->GetNumberOfCells();
+					for (int i = 0; i < tCount * 5; i = i + 5)
+					{
+						vtkIdType counta;
+						vtkIdType *pts;
+						cellAry->GetCell(i, counta, pts);
+
+						if (counta != 4) continue;
+					}
+				}
+				else if (grid->GetGeometryType() == 12)
+				{
+					osg::ref_ptr<osg::Vec3Array> cubeVa = new osg::Vec3Array;
+					osg::ref_ptr<osg::Vec3Array> cubeNa = new osg::Vec3Array;
+					osg::ref_ptr<osg::DrawElementsUInt> de = new osg::DrawElementsUInt(osg::PrimitiveSet::TRIANGLES, 0);
+
+					for (int i = 0; i < grid->GetNumberOfCells() * 9; i = i + 9)
+					{
+						vtkIdType counta;
+						vtkIdType *pts;
+						cellAry->GetCell(i, counta, pts);
+
+						if (counta != 8) continue;
+
+						//osg::Vec3d v1 = va->at(pts[0]);
+						//osg::Vec3d v2 = va->at(pts[1]);
+						//osg::Vec3d v3 = va->at(pts[2]);
+						//osg::Vec3d v4 = va->at(pts[3]);
+						//osg::Vec3d v5 = va->at(pts[4]);
+						//osg::Vec3d v6 = va->at(pts[5]);
+						//osg::Vec3d v7 = va->at(pts[6]);
+						//osg::Vec3d v8 = va->at(pts[7]);
+
+
+						cubeVa->push_back(va->at(pts[0]));
+						cubeVa->push_back(va->at(pts[1]));
+						cubeVa->push_back(va->at(pts[2]));
+						cubeVa->push_back(va->at(pts[3]));
+						cubeNa->push_back(osg::Vec3(0, 0, -1));
+						cubeNa->push_back(osg::Vec3(0, 0, -1));
+						cubeNa->push_back(osg::Vec3(0, 0, -1));
+						cubeNa->push_back(osg::Vec3(0, 0, -1));
+
+						cubeVa->push_back(va->at(pts[4]));
+						cubeVa->push_back(va->at(pts[5]));
+						cubeVa->push_back(va->at(pts[6]));
+						cubeVa->push_back(va->at(pts[7]));
+						cubeNa->push_back(osg::Vec3(0, 0, 1));
+						cubeNa->push_back(osg::Vec3(0, 0, 1));
+						cubeNa->push_back(osg::Vec3(0, 0, 1));
+						cubeNa->push_back(osg::Vec3(0, 0, 1));
+
+						cubeVa->push_back(va->at(pts[1]));
+						cubeVa->push_back(va->at(pts[5]));
+						cubeVa->push_back(va->at(pts[4]));
+						cubeVa->push_back(va->at(pts[0]));
+						cubeNa->push_back(osg::Vec3(0, -1, 0));
+						cubeNa->push_back(osg::Vec3(0, -1, 0));
+						cubeNa->push_back(osg::Vec3(0, -1, 0));
+						cubeNa->push_back(osg::Vec3(0, -1, 0));
+
+						cubeVa->push_back(va->at(pts[1]));
+						cubeVa->push_back(va->at(pts[2]));
+						cubeVa->push_back(va->at(pts[6]));
+						cubeVa->push_back(va->at(pts[5]));
+						cubeNa->push_back(osg::Vec3(1, 0, 0));
+						cubeNa->push_back(osg::Vec3(1, 0, 0));
+						cubeNa->push_back(osg::Vec3(1, 0, 0));
+						cubeNa->push_back(osg::Vec3(1, 0, 0));
+
+						cubeVa->push_back(va->at(pts[2]));
+						cubeVa->push_back(va->at(pts[6]));
+						cubeVa->push_back(va->at(pts[7]));
+						cubeVa->push_back(va->at(pts[3]));
+						cubeNa->push_back(osg::Vec3(0, 1, 0));
+						cubeNa->push_back(osg::Vec3(0, 1, 0));
+						cubeNa->push_back(osg::Vec3(0, 1, 0));
+						cubeNa->push_back(osg::Vec3(0, 1, 0));
+
+						cubeVa->push_back(va->at(pts[3]));
+						cubeVa->push_back(va->at(pts[7]));
+						cubeVa->push_back(va->at(pts[4]));
+						cubeVa->push_back(va->at(pts[0]));
+						cubeNa->push_back(osg::Vec3(-1, 0, 0));
+						cubeNa->push_back(osg::Vec3(-1, 0, 0));
+						cubeNa->push_back(osg::Vec3(-1, 0, 0));
+						cubeNa->push_back(osg::Vec3(-1, 0, 0));
+					}
+
+					osg::ref_ptr<osg::Vec4Array> ca = new osg::Vec4Array;
+					ca->push_back(osg::Vec4(1, 1, 1, 1));
+
+					osg::ref_ptr<osg::Geometry> geom = new osg::Geometry;
+					geom->setVertexArray(cubeVa);
+					geom->setNormalArray(cubeNa, osg::Array::BIND_PER_VERTEX);
+					geom->setColorArray(ca, osg::Array::BIND_OVERALL);
+					geom->addPrimitiveSet(new osg::DrawArrays(osg::PrimitiveSet::QUADS, 0, cubeVa->size()));
+					geode->addDrawable(geom);
+				}
+			}
 		}
 
-		//osgDB::writeNodeFile(*geode, "geo3dmltest.osgb");
+		osgDB::writeNodeFile(*geode, "geo3dmltest.osgb");
 		return geode.release();
 	}
 
@@ -116,7 +241,7 @@ public:
 	virtual ReadResult readImage(std::istream& fin, const Options* options) const
 	{
 		return ReadResult::FILE_NOT_HANDLED;
-	}
+}
 
 	ReadResult readNode(const std::string& file, const osgDB::Options* options) const
 	{
@@ -166,6 +291,7 @@ public:
 			projGroup->addChild(mgroup);
 		}
 
+		delete project;
 		return projGroup;
 	}
 };

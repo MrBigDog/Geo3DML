@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="gb2312"?>
+<Geo3DProject xmlns:geo3dml="http://www.cgs.gov.cn/GMML" xmlns="http://www.cgs.gov.cn/GMML"
+	xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:dt="http://www.opengis.net/gml/3.2"
+	xmlns:gmlcov="http://www.opengis.net/gml/3.2"
+	xmlns:swe="http://www.opengis.net/swe/2.0"
+	xmlns:ogc="http://www.opengis.net/ogc"
+	xmlns:se="http://www.opengis.net/se"
+	xmlns:gsml="http://xmlns.geosciml.org/GeoSciML-Core/3.0"
+	xmlns:gsmlst="http://xmlns.geosciml.org/GeologicStructure/3.0"
+	xmlns:gsmlgu="http://xmlns.geosciml.org/GeologicUnit/3.0"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xi="http://www.w3.org/2001/XInclude"
+	xsi:schemaLocation="http://www.cgs.gov.cn/GMML file:/E:/GMML/docs/schema/gmml.xsd">
+<Name>Project_Point</Name>
+<Description>CornerPoint</Description>
+<Maps>
+<Map>
+<xi:include href="Project_Point_map.xml" />
+</Map>
+</Maps>
+<Models>
+<Model>
+<xi:include href="Project_Point_model_mod.xml" />
+</Model>
+</Models>
+<Style>
+<GeoSceneStyle>
+<Background>0 0 0</Background>
+<Light>
+<On>1</On>
+<Type>Scene</Type>
+<Position>0 0 0</Position>
+<FocalPosition>0 0 0</FocalPosition>
+<Intensity>1</Intensity>
+<AmbientColor>0 0 0</AmbientColor>
+<SpecularColor>0 0 0</SpecularColor>
+<DiffuseColor>0 0 0</DiffuseColor>
+</Light>
+</GeoSceneStyle>
+</Style>
+</Geo3DProject>

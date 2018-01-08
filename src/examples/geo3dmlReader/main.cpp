@@ -7,7 +7,7 @@
 
 int main()
 {
-	osg::ref_ptr<osg::Node> geo3dmlNode = osgDB::readNodeFile("D:\\Geo3DGml_GIT\\Geo3DML\\data\\geo3dml_test_models\\mesh\\单个地质体组织.xml");
+	osg::ref_ptr<osg::Node> geo3dmlNode = osgDB::readNodeFile("D:\\Geo3DGml_GIT\\Geo3DML\\data\\geo3dml_test_models\\六面体模型\\规则六面体模型.xml");
 
 	osg::ref_ptr<osg::Group> root = new osg::Group;
 	root->addChild(geo3dmlNode);
