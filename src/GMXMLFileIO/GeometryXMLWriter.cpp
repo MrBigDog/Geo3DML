@@ -27,8 +27,9 @@ GeometryXMLWriter::~GeometryXMLWriter(void)
 void GeometryXMLWriter::WriteGeometry(vtkObject* shape, std::ostream& xml_stream)
 {
 	std::string xml_node_name;
+	std::string strShapeName = shape->GetClassName();
 
-	if(shape->GetClassName() == "GMPolyData")
+	if(strShapeName == "GMPolyData")
 	{
 		GMPolyData* poly_data = (GMPolyData*)shape;
 
@@ -113,7 +114,7 @@ void GeometryXMLWriter::WriteGeometry(vtkObject* shape, std::ostream& xml_stream
 	}
 	else
 	{
-		if(shape->GetClassName() == "GMUnstructuredGrid")
+		if(strShapeName == "GMUnstructuredGrid")
 		{
 			GMUnstructuredGrid *poly_data = (GMUnstructuredGrid *)shape;
 			xml_node_name = "GeoVolume";
@@ -130,7 +131,7 @@ void GeometryXMLWriter::WriteGeometry(vtkObject* shape, std::ostream& xml_stream
 			}
 			
 		}
-		else if(shape->GetClassName() == "GMStructuredPoints")
+		else if(strShapeName == "GMStructuredPoints")
 		{
 			GMStructuredPoints *poly_data = (GMStructuredPoints *)shape;
 			xml_node_name="GeoGrid";
@@ -139,7 +140,7 @@ void GeometryXMLWriter::WriteGeometry(vtkObject* shape, std::ostream& xml_stream
 			WriteStructedPoints(  poly_data, xml_stream);
 		}
 
-		else if(shape->GetClassName() == "GMCornerPointGrid")
+		else if(strShapeName == "GMCornerPointGrid")
 		{
 			GMCornerPointGrid *poly_data = (GMCornerPointGrid *)shape;
 			xml_node_name="GeoCornerPointGrid";
@@ -340,7 +341,7 @@ void GeometryXMLWriter::WriteTIN(GMPolyData* poly_data,std::ostream& xml_stream)
 			vtkIdType counta;
 			vtkIdType *pts;
 			line->GetCell(i, counta, pts);
-
+			
 			if(counta!=3)
 				continue;
 			counttri++;

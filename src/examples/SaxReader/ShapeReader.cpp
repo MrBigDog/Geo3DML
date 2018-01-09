@@ -1,4 +1,4 @@
-//#include "StdAfx.h"
+#include "StdAfx.h"
 #include "ShapeReader.h"
 #include "gmmlSystem.h"
 #include "GMPolyData.h"

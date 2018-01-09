@@ -2111,7 +2111,8 @@ vtkDataArray*  GeometryXMLReader::ReadDiscreteCoverageGMML(xmlNode* geometryNode
 
 		data->SetName(PropertyFeildName.c_str());
 		vtkObject* mDataSet = ShapeObject;
-		if(mDataSet->GetClassName() == "GMPolyData")
+		
+		if(0 == strcmp(mDataSet->GetClassName(),"GMPolyData"))
 		{
 			GMPolyData* DataSet =(GMPolyData*)mDataSet;
 
@@ -2121,7 +2122,7 @@ vtkDataArray*  GeometryXMLReader::ReadDiscreteCoverageGMML(xmlNode* geometryNode
 			if( PropertyPosType == "FACE" || PropertyPosType == "VOLUME")
 				DataSet->GetCellData()->AddArray(data);
 		}
-		if(mDataSet->GetClassName() == "GMStructuredPoints")
+		if(0 == strcmp(mDataSet->GetClassName(), "GMStructuredPoints"))
 		{
 			GMStructuredPoints* DataSet =(GMStructuredPoints*)mDataSet;
 
@@ -2133,7 +2134,7 @@ vtkDataArray*  GeometryXMLReader::ReadDiscreteCoverageGMML(xmlNode* geometryNode
 				DataSet->GetCellData()->AddArray(data);
 		}
 
-		if(mDataSet->GetClassName() == "GMUnstructuredGrid")
+		if(0 == strcmp(mDataSet->GetClassName(), "GMUnstructuredGrid"))
 		{
 			GMUnstructuredGrid* DataSet =(GMUnstructuredGrid*)mDataSet;
 
@@ -2144,7 +2145,7 @@ vtkDataArray*  GeometryXMLReader::ReadDiscreteCoverageGMML(xmlNode* geometryNode
 				DataSet->GetCellData()->AddArray(data);
 		}
 
-		if(mDataSet->GetClassName() == "GMCornerPointGrid")
+		if(0 == strcmp(mDataSet->GetClassName() , "GMCornerPointGrid"))
 		{
 			GMCornerPointGrid* DataSet =(GMCornerPointGrid*)mDataSet;
 

@@ -87,28 +87,29 @@ void GeoFeatureXMLWriter::WriteMappedProperty(gmml::MappedFeature* mapped_featur
 		vtkObject * ob = mapped_feature->GetShape();
 		vtkDataSet* dataset = 0;
 		std::string geoid = mapped_feature->getID() ;
-		if(ob->GetClassName() == "GMPolyData")
+		std::string strClassName = ob->GetClassName();
+		if(strClassName == "GMPolyData")
 		{
 			GMPolyData* poly =( GMPolyData*)ob;
 			dataset = poly;
 			geoid = poly->GetID();
 		}
 
-		if(ob->GetClassName() == "GMUnstructuredGrid")
+		if(strClassName == "GMUnstructuredGrid")
 		{
 			GMUnstructuredGrid* poly =( GMUnstructuredGrid*)ob;
 			dataset = poly;
 			geoid = poly->GetID();
 		}
 
-		if(ob->GetClassName() == "GMStructuredPoints")
+		if(strClassName == "GMStructuredPoints")
 		{
 			GMStructuredPoints* poly =( GMStructuredPoints*)ob;
 			dataset = poly;
 			geoid = poly->GetID();
 		}
 
-		if(ob->GetClassName() == "GMCornerPointGrid")
+		if(strClassName == "GMCornerPointGrid")
 		{
 			GMCornerPointGrid* poly =( GMCornerPointGrid*)ob;
 			dataset = poly;
@@ -116,7 +117,7 @@ void GeoFeatureXMLWriter::WriteMappedProperty(gmml::MappedFeature* mapped_featur
 		}
 		
 
-		if(ob->GetClassName() == "GMCornerPointGrid")
+		if(strClassName == "GMCornerPointGrid")
 		{
 			xml_stream << "<Propertymodels>" << endl;
 
@@ -203,42 +204,42 @@ void GeoFeatureXMLWriter::WriteDiscreteCoverage(int position_type, vtkObject* sh
 	int data_count=0;
 	int data_component=0;
 
-	if(shape_property->GetClassName() == "vtkDoubleArray")
+	if(0 == strcmp(shape_property->GetClassName() , "vtkDoubleArray"))
 	{
 		vtkDoubleArray* dataA = (vtkDoubleArray*)shape_property;
 		data_type = "double";
 		data_count = dataA->GetNumberOfTuples();
 		data_component = dataA->GetNumberOfComponents();
 	}
-	else if(shape_property->GetClassName() == "vtkFloatArray")
+	else if(0 == strcmp(shape_property->GetClassName(), "vtkFloatArray"))
 	{
 		vtkFloatArray* dataA = (vtkFloatArray*)shape_property;
 		data_type = "float";
 		data_count = dataA->GetNumberOfTuples();
 		data_component = dataA->GetNumberOfComponents();
 	}
-	else if(shape_property->GetClassName() == "vtkLongArray")
+	else if(0 == strcmp(shape_property->GetClassName() , "vtkLongArray"))
 	{
 		vtkLongArray* dataA = (vtkLongArray*)shape_property;
 		data_type = "long";
 		data_count = dataA->GetNumberOfTuples();
 		data_component = dataA->GetNumberOfComponents();
 	}
-	else if(shape_property->GetClassName() == "vtkIntArray")
+	else if(0 == strcmp(shape_property->GetClassName() , "vtkIntArray"))
 	{
 		vtkIntArray* dataA = (vtkIntArray*)shape_property;
 		data_type = "int";
 		data_count = dataA->GetNumberOfTuples();
 		data_component = dataA->GetNumberOfComponents();
 	}
-	else if(shape_property->GetClassName() == "vtkCharArray")
+	else if(0 == strcmp(shape_property->GetClassName() , "vtkCharArray"))
 	{
 		vtkCharArray* dataA = (vtkCharArray*)shape_property;
 		data_type = "char";
 		data_count = dataA->GetNumberOfTuples();
 		data_component = dataA->GetNumberOfComponents();
 	}
-	else if(shape_property->GetClassName() == "vtkUnsignedCharArray") 
+	else if(0 == strcmp(shape_property->GetClassName() , "vtkUnsignedCharArray"))
 	{
 		vtkUnsignedCharArray* dataA = (vtkUnsignedCharArray*)shape_property;
 		data_type = "unsigned char";

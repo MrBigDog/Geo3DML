@@ -77,8 +77,7 @@ namespace
 					geode->addDrawable(geom);
 				}
 			}
-			//VoxelModel
-			else if (shapeName == "GMUnstructuredGrid")
+			else if (shapeName == "GMUnstructuredGrid")//VoxelModel
 			{
 				GMUnstructuredGrid* grid = (GMUnstructuredGrid*)shape;
 				vtkPoints* points = grid->GetPoints();

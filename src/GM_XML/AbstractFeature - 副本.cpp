@@ -45,17 +45,6 @@ AttributeValue AbstractFeature::GetAttributeValue(const int& i)
 	return attr_value;
 }
 
-bool AbstractFeature::GetAttributeValue(const int& i, AttributeValue*& pOut)
-{
-	pOut = NULL;
-	if (i < 0 || i >= attributeValues.size())
-	{
-		return false;
-	}
-	pOut = &attributeValues[i];
-	return true;
-}
-
 ///@brief  获取属性名为fieldname的属性
 ///@param fieldname 属性名称
 ///@return 如果属性名称为空，返回属性名称和属性值为空的对象；否则返回相应的属性
