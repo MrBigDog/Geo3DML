@@ -1,5 +1,7 @@
 #include <osg/Group>
-#include <osg/CullFace>
+#include <osg/Material>
+#include <osg/BlendFunc>
+#include <osg/BlendColor>
 #include <osgDB/ReadFile>
 #include <osgDB/WriteFile>
 #include <osgGA/StateSetManipulator>
@@ -20,6 +22,11 @@ int main()
 	//osg::ref_ptr<osg::CullFace> cullface = new osg::CullFace(osg::CullFace::BACK);
 	//root->getOrCreateStateSet()->setAttribute(cullface.get());
 	//root->getOrCreateStateSet()->setMode(GL_CULL_FACE, osg::StateAttribute::ON);
+	//state->setAttributeAndModes(bf, osg::StateAttribute::ON);
+	//state->setAttributeAndModes(bc, osg::StateAttribute::ON);
+	//bf->setSource(osg::BlendFunc::CONSTANT_ALPHA);
+	//bf->setDestination(osg::BlendFunc::ONE_MINUS_CONSTANT_ALPHA);
+	//bc->setConstantColor(osg::Vec4(1, 1, 1, 0.5));
 
 	osgViewer::Viewer viewer;
 	viewer.setSceneData(root);

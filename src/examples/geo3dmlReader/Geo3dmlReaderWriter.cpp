@@ -5,12 +5,12 @@
 #include <osgDB/FileNameUtils>
 #include <osgDB/WriteFile>
 
-#include <GMLFeature/gmlFeatureCollection.h>
 #include <GM_XML/Geo3DProject.h>
 #include <GM_XML/FeatureClass.h>
 #include <GM_XML/GeologicFeature.h>
 #include <GM_XML/MappedFeature.h>
 #include <GM_XML/GeoModel.h>
+#include <GMLFeature/gmlFeatureCollection.h>
 #include <GMXMLFileIO/Geo3DProjectXMLReader.h>
 #include <vtkExtending/vtkObject.h>
 #include <vtkExtending/GMPolyData.h>
@@ -266,15 +266,20 @@ public:
 		supportsExtension("xml", "geo3dml reader");
 		supportsExtension("geo3dxml", "geo3dml reader");
 
+		//0    (46.0f/255.0f, 154.0f/255.0f,  88.0f/255.0f, 1.0f)
+		//1800 (251.0f/255.0f, 255.0f/255.0f, 128.0f/255.0f, 1.0f)
+		//2800 (224.0f/255.0f, 108.0f/255.0f,  31.0f/255.0f, 1.0f)
+		//3500 (200.0f/255.0f,  55.0f/255.0f,  55.0f/255.0f, 1.0f)
+		//4000 (215.0f/255.0f, 244.0f/255.0f, 244.0f/255.0f, 1.0f)
 		_transferFunction = new osg::TransferFunction1D();
-		_transferFunction->setColor(0, osg::Vec4(1, 0, 0, 1));
-		_transferFunction->setColor(100, osg::Vec4(0, 1, 0, 1));
+		_transferFunction->setColor(0, osg::Vec4(46.0f / 255.0f, 154.0f / 255.0f,  88.0f / 255.0f, 1.0f));
+		_transferFunction->setColor(18000 * 2, osg::Vec4(251.0f / 255.0f, 255.0f / 255.0f, 128.0f / 255.0f, 1.0f));
+		_transferFunction->setColor(28000 * 2, osg::Vec4(224.0f / 255.0f, 108.0f / 255.0f, 31.0f / 255.0f, 1.0f));
+		_transferFunction->setColor(35000 * 2, osg::Vec4(200.0f / 255.0f, 55.0f / 255.0f, 55.0f / 255.0f, 1.0f));
+		_transferFunction->setColor(40000*2, osg::Vec4(215.0f / 255.0f, 244.0f / 255.0f, 244.0f / 255.0f, 1.0f));
 	}
 
-	const char* className() const
-	{
-		return "Geo3dmlReaderWriter";
-	}
+	const char* className() const { return "Geo3dmlReaderWriter"; }
 
 	bool acceptsExtension(const std::string& extension) const
 	{
