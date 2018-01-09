@@ -1,3 +1,4 @@
+#include <osg/TransferFunction>
 #include <osgDB/Registry>
 #include <osgDB/ReaderWriter>
 #include <osgDB/FileUtils>
@@ -22,7 +23,7 @@
 
 namespace
 {
-	osg::Node* createFeatureNode(gmml::GeologicFeature* gf)
+	osg::Node* createFeatureNode(gmml::GeologicFeature* gf, osg::TransferFunction1D* tf)
 	{
 		osg::ref_ptr<osg::Geode> geode = new osg::Geode;
 
@@ -82,6 +83,8 @@ namespace
 				GMUnstructuredGrid* grid = (GMUnstructuredGrid*)shape;
 				vtkPoints* points = grid->GetPoints();
 				int pointNum = points->GetNumberOfPoints();
+
+				//Vertex
 				osg::ref_ptr<osg::Vec3Array> va = new osg::Vec3Array;
 				va->reserve(pointNum);
 				for (int i = 0; i < pointNum; i++)
@@ -91,6 +94,26 @@ namespace
 					va->push_back(p);
 				}
 
+				//Attribuate;
+				osg::ref_ptr<osg::Vec4Array> ca = 0L;
+				int num1 = grid->GetPointData()->GetNumberOfArrays();
+				if (num1 > 0)
+				{
+					ca = new osg::Vec4Array;
+					vtkDataArray * vPointData = grid->GetPointData()->GetArray(0);
+					if (0 == strcmp(vPointData->GetClassName(), "vtkDoubleArray"))
+					{
+						vtkDoubleArray* dataA = (vtkDoubleArray*)vPointData;
+						for (unsigned long i = 0; i < dataA->GetNumberOfTuples()*dataA->GetNumberOfComponents(); ++i)
+						{
+							double fValue = dataA->GetValue(i);
+							osg::Vec4 color = tf->getColor(fValue);
+							ca->push_back(color);
+						}
+					}
+				}
+
+				//Shape
 				vtkCellArray* cellAry = grid->GetCells();
 				if (grid->GetGeometryType() == 10)//四面体;
 				{
@@ -106,7 +129,6 @@ namespace
 				}
 				else if (grid->GetGeometryType() == 12)//六面体;
 				{
-					//osg::ref_ptr<osg::DrawElementsUInt> de = new osg::DrawElementsUInt(osg::PrimitiveSet::TRIANGLES, 0);
 					for (int i = 0; i < grid->GetNumberOfCells() * 9; i = i + 9)
 					{
 						vtkIdType counta;
@@ -117,11 +139,19 @@ namespace
 
 						osg::ref_ptr<osg::Vec3Array> cubeVa = new osg::Vec3Array;
 						osg::ref_ptr<osg::Vec3Array> cubeNa = new osg::Vec3Array;
+						osg::ref_ptr<osg::Vec4Array> cubeCa = new osg::Vec4Array;
 
 						cubeVa->push_back(va->at(pts[0]));
 						cubeVa->push_back(va->at(pts[1]));
 						cubeVa->push_back(va->at(pts[2]));
 						cubeVa->push_back(va->at(pts[3]));
+						if (ca&&ca->size() == va->size())
+						{
+							cubeCa->push_back(ca->at(pts[0]));
+							cubeCa->push_back(ca->at(pts[1]));
+							cubeCa->push_back(ca->at(pts[2]));
+							cubeCa->push_back(ca->at(pts[3]));
+						}
 						cubeNa->push_back(osg::Vec3(0, 0, -1));
 						cubeNa->push_back(osg::Vec3(0, 0, -1));
 						cubeNa->push_back(osg::Vec3(0, 0, -1));
@@ -131,6 +161,13 @@ namespace
 						cubeVa->push_back(va->at(pts[5]));
 						cubeVa->push_back(va->at(pts[6]));
 						cubeVa->push_back(va->at(pts[7]));
+						if (ca&&ca->size() == va->size())
+						{
+							cubeCa->push_back(ca->at(pts[4]));
+							cubeCa->push_back(ca->at(pts[5]));
+							cubeCa->push_back(ca->at(pts[6]));
+							cubeCa->push_back(ca->at(pts[7]));
+						}
 						cubeNa->push_back(osg::Vec3(0, 0, 1));
 						cubeNa->push_back(osg::Vec3(0, 0, 1));
 						cubeNa->push_back(osg::Vec3(0, 0, 1));
@@ -140,6 +177,13 @@ namespace
 						cubeVa->push_back(va->at(pts[5]));
 						cubeVa->push_back(va->at(pts[4]));
 						cubeVa->push_back(va->at(pts[0]));
+						if (ca&&ca->size() == va->size())
+						{
+							cubeCa->push_back(ca->at(pts[1]));
+							cubeCa->push_back(ca->at(pts[5]));
+							cubeCa->push_back(ca->at(pts[4]));
+							cubeCa->push_back(ca->at(pts[0]));
+						}
 						cubeNa->push_back(osg::Vec3(0, -1, 0));
 						cubeNa->push_back(osg::Vec3(0, -1, 0));
 						cubeNa->push_back(osg::Vec3(0, -1, 0));
@@ -149,6 +193,13 @@ namespace
 						cubeVa->push_back(va->at(pts[2]));
 						cubeVa->push_back(va->at(pts[6]));
 						cubeVa->push_back(va->at(pts[5]));
+						if (ca&&ca->size() == va->size())
+						{
+							cubeCa->push_back(ca->at(pts[1]));
+							cubeCa->push_back(ca->at(pts[2]));
+							cubeCa->push_back(ca->at(pts[6]));
+							cubeCa->push_back(ca->at(pts[5]));
+						}
 						cubeNa->push_back(osg::Vec3(1, 0, 0));
 						cubeNa->push_back(osg::Vec3(1, 0, 0));
 						cubeNa->push_back(osg::Vec3(1, 0, 0));
@@ -158,6 +209,13 @@ namespace
 						cubeVa->push_back(va->at(pts[6]));
 						cubeVa->push_back(va->at(pts[7]));
 						cubeVa->push_back(va->at(pts[3]));
+						if (ca&&ca->size() == va->size())
+						{
+							cubeCa->push_back(ca->at(pts[2]));
+							cubeCa->push_back(ca->at(pts[6]));
+							cubeCa->push_back(ca->at(pts[7]));
+							cubeCa->push_back(ca->at(pts[3]));
+						}
 						cubeNa->push_back(osg::Vec3(0, 1, 0));
 						cubeNa->push_back(osg::Vec3(0, 1, 0));
 						cubeNa->push_back(osg::Vec3(0, 1, 0));
@@ -167,66 +225,50 @@ namespace
 						cubeVa->push_back(va->at(pts[7]));
 						cubeVa->push_back(va->at(pts[4]));
 						cubeVa->push_back(va->at(pts[0]));
+						if (ca&&ca->size() == va->size())
+						{
+							cubeCa->push_back(ca->at(pts[3]));
+							cubeCa->push_back(ca->at(pts[7]));
+							cubeCa->push_back(ca->at(pts[4]));
+							cubeCa->push_back(ca->at(pts[0]));
+						}
 						cubeNa->push_back(osg::Vec3(-1, 0, 0));
 						cubeNa->push_back(osg::Vec3(-1, 0, 0));
 						cubeNa->push_back(osg::Vec3(-1, 0, 0));
 						cubeNa->push_back(osg::Vec3(-1, 0, 0));
-
-						osg::ref_ptr<osg::Vec4Array> ca = new osg::Vec4Array;
-						ca->push_back(osg::Vec4(1, 1, 1, 1));
 
 						osg::ref_ptr<osg::Geometry> geom = new osg::Geometry;
 						geom->setUseDisplayList(false);
 						geom->setUseVertexBufferObjects(true);
 						geom->setVertexArray(cubeVa);
 						geom->setNormalArray(cubeNa, osg::Array::BIND_PER_VERTEX);
-						geom->setColorArray(ca, osg::Array::BIND_OVERALL);
+						geom->setColorArray(cubeCa, osg::Array::BIND_PER_VERTEX);
 						geom->addPrimitiveSet(new osg::DrawArrays(osg::PrimitiveSet::QUADS, 0, cubeVa->size()));
 						geode->addDrawable(geom);
-					}
-
-					////vertex_offset += 3 * sizeof(float);
-					int num1 = grid->GetPointData()->GetNumberOfArrays();
-					if (num1 > 0)
-					{
-						vtkDataArray * vPointData = grid->GetPointData()->GetArray(0);
-						if (0 == strcmp(vPointData->GetClassName(), "vtkDoubleArray"))
-						{
-							double dMin = 1E10, dMax = -1E10;
-							vtkDoubleArray* dataA = (vtkDoubleArray*)vPointData;
-							for (unsigned long i = 0; i < dataA->GetNumberOfTuples()*dataA->GetNumberOfComponents(); ++i)
-							{
-								double fValue = dataA->GetValue(i);
-								dMin = (fValue < dMin) ? fValue : dMin;
-								dMax = (fValue > dMax) ? fValue : dMax;
-							}
-							int nAllColorCount = 0x000000FF - 0;
-							double dStep = (dMax - dMin) / nAllColorCount;
-							for (unsigned long i = 0; i < dataA->GetNumberOfTuples()*dataA->GetNumberOfComponents(); ++i)
-							{
-								double fValue = dataA->GetValue(i);
-								//in_hardware_mesh->set_ulong(vertex_offset, i, ulong((fValue - dMin)*dStep));
-							}
-						}
 					}
 				}
 			}
 		}
-
 		//osgDB::writeNodeFile(*geode, "geo3dmltest.osgb");
 		return geode.release();
 	}
-
 }
 
 //  [1/5/2018 BigDog]
 class Geo3dmlReaderWriter :public osgDB::ReaderWriter
 {
+private:
+	osg::ref_ptr< osg::TransferFunction1D> _transferFunction;
+
 public:
 	Geo3dmlReaderWriter()
 	{
 		supportsExtension("xml", "geo3dml reader");
 		supportsExtension("geo3dxml", "geo3dml reader");
+
+		_transferFunction = new osg::TransferFunction1D();
+		_transferFunction->setColor(0, osg::Vec4(1, 0, 0, 1));
+		_transferFunction->setColor(100, osg::Vec4(0, 1, 0, 1));
 	}
 
 	const char* className() const
@@ -303,7 +345,7 @@ public:
 				for (int fi = 0; fi < fc->GetGeologicFeatureCount(); ++fi)
 				{
 					gmml::GeologicFeature* geoFeature = fc->GetGeologicFeature(fi);
-					osg::ref_ptr<osg::Node> node = createFeatureNode(geoFeature);
+					osg::ref_ptr<osg::Node> node = createFeatureNode(geoFeature, _transferFunction);
 					mgroup->addChild(node);
 				}
 			}

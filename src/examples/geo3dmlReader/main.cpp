@@ -9,13 +9,14 @@
 
 int main()
 {
-	osg::ref_ptr<osg::Node> geo3dmlNode = osgDB::readNodeFile("D:\\Geo3DGml_GIT\\Geo3DML\\data\\geo3dml_test_models\\六面体模型\\规则六面体模型.xml");
+	osg::ref_ptr<osg::Node> geo3dmlNode = osgDB::readNodeFile("D:\\Geo3DGml_GIT\\Geo3DML\\data\\geo3dml_test_models\\cubeMode\\aa.xml");
 	//osg::ref_ptr<osg::Node> geo3dmlNode = osgDB::readNodeFile("geo3dmltest.osgb");
 
 	osg::ref_ptr<osg::Group> root = new osg::Group;
 	root->addChild(geo3dmlNode);
 
-	//osgDB::writeNodeFile(*geo3dmlNode, "geoModel.osg");
+	osgDB::writeNodeFile(*geo3dmlNode, "geoModel.osg");
+
 	//osg::ref_ptr<osg::CullFace> cullface = new osg::CullFace(osg::CullFace::BACK);
 	//root->getOrCreateStateSet()->setAttribute(cullface.get());
 	//root->getOrCreateStateSet()->setMode(GL_CULL_FACE, osg::StateAttribute::ON);
