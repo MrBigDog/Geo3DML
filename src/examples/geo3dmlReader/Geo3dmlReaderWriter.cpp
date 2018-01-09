@@ -105,7 +105,8 @@ namespace
 					if (0 == strcmp(vPointData->GetClassName(), "vtkDoubleArray"))
 					{
 						vtkDoubleArray* dataA = (vtkDoubleArray*)vPointData;
-						for (unsigned long i = 0; i < dataA->GetNumberOfTuples()*dataA->GetNumberOfComponents(); ++i)
+						unsigned long tnum = dataA->GetNumberOfTuples()*dataA->GetNumberOfComponents();
+						for (unsigned long i = 0; i < tnum; ++i)
 						{
 							double fValue = dataA->GetValue(i);
 							osg::Vec4 color = tf->getColor(fValue);
@@ -130,7 +131,8 @@ namespace
 				}
 				else if (grid->GetGeometryType() == 12)//ÁùÃæÌå;
 				{
-					for (int i = 0; i < grid->GetNumberOfCells() * 9; i = i + 9)
+					int tnum = grid->GetNumberOfCells() * 9;
+					for (int i = 0; i < tnum; i = i + 9)
 					{
 						vtkIdType counta;
 						vtkIdType *pts;
@@ -250,7 +252,6 @@ namespace
 				}
 			}
 		}
-		//osgDB::writeNodeFile(*geode, "geo3dmltest.osgb");
 		return geode.release();
 	}
 }
