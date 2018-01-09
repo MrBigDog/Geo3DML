@@ -100,6 +100,7 @@ namespace
 				if (num1 > 0)
 				{
 					ca = new osg::Vec4Array;
+					ca->reserve(pointNum);
 					vtkDataArray * vPointData = grid->GetPointData()->GetArray(0);
 					if (0 == strcmp(vPointData->GetClassName(), "vtkDoubleArray"))
 					{
@@ -137,9 +138,9 @@ namespace
 
 						if (counta != 8) continue;
 
-						osg::ref_ptr<osg::Vec3Array> cubeVa = new osg::Vec3Array;
-						osg::ref_ptr<osg::Vec3Array> cubeNa = new osg::Vec3Array;
-						osg::ref_ptr<osg::Vec4Array> cubeCa = new osg::Vec4Array;
+						osg::ref_ptr<osg::Vec3Array> cubeVa = new osg::Vec3Array; cubeVa->reserve(8);
+						osg::ref_ptr<osg::Vec3Array> cubeNa = new osg::Vec3Array; cubeNa->reserve(8);
+						osg::ref_ptr<osg::Vec4Array> cubeCa = new osg::Vec4Array; cubeCa->reserve(8);
 
 						cubeVa->push_back(va->at(pts[0]));
 						cubeVa->push_back(va->at(pts[1]));
@@ -272,11 +273,11 @@ public:
 		//3500 (200.0f/255.0f,  55.0f/255.0f,  55.0f/255.0f, 1.0f)
 		//4000 (215.0f/255.0f, 244.0f/255.0f, 244.0f/255.0f, 1.0f)
 		_transferFunction = new osg::TransferFunction1D();
-		_transferFunction->setColor(0, osg::Vec4(46.0f / 255.0f, 154.0f / 255.0f,  88.0f / 255.0f, 1.0f));
+		_transferFunction->setColor(0, osg::Vec4(46.0f / 255.0f, 154.0f / 255.0f, 88.0f / 255.0f, 1.0f));
 		_transferFunction->setColor(18000 * 2, osg::Vec4(251.0f / 255.0f, 255.0f / 255.0f, 128.0f / 255.0f, 1.0f));
 		_transferFunction->setColor(28000 * 2, osg::Vec4(224.0f / 255.0f, 108.0f / 255.0f, 31.0f / 255.0f, 1.0f));
 		_transferFunction->setColor(35000 * 2, osg::Vec4(200.0f / 255.0f, 55.0f / 255.0f, 55.0f / 255.0f, 1.0f));
-		_transferFunction->setColor(40000*2, osg::Vec4(215.0f / 255.0f, 244.0f / 255.0f, 244.0f / 255.0f, 1.0f));
+		_transferFunction->setColor(40000 * 2, osg::Vec4(215.0f / 255.0f, 244.0f / 255.0f, 244.0f / 255.0f, 1.0f));
 	}
 
 	const char* className() const { return "Geo3dmlReaderWriter"; }
