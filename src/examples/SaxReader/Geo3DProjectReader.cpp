@@ -1,4 +1,3 @@
-//#include "StdAfx.h"
 #include "Geo3DProjectReader.h"
 
 #include "gmmlSystem.h"
@@ -7,26 +6,14 @@
 #include "Geo3DProjectMetaData.h"
 #include "GeoModel.h"
 #include "Geo3DMap.h"
-
-
 #include "GeoModelReader.h"
 #include "Geo3DMapReader.h"
 #include "ShapeReader.h"
 
 #include <string>
 
-
-//using gmml::Geo3DProject;
-//using gmml::Geo3DProjectMetaData;
-//using gmml::GeoModel;
-//using gmml::Geo3DMap;
-//using std::string;
-
 int ReadGeo3DProject(void* pData, const char* pGeo3DProjectFile, int binary)
 {
-
-	const char* pPathName = NULL;
-
 	std::string strPathName;
 	if (pGeo3DProjectFile)
 	{
@@ -125,24 +112,18 @@ int ReadGeo3DProject(void* pData, const char* pGeo3DProjectFile, int binary)
 					gmmlDisplayErrorandWarningText("∂¡»°ÕÍ±œ");
 					return 0;
 				}
-
 			}
-
 			if (prev_name)
 			{
 				xmlFree(prev_name);
 			}
-
 			if (name)
 			{
 				prev_name = name;
 			}
-
 			nRet = xmlTextReaderRead(reader);
 		}
-
 		return 1;
 	}
-
 	return 0;
 }

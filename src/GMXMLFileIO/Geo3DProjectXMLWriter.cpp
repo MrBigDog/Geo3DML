@@ -10,10 +10,8 @@
 #include "iconv.h"
 #include <set>
 #include "vtkWin32ProcessOutputWindow.h"
-#include "..//gmlFeature//guiProgressWindow.h"
 
 #include "iconv.h"
-extern guiProgressWindow* g_ProgressWindow;
 
 Geo3DProjectXMLWriter::Geo3DProjectXMLWriter(void)
 {
@@ -24,27 +22,27 @@ Geo3DProjectXMLWriter::~Geo3DProjectXMLWriter(void)
 {
 }
 
-bool Geo3DProjectXMLWriter::WriteProject(gmml::Geo3DProject* project, const char* xml_path,char* pEncoding,int binary ) const
+bool Geo3DProjectXMLWriter::WriteProject(gmml::Geo3DProject* project, const char* xml_path, char* pEncoding, int binary) const
 {
-	GeometryXMLWriter::BinaryExport=binary;
+	GeometryXMLWriter::BinaryExport = binary;
 
-	if(!project)
+	if (!project)
 		return false;
 
 	std::ofstream xml_file(xml_path);
 	if (!xml_file.is_open())
 		return false;
 
-	std::string str_dir,strXmlPath(xml_path);
+	std::string str_dir, strXmlPath(xml_path);
 	size_t pos = strXmlPath.rfind('\\');
 	if (pos != std::string::npos)
 		str_dir = strXmlPath.substr(0, pos + 1);
 
-	char pDataBuf[100]={0};
-	sprintf(pDataBuf,"<?xml version=\"1.0\" encoding=\"%s\"?>",pEncoding);
-	xml_file << pDataBuf<< std::endl
+	char pDataBuf[100] = { 0 };
+	sprintf(pDataBuf, "<?xml version=\"1.0\" encoding=\"%s\"?>", pEncoding);
+	xml_file << pDataBuf << std::endl
 
-	//xml_file << "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" << std::endl
+		//xml_file << "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" << std::endl
 		<< "<Geo3DProject" << " xmlns:geo3dml=\"" << xmlNS_GMML << "\" xmlns=\"" << xmlNS_GMML << "\"" << std::endl
 		<< "\t" << "xmlns:gml=\"" << xmlNS_gml << "\"" << std::endl
 		<< "\t" << "xmlns:dt=\"" << xmlNS_gml << "\"" << std::endl
@@ -60,10 +58,9 @@ bool Geo3DProjectXMLWriter::WriteProject(gmml::Geo3DProject* project, const char
 		<< "\t" << "xmlns:xi=\"http://www.w3.org/2001/XInclude\"" << std::endl
 		<< "\t" << "xsi:schemaLocation=\"" << xmlNS_GMML << " file:/E:/GMML/docs/schema/gmml.xsd\">" << std::endl;
 
-	
-	xml_file << "<Name>" << project->getName()<< "</Name>" << std::endl;
+	xml_file << "<Name>" << project->getName() << "</Name>" << std::endl;
 	xml_file << "<Description>" << project->getDescription() << "</Description>" << std::endl;
-	
+
 	// GeoMaps
 	xml_file << "<Maps>" << std::endl;
 	int map_count = project->GetGeo3DMapCount();
@@ -71,11 +68,11 @@ bool Geo3DProjectXMLWriter::WriteProject(gmml::Geo3DProject* project, const char
 	{
 		gmml::Geo3DMap* map = project->GetGeo3DMap(i);
 		if (map)
-		{	
+		{
 			std::string map_path = str_dir + map->getName() + ".xml";	//绝对路径
 			xml_file << "<Map>" << std::endl;
 			Geo3DMapXMLWriter map_writer;
-			map_writer.WriteMap(map, map_path,pEncoding);
+			map_writer.WriteMap(map, map_path, pEncoding);
 
 			map_path = map->getName() + ".xml"; // 相对路径
 			xml_file << "<xi:include href=\"" << map_path << "\" />" << std::endl;
@@ -89,14 +86,14 @@ bool Geo3DProjectXMLWriter::WriteProject(gmml::Geo3DProject* project, const char
 	int model_count = project->GetGeoModelCount();
 	for (int i = 0; i < model_count; i++)
 	{
-		gmml::GeoModel* model = project->GetGeoModel(i);				
-		if(model)
+		gmml::GeoModel* model = project->GetGeoModel(i);
+		if (model)
 		{
 			xml_file << "<Model>" << std::endl;
 			std::string model_path = str_dir + model->getName() + "_mod.xml";	//绝对路径
 
 			GeoModelXMLWriter model_writer;
-			model_writer.WriteModel(model, model_path,pEncoding);
+			model_writer.WriteModel(model, model_path, pEncoding);
 
 			model_path = model->getName() + "_mod.xml"; // 相对路径
 			xml_file << "<xi:include href=\"" << model_path << "\" />" << std::endl;
@@ -107,21 +104,16 @@ bool Geo3DProjectXMLWriter::WriteProject(gmml::Geo3DProject* project, const char
 	xml_file << "<Style>" << std::endl;
 	xml_file << "<GeoSceneStyle>" << std::endl;
 	xml_file << "<Background>" << "0 0 0";	xml_file << "</Background>" << std::endl;
-
-     xml_file << "<Light>" << std::endl;
-
-	 xml_file << "<On>" << "1";	xml_file << "</On>" << std::endl;
-	  xml_file << "<Type>" << "Scene";	xml_file << "</Type>" << std::endl;
-	   xml_file << "<Position>" << "0 0 0";	xml_file << "</Position>" << std::endl;
-	   xml_file << "<FocalPosition>" << "0 0 0";	xml_file << "</FocalPosition>" << std::endl;
-	   xml_file << "<Intensity>" << "1";	xml_file << "</Intensity>" << std::endl;
-	   xml_file << "<AmbientColor>" << "0 0 0";	xml_file << "</AmbientColor>" << std::endl;
-	   xml_file << "<SpecularColor>" << "0 0 0";	xml_file << "</SpecularColor>" << std::endl;
-	   xml_file << "<DiffuseColor>" << "0 0 0";	xml_file << "</DiffuseColor>" << std::endl;
-
-	 xml_file << "</Light>" << std::endl;
-
-
+	xml_file << "<Light>" << std::endl;
+	xml_file << "<On>" << "1";	xml_file << "</On>" << std::endl;
+	xml_file << "<Type>" << "Scene";	xml_file << "</Type>" << std::endl;
+	xml_file << "<Position>" << "0 0 0";	xml_file << "</Position>" << std::endl;
+	xml_file << "<FocalPosition>" << "0 0 0";	xml_file << "</FocalPosition>" << std::endl;
+	xml_file << "<Intensity>" << "1";	xml_file << "</Intensity>" << std::endl;
+	xml_file << "<AmbientColor>" << "0 0 0";	xml_file << "</AmbientColor>" << std::endl;
+	xml_file << "<SpecularColor>" << "0 0 0";	xml_file << "</SpecularColor>" << std::endl;
+	xml_file << "<DiffuseColor>" << "0 0 0";	xml_file << "</DiffuseColor>" << std::endl;
+	xml_file << "</Light>" << std::endl;
 	xml_file << "</GeoSceneStyle>" << std::endl;
 	xml_file << "</Style>" << std::endl;
 	xml_file << "</Geo3DProject>" << std::endl;

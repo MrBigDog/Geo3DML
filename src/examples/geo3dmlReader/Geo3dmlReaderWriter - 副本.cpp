@@ -26,6 +26,17 @@ namespace
 	osg::Node* createFeatureNode(gmml::GeologicFeature* gf, osg::TransferFunction1D* tf)
 	{
 		osg::ref_ptr<osg::Geode> geode = new osg::Geode;
+
+		//osg::ref_ptr<osg::VertexBufferObject> vbo = new osg::VertexBufferObject;
+		//osg::ref_ptr<osg::Vec3Array> na = new osg::Vec3Array; na->reserve(6);
+		////na->setVertexBufferObject(vbo);
+		//na->push_back(osg::Vec3(0, 0, -1));
+		//na->push_back(osg::Vec3(0, 0, 1));
+		//na->push_back(osg::Vec3(0, -1, 0));
+		//na->push_back(osg::Vec3(1, 0, 0));
+		//na->push_back(osg::Vec3(0, 1, 0));
+		//na->push_back(osg::Vec3(-1, 0, 0));
+
 		for (int i = 0; i < gf->GetMappedFeatureCount(); ++i)
 		{
 			gmml::MappedFeature* mf = gf->GetMappedFeature(i);
@@ -142,8 +153,50 @@ namespace
 
 						osg::ref_ptr<osg::Vec3Array> cubeVa = new osg::Vec3Array; cubeVa->reserve(24);
 						osg::ref_ptr<osg::Vec4Array> cubeCa = new osg::Vec4Array; cubeCa->reserve(24);
-						osg::ref_ptr<osg::Vec3Array> cubeNa = new osg::Vec3Array; cubeNa->reserve(24);
+						//for (unsigned int vi = 0; vi < counta; ++vi)
+						//{
+						//	cubeVa->push_back(va->at(pts[vi]));
+						//	cubeCa->push_back(ca->at(pts[vi]));
+						//}
 
+						osg::ref_ptr<osg::Vec3Array> cubeNa = new osg::Vec3Array; cubeNa->reserve(24);
+						//cubeNa->push_back(osg::Vec3(0, 0, -1));
+						//cubeNa->push_back(osg::Vec3(0, 0, 1));
+						//cubeNa->push_back(osg::Vec3(0, -1, 0));
+						//cubeNa->push_back(osg::Vec3(1, 0, 0));
+						//cubeNa->push_back(osg::Vec3(0, 1, 0));
+						//cubeNa->push_back(osg::Vec3(-1, 0, 0));
+
+						//osg::ref_ptr<osg::DrawElementsUShort> de1 = new osg::DrawElementsUShort(osg::PrimitiveSet::QUADS);
+						//de1->push_back(0);
+						//de1->push_back(1);
+						//de1->push_back(2);
+						//de1->push_back(3);
+						//osg::ref_ptr<osg::DrawElementsUShort> de2 = new osg::DrawElementsUShort(osg::PrimitiveSet::QUADS);
+						//de2->push_back(4);
+						//de2->push_back(5);
+						//de2->push_back(6);
+						//de2->push_back(7);
+						//osg::ref_ptr<osg::DrawElementsUShort> de3 = new osg::DrawElementsUShort(osg::PrimitiveSet::QUADS);
+						//de3->push_back(1);
+						//de3->push_back(5);
+						//de3->push_back(4);
+						//de3->push_back(0);
+						//osg::ref_ptr<osg::DrawElementsUShort> de4 = new osg::DrawElementsUShort(osg::PrimitiveSet::QUADS);
+						//de4->push_back(1);
+						//de4->push_back(2);
+						//de4->push_back(6);
+						//de4->push_back(5);
+						//osg::ref_ptr<osg::DrawElementsUShort> de5 = new osg::DrawElementsUShort(osg::PrimitiveSet::QUADS);
+						//de5->push_back(2);
+						//de5->push_back(6);
+						//de5->push_back(7);
+						//de5->push_back(3);
+						//osg::ref_ptr<osg::DrawElementsUShort> de6 = new osg::DrawElementsUShort(osg::PrimitiveSet::QUADS);
+						//de6->push_back(3);
+						//de6->push_back(7);
+						//de6->push_back(4);
+						//de6->push_back(0);
 						cubeVa->push_back(va->at(pts[0]));
 						cubeVa->push_back(va->at(pts[1]));
 						cubeVa->push_back(va->at(pts[2]));
@@ -247,7 +300,12 @@ namespace
 						geom->setNormalArray(cubeNa, osg::Array::BIND_PER_VERTEX);
 						geom->setColorArray(cubeCa, osg::Array::BIND_PER_VERTEX);
 						geom->addPrimitiveSet(new osg::DrawArrays(osg::PrimitiveSet::QUADS, 0, cubeVa->size()));
-
+						//geom->addPrimitiveSet(de1);
+						//geom->addPrimitiveSet(de2);
+						//geom->addPrimitiveSet(de3);
+						//geom->addPrimitiveSet(de4);
+						//geom->addPrimitiveSet(de5);
+						//geom->addPrimitiveSet(de6);
 						geode->addDrawable(geom);
 					}
 				}

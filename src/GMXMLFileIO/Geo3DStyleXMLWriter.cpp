@@ -12,7 +12,7 @@ namespace se
 	class FeatureType3DStyle;
 	class FeatureStyleRule;
 	class GeoSymbolizer;
-	
+
 	class GeoPointSymbolizer;
 	class GeofaceSymbolizer;
 	class GeoLineSymbolizer;
@@ -20,7 +20,7 @@ namespace se
 
 namespace gmml
 {
-	class Geo3DStyle;	
+	class Geo3DStyle;
 }
 
 Geo3DStyleXMLWriter::Geo3DStyleXMLWriter(void)
@@ -40,28 +40,28 @@ void Geo3DStyleXMLWriter::WriteStyle(gmml::Geo3DStyle* style, std::ofstream& xml
 
 	xml_stream << "<se:FeatureTypeStyle>" << std::endl;
 
-	for(int i = 0; i < style->GetFeatureTypeStyleCount(); i++)
+	for (int i = 0; i < style->GetFeatureTypeStyleCount(); i++)
 	{
 		se::FeatureType3DStyle* type_style = style->GetFeatureTypeStyle(i);
 
-		for(int j = 0; j < type_style->getRuleCount(); j++)
+		for (int j = 0; j < type_style->getRuleCount(); j++)
 		{
 			xml_stream << "<se:Rule>" << std::endl;
 
 			se::FeatureStyleRule* rule = type_style->getRule(j);
-			if(rule)
+			if (rule)
 			{
-				xml_stream << "<ogc:Filter>" <<  std::endl; 
-				xml_stream << "<ogc:PropertyIsEqualTo>" <<  std::endl; 
-				xml_stream << "<ogc:PropertyName>" << rule->PropertyName;	
-				xml_stream << "</ogc:PropertyName>" <<  std::endl; 
+				xml_stream << "<ogc:Filter>" << std::endl;
+				xml_stream << "<ogc:PropertyIsEqualTo>" << std::endl;
+				xml_stream << "<ogc:PropertyName>" << rule->PropertyName;
+				xml_stream << "</ogc:PropertyName>" << std::endl;
 				xml_stream << "<ogc:Literal>" << rule->Literal;
-				xml_stream << "</ogc:Literal>" <<  std::endl; 
+				xml_stream << "</ogc:Literal>" << std::endl;
 
-				xml_stream << "</ogc:PropertyIsEqualTo>" <<  std::endl; 
-				xml_stream << "</ogc:Filter>" <<  std::endl;
+				xml_stream << "</ogc:PropertyIsEqualTo>" << std::endl;
+				xml_stream << "</ogc:Filter>" << std::endl;
 			}
-						
+
 			WirteSymbolizer(rule, xml_stream);
 
 			xml_stream << "</se:Rule>" << std::endl;
@@ -72,26 +72,26 @@ void Geo3DStyleXMLWriter::WriteStyle(gmml::Geo3DStyle* style, std::ofstream& xml
 
 	xml_stream << "<se:CoverageType3DStyle>" << std::endl;
 
-	for(int i = 0; i < style->GetCoverageTypeStyleCount(); i++)
+	for (int i = 0; i < style->GetCoverageTypeStyleCount(); i++)
 	{
 		se::CoverageType3DStyle* type_style = style->GetCoverageTypeStyle(i);
 
-		for(int j = 0; j < type_style->getRuleCount(); j++)
+		for (int j = 0; j < type_style->getRuleCount(); j++)
 		{
 			xml_stream << "<se:Rule>" << std::endl;
 
 			se::CoverageStyleRule* rule = type_style->getRule(j);
-			if(rule)
+			if (rule)
 			{
-				xml_stream << "<ogc:Filter>" <<  std::endl; 
-				xml_stream << "<ogc:PropertyIsEqualTo>" <<  std::endl; 
-				xml_stream << "<ogc:PropertyName>" << rule->PropertyName;	
-				xml_stream << "</ogc:PropertyName>" <<  std::endl; 
+				xml_stream << "<ogc:Filter>" << std::endl;
+				xml_stream << "<ogc:PropertyIsEqualTo>" << std::endl;
+				xml_stream << "<ogc:PropertyName>" << rule->PropertyName;
+				xml_stream << "</ogc:PropertyName>" << std::endl;
 				xml_stream << "<ogc:Literal>" << rule->Literal;
-				xml_stream << "</ogc:Literal>" <<  std::endl; 
+				xml_stream << "</ogc:Literal>" << std::endl;
 
-				xml_stream << "</ogc:PropertyIsEqualTo>" <<  std::endl; 
-				xml_stream << "</ogc:Filter>" <<  std::endl;
+				xml_stream << "</ogc:PropertyIsEqualTo>" << std::endl;
+				xml_stream << "</ogc:Filter>" << std::endl;
 			}
 
 			WirteCoverageSymbolizer(rule, xml_stream);
@@ -102,16 +102,16 @@ void Geo3DStyleXMLWriter::WriteStyle(gmml::Geo3DStyle* style, std::ofstream& xml
 
 	xml_stream << "</se:CoverageType3DStyle>" << std::endl;
 
-	
+
 	xml_stream << "</" << xml_node_name << ">" << std::endl;
 }
 
 void Geo3DStyleXMLWriter::WirteCoverageSymbolizer(se::CoverageStyleRule* rule, std::ofstream& xml_stream)
 {
 
-	std::string xml_node_name ;
-	
- 
+	std::string xml_node_name;
+
+
 
 	xml_node_name = "GeoDiscreteCoverageSymbolizer";
 	if (rule->GetSymbolizer() == NULL)
@@ -120,50 +120,50 @@ void Geo3DStyleXMLWriter::WirteCoverageSymbolizer(se::CoverageStyleRule* rule, s
 	}
 	xml_stream << "<" << xml_node_name << ">" << std::endl;
 
-	if(rule->GetSymbolizer()->GetClassName() != std::string("GeoDiscreteCoverageSymbolizer"))
+	if (rule->GetSymbolizer()->GetClassName() != std::string("GeoDiscreteCoverageSymbolizer"))
 		return;
 
 	se::GeoDiscreteCoverageSymbolizer* CoverageSymbolizer = (se::GeoDiscreteCoverageSymbolizer*)rule->GetSymbolizer();
-	
-	for(int rulecount = 0; rulecount< CoverageSymbolizer->getRuleCount(); rulecount++)
+
+	for (int rulecount = 0; rulecount < CoverageSymbolizer->getRuleCount(); rulecount++)
 	{
 		se::CoverageStyleRule* RasterRule = CoverageSymbolizer->getRule(rulecount);
 
 		xml_stream << "<se:Rule>" << std::endl;
 
-		
-		if(RasterRule )
-		{
-			xml_stream << "<ogc:Filter>" <<  std::endl; 
-			xml_stream << "<ogc:PropertyIsEqualTo>" <<  std::endl; 
-			xml_stream << "<ogc:PropertyName>" << RasterRule->PropertyName;	
-			xml_stream << "</ogc:PropertyName>" <<  std::endl; 
-			xml_stream << "<ogc:Literal>" << RasterRule ->Literal;
-			xml_stream << "</ogc:Literal>" <<  std::endl; 
 
-			xml_stream << "</ogc:PropertyIsEqualTo>" <<  std::endl; 
-			xml_stream << "</ogc:Filter>" <<  std::endl;
+		if (RasterRule)
+		{
+			xml_stream << "<ogc:Filter>" << std::endl;
+			xml_stream << "<ogc:PropertyIsEqualTo>" << std::endl;
+			xml_stream << "<ogc:PropertyName>" << RasterRule->PropertyName;
+			xml_stream << "</ogc:PropertyName>" << std::endl;
+			xml_stream << "<ogc:Literal>" << RasterRule->Literal;
+			xml_stream << "</ogc:Literal>" << std::endl;
+
+			xml_stream << "</ogc:PropertyIsEqualTo>" << std::endl;
+			xml_stream << "</ogc:Filter>" << std::endl;
 		}
 
-		if(RasterRule->GetSymbolizer()->GetClassName() == std::string("RasterSymbolizer"))
+		if (RasterRule->GetSymbolizer()->GetClassName() == std::string("RasterSymbolizer"))
 		{
-			std::string r_node_name = "se:RasterSymbolizer" ;
+			std::string r_node_name = "se:RasterSymbolizer";
 			xml_stream << "<" << r_node_name << ">" << std::endl;
-			xml_stream << "<ColorMap type=\""<< ((se:: RasterSymbolizer*)(RasterRule->GetSymbolizer()))->GetType() <<"\">" << std::endl;
+			xml_stream << "<ColorMap type=\"" << ((se::RasterSymbolizer*)(RasterRule->GetSymbolizer()))->GetType() << "\">" << std::endl;
 
-			xml_stream << "<se:Geometry>" ;
-			xml_stream <<((se:: RasterSymbolizer*)(RasterRule->GetSymbolizer()))->GetGeometry();
+			xml_stream << "<se:Geometry>";
+			xml_stream << ((se::RasterSymbolizer*)(RasterRule->GetSymbolizer()))->GetGeometry();
 			xml_stream << "</se:Geometry>" << std::endl;
-			int num=((se:: RasterSymbolizer*)(RasterRule->GetSymbolizer()))->GetMapEntryCount();
-			double Quanlity; 
+			int num = ((se::RasterSymbolizer*)(RasterRule->GetSymbolizer()))->GetMapEntryCount();
+			double Quanlity;
 			std::string  ColorRef;
 			double  Opacity;
 			std::string Label;
-			for(int xx=0;xx<num;xx++)
+			for (int xx = 0; xx < num; xx++)
 			{
-				((se:: RasterSymbolizer*)(RasterRule->GetSymbolizer()))->GetMapEntry(xx,Quanlity,ColorRef,Opacity,Label);
+				((se::RasterSymbolizer*)(RasterRule->GetSymbolizer()))->GetMapEntry(xx, Quanlity, ColorRef, Opacity, Label);
 
-				xml_stream <<"<ColorMapEntry color=\""<<ColorRef<<"\" quantity=\""<<Quanlity<<"\" label=\""<<Label<<"\" opacity=\""<<Opacity<<"\""<<"/"<<">"<<std::endl;
+				xml_stream << "<ColorMapEntry color=\"" << ColorRef << "\" quantity=\"" << Quanlity << "\" label=\"" << Label << "\" opacity=\"" << Opacity << "\"" << "/" << ">" << std::endl;
 			}
 
 			xml_stream << "</ColorMap>" << std::endl;
@@ -174,7 +174,7 @@ void Geo3DStyleXMLWriter::WirteCoverageSymbolizer(se::CoverageStyleRule* rule, s
 		xml_stream << "</se:Rule>" << std::endl;
 
 	}
-	
+
 	xml_stream << "</" << xml_node_name << ">" << std::endl;
 }
 
@@ -182,15 +182,15 @@ void Geo3DStyleXMLWriter::WirteCoverageSymbolizer(se::CoverageStyleRule* rule, s
 void Geo3DStyleXMLWriter::WirteSymbolizer(se::FeatureStyleRule* rule, std::ofstream& xml_stream)
 {
 
-	std::string xml_node_name ;
+	std::string xml_node_name;
 
-	if(rule->SymbolizerType == "PointSymbolizer")
+	if (rule->SymbolizerType == "PointSymbolizer")
 		xml_node_name = "GeoPointSymbolizer";
 
-	else if(rule->SymbolizerType == "LineSymbolizer")
+	else if (rule->SymbolizerType == "LineSymbolizer")
 		xml_node_name = "GeoLineSymbolizer";
 
-	else if(rule->SymbolizerType == "GeofaceSymbolizer")
+	else if (rule->SymbolizerType == "GeofaceSymbolizer")
 		xml_node_name = "GeoSurfaceSymbolizer";
 	if (rule->GetSymbolizer() == NULL)
 	{
@@ -198,7 +198,7 @@ void Geo3DStyleXMLWriter::WirteSymbolizer(se::FeatureStyleRule* rule, std::ofstr
 	}
 	xml_stream << "<" << xml_node_name << ">" << std::endl;
 
-	if(rule->SymbolizerType == "PointSymbolizer")
+	if (rule->SymbolizerType == "PointSymbolizer")
 	{
 		xml_stream << "<se:Graphic>" << std::endl;
 
@@ -207,7 +207,7 @@ void Geo3DStyleXMLWriter::WirteSymbolizer(se::FeatureStyleRule* rule, std::ofstr
 
 		xml_stream << "</se:Graphic>" << std::endl;
 
-		xml_stream << "<Material>"<< std::endl;
+		xml_stream << "<Material>" << std::endl;
 
 		xml_stream << "<AmbientIntensity>" << ((se::GeoPointSymbolizer*)(rule->GetSymbolizer()))->AmbientIntensity;
 		xml_stream << "</AmbientIntensity>" << std::endl;
@@ -230,7 +230,7 @@ void Geo3DStyleXMLWriter::WirteSymbolizer(se::FeatureStyleRule* rule, std::ofstr
 		xml_stream << ((se::GeoPointSymbolizer*)(rule->GetSymbolizer()))->SpecularColor[2];
 		xml_stream << "</SpecularColor>" << std::endl;
 
-		if(((se::GeoPointSymbolizer*)(rule->GetSymbolizer()))->Transparency == 0)
+		if (((se::GeoPointSymbolizer*)(rule->GetSymbolizer()))->Transparency == 0)
 		{
 			double transparency_tmp = 1;
 			xml_stream << "<Transparency>" << transparency_tmp;
@@ -242,12 +242,12 @@ void Geo3DStyleXMLWriter::WirteSymbolizer(se::FeatureStyleRule* rule, std::ofstr
 		xml_stream << "</Material>" << std::endl;
 	}
 
-	if(rule->SymbolizerType == "LineSymbolizer")
+	if (rule->SymbolizerType == "LineSymbolizer")
 	{
 		xml_stream << "<se:Stroke>" << std::endl;
 
 		xml_stream << "<se:SvgParameter name=\"stroke-width\">" << ((se::GeoLineSymbolizer*)(rule->GetSymbolizer()))->LineWidth;
-		xml_stream << "</se:SvgParameter>"<< std::endl;
+		xml_stream << "</se:SvgParameter>" << std::endl;
 
 		xml_stream << "</se:Stroke>" << std::endl;
 
@@ -274,7 +274,7 @@ void Geo3DStyleXMLWriter::WirteSymbolizer(se::FeatureStyleRule* rule, std::ofstr
 		xml_stream << ((se::GeoLineSymbolizer*)(rule->GetSymbolizer()))->SpecularColor[2];
 		xml_stream << "</SpecularColor>" << std::endl;
 
-		if(((se::GeoLineSymbolizer*)(rule->GetSymbolizer()))->Transparency == 0)
+		if (((se::GeoLineSymbolizer*)(rule->GetSymbolizer()))->Transparency == 0)
 		{
 			double transparency_tmp = 1;
 			xml_stream << "<Transparency>" << transparency_tmp;
@@ -286,7 +286,7 @@ void Geo3DStyleXMLWriter::WirteSymbolizer(se::FeatureStyleRule* rule, std::ofstr
 		xml_stream << "</Material>" << std::endl;
 	}
 
-	if(rule->SymbolizerType == "GeofaceSymbolizer")
+	if (rule->SymbolizerType == "GeofaceSymbolizer")
 	{
 		xml_stream << "<Front>" << std::endl;
 
@@ -313,7 +313,7 @@ void Geo3DStyleXMLWriter::WirteSymbolizer(se::FeatureStyleRule* rule, std::ofstr
 		xml_stream << ((se::GeofaceSymbolizer*)(rule->GetSymbolizer()))->SpecularColor[2];
 		xml_stream << "</SpecularColor>" << std::endl;
 
-		if(((se::GeofaceSymbolizer*)(rule->GetSymbolizer()))->Transparency == 0)
+		if (((se::GeofaceSymbolizer*)(rule->GetSymbolizer()))->Transparency == 0)
 		{
 			double transparency_tmp = 1;
 			xml_stream << "<Transparency>" << transparency_tmp;
@@ -325,7 +325,7 @@ void Geo3DStyleXMLWriter::WirteSymbolizer(se::FeatureStyleRule* rule, std::ofstr
 
 		xml_stream << "</Material>" << std::endl;
 
-		if(((se::GeofaceSymbolizer*)(rule->GetSymbolizer()))->Texture)
+		if (((se::GeofaceSymbolizer*)(rule->GetSymbolizer()))->Texture)
 		{
 			//ÎÆÀí²ÎÊý
 			xml_stream << "<GeoReferencedTexture>" << std::endl;
@@ -347,26 +347,20 @@ void Geo3DStyleXMLWriter::WirteSymbolizer(se::FeatureStyleRule* rule, std::ofstr
 			xml_stream << ((se::GeofaceSymbolizer*)(rule->GetSymbolizer()))->Texture->BorderColor[2] << " ";
 			xml_stream << ((se::GeofaceSymbolizer*)(rule->GetSymbolizer()))->Texture->BorderColor[3];
 			xml_stream << "</BorderColor>" << std::endl;
-
 			xml_stream << "<ReferencePoint>" << ((se::GeofaceSymbolizer*)(rule->GetSymbolizer()))->Texture->ReferencePoint[0] << " ";
 			xml_stream << ((se::GeofaceSymbolizer*)(rule->GetSymbolizer()))->Texture->ReferencePoint[1] << " ";
 			xml_stream << ((se::GeofaceSymbolizer*)(rule->GetSymbolizer()))->Texture->ReferencePoint[2];
 			xml_stream << "</ReferencePoint>" << std::endl;
-
 			xml_stream << "<Orientation>" << ((se::GeofaceSymbolizer*)(rule->GetSymbolizer()))->Texture->Orientation[0] << " ";
 			xml_stream << ((se::GeofaceSymbolizer*)(rule->GetSymbolizer()))->Texture->Orientation[1] << " ";
 			xml_stream << ((se::GeofaceSymbolizer*)(rule->GetSymbolizer()))->Texture->Orientation[2] << " ";
 			xml_stream << ((se::GeofaceSymbolizer*)(rule->GetSymbolizer()))->Texture->Orientation[3];
 			xml_stream << "</Orientation>" << std::endl;
-
 			xml_stream << "</GeoReferencedTexture>" << std::endl;
 		}
-
-
 		xml_stream << "</Front>" << std::endl;
-
 		xml_stream << "<Back>" << std::endl;
 		xml_stream << "</Back>" << std::endl;
 	}
 	xml_stream << "</" << xml_node_name << ">" << std::endl;
-  }
+}

@@ -1,5 +1,5 @@
-SET(TARGET_H  )
-SET(TARGET_SRC Geo3dmlReaderWriter.cpp main.cpp)
+SET(TARGET_H  VoxelMeshClipper.h Vector.h)
+SET(TARGET_SRC Geo3dmlReaderWriter.cpp VoxelMeshClipper.cpp Vector.cpp main.cpp)
 
 INCLUDE_DIRECTORIES(${GWEARTH_SOURCE_DIR}/Src ${GWEARTH_SOURCE_DIR}/Src/vtklibxml2 ${OSG_INCLUDE_DIR} ${ICONV_INCLUDE_DIR} )
 

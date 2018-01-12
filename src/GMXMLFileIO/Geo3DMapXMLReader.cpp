@@ -9,13 +9,13 @@
 #include "gmmlSystem.h"
 Geo3DMapXMLReader::Geo3DMapXMLReader(void)
 {
- 
+
 }
 
 
 Geo3DMapXMLReader::~Geo3DMapXMLReader(void)
 {
- 
+
 }
 
 
@@ -42,12 +42,12 @@ void Geo3DMapXMLReader::CreateGeomap()
 }
 
 bool  Geo3DMapXMLReader::ReadNode(xmlNodePtr curNode)
-{	
-	
-	if(xmlStrcmp(curNode->name, BAD_CAST "Geo3DMap")) 
+{
+
+	if (xmlStrcmp(curNode->name, BAD_CAST "Geo3DMap"))
 	{
 		return false;
-	} 
+	}
 
 	xmlChar* tmp_str;        //临时字符串变量
 
@@ -57,55 +57,55 @@ bool  Geo3DMapXMLReader::ReadNode(xmlNodePtr curNode)
 	gmml::Geo3DMap* map = NULL;
 	CreateGeomap();
 	map = (gmml::Geo3DMap*)gmmlObject;
-	while(curNode != NULL) 
+	while (curNode != NULL)
 	{
 		//取出Geo3DMap节点中的内容
-		if ((!xmlStrcmp(curNode->name, (const xmlChar *)"Name"))) 
+		if ((!xmlStrcmp(curNode->name, (const xmlChar *)"Name")))
 		{
 			gmmlProgressing();
 			tmp_str = xmlNodeGetContent(curNode);
-			char* out =0; 
-			if(std::string(mXMLCoding) == "UTF-8")
-				out = ConvertEnc("UTF-8","gb2312", (char*)tmp_str);
+			char* out = 0;
+			if (std::string(mXMLCoding) == "UTF-8")
+				out = ConvertEnc("UTF-8", "gb2312", (char*)tmp_str);
 			std::string sr;
 			if (out)
-				sr=std::string((char*)out);
+				sr = std::string((char*)out);
 			else
-				sr=std::string((char*)tmp_str);
+				sr = std::string((char*)tmp_str);
 			map->setName(sr);
 
-			xmlFree(tmp_str); 
-		} 	
-		else if((!xmlStrcmp(curNode->name, (const xmlChar *)"Layers"))) 
-		{	
+			xmlFree(tmp_str);
+		}
+		else if ((!xmlStrcmp(curNode->name, (const xmlChar *)"Layers")))
+		{
 			gmmlProgressing();
 			xmlNodePtr layerNode = curNode->xmlChildrenNode;
-			while(layerNode)
+			while (layerNode)
 			{
-				if((!xmlStrcmp(layerNode->name, (const xmlChar *)"Layer"))) 
+				if ((!xmlStrcmp(layerNode->name, (const xmlChar *)"Layer")))
 				{
 					Geo3DLayerXMLReader GeoLayerReader;
-					if(map)
+					if (map)
 						GeoLayerReader.ReadGeoLayer(layerNode);
 					///@brief 将GeoLayer加入到新GeoLayer中
-					if(map)
+					if (map)
 						map->AddGeoLayer((gmml::Geo3DLayer*)GeoLayerReader.GetGeoLayer());
 				}
-			  layerNode = layerNode->next;
+				layerNode = layerNode->next;
 			}
-		}	
-		else if(xmlStrcmp(curNode->name, (const xmlChar *)"text"))
+		}
+		else if (xmlStrcmp(curNode->name, (const xmlChar *)"text"))
 		{
 			gmmlProgressing();
 			tmp_str = xmlNodeGetContent(curNode);
 			char* out = NULL;
-			if(std::string(mXMLCoding) == "UTF-8")
-				out =ConvertEnc("UTF-8","GB2312",(char*)tmp_str);
+			if (std::string(mXMLCoding) == "UTF-8")
+				out = ConvertEnc("UTF-8", "GB2312", (char*)tmp_str);
 			std::string sr;
 			if (out)
-				sr=std::string((char*)out);
+				sr = std::string((char*)out);
 			else
-				sr=std::string((char*)tmp_str);
+				sr = std::string((char*)tmp_str);
 			AttributeValue attr_desc;
 			attr_desc.fieldName = "Description";
 			attr_desc.fieldValue = sr;
@@ -113,8 +113,8 @@ bool  Geo3DMapXMLReader::ReadNode(xmlNodePtr curNode)
 			xmlFree(tmp_str);
 		}
 
-		curNode = curNode->next; 
-	} 
+		curNode = curNode->next;
+	}
 
 	return true;
 
