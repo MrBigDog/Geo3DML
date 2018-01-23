@@ -14,6 +14,8 @@
 
 #include "VoxelMeshClipper.h"
 
+#include <osgFX/Outline>
+
 void setTransparent(osg::StateSet* state, float alf)
 {
 	state->setMode(GL_LIGHTING, osg::StateAttribute::OFF | osg::StateAttribute::PROTECTED);
@@ -103,42 +105,63 @@ private:
 	osg::Vec3 _offset;
 };
 
+#include "EffectUtil.h"
+
 int main()
 {
-	osg::ref_ptr<osg::Node> geo3dmlNode = osgDB::readNodeFile("D:\\Geo3DGml_GIT\\Geo3DML\\data\\geo3dml_test_models\\cubeMode\\aa.xml");
+	std::string fpath = "D:\\Geo3DGml_GIT\\Geo3DML\\data\\geo3dml_test_models\\cubeMode\\aa.xml";
+	std::string newpath = "E:\\DATA\\GeoData\\Workspace\\500\\workspace.xml";
+	std::string newpath1 = "E:\\DATA\\GeoData\\Workspace\\800\\Workspace\\workspace.xml";
+	std::string newpath2 = "E:\\DATA\\GeoData\\Workspace--\\Workspace\\800\\newws\\800.xml";
+	osg::ref_ptr<osg::Node> geo3dmlNode = osgDB::readNodeFile(newpath1);
+
+	setBloomEffect3(geo3dmlNode);
+
+	//osgDB::writeNodeFile(*geo3dmlNode, "geoModel-500.osg");
 	//osg::ref_ptr<osg::PolygonMode> pm = new osg::PolygonMode;
 	//pm->setMode(osg::PolygonMode::FRONT_AND_BACK, osg::PolygonMode::LINE);
 	//geo3dmlNode->getOrCreateStateSet()->setAttributeAndModes(pm, osg::StateAttribute::OVERRIDE | osg::StateAttribute::ON);
 
-	osg::ComputeBoundsVisitor cbv;
-	geo3dmlNode->accept(cbv);
+	//osgDB::writeNodeFile(*geo3dmlNode, "test.osgb");
 
-	osg::BoundingBox bb = cbv.getBoundingBox();
+	//osg::ComputeBoundsVisitor cbv;
+	//geo3dmlNode->accept(cbv);
 
-	osg::Vec3 planePoint = bb.center();
-	osg::Vec3 planeNormal = osg::Vec3(1, 1, 1);
+	//osg::BoundingBox bb = cbv.getBoundingBox();
 
-	GeomVisitor gv(planePoint, planeNormal);
-	geo3dmlNode->accept(gv);
+	//osg::Vec3 planePoint = bb.center();
+	//osg::Vec3 planeNormal = osg::Vec3(1, 1, 1);
 
-	osg::ref_ptr<osg::Node> pf = gv._root;
-	FlatVisitor fv(planePoint);
-	pf->accept(fv);
-	osg::ref_ptr<osg::MatrixTransform> mt = new osg::MatrixTransform;
-	mt->addChild(pf);
-	mt->setMatrix(osg::Matrixd::translate(planePoint));
+	//GeomVisitor gv(planePoint, planeNormal);
+	//geo3dmlNode->accept(gv);
+
+	//osg::ref_ptr<osg::Node> pf = gv._root;
+	//FlatVisitor fv(planePoint);
+	//pf->accept(fv);
+	//osg::ref_ptr<osg::MatrixTransform> mt = new osg::MatrixTransform;
+	//mt->addChild(pf);
+	//mt->setMatrix(osg::Matrixd::translate(planePoint));
+
+
 
 	osg::ref_ptr<osg::Group> root = new osg::Group;
 	root->addChild(geo3dmlNode);
-	root->addChild(mt);
+	//root->addChild(mt);
+	//setOutlineEffect(geo3dmlNode);
+
 
 	osgViewer::Viewer viewer;
-	viewer.setSceneData(root);
 	viewer.addEventHandler(new osgGA::StateSetManipulator(viewer.getCamera()->getOrCreateStateSet()));
 	viewer.addEventHandler(new osgViewer::StatsHandler());
 	viewer.addEventHandler(new osgViewer::WindowSizeHandler());
 	viewer.addEventHandler(new osgViewer::ThreadingHandler());
 	viewer.addEventHandler(new osgViewer::LODScaleHandler());
+	unsigned int clearMask = viewer.getCamera()->getClearMask();
+	osg::DisplaySettings::instance()->setMinimumNumStencilBits(1);
+	viewer.getCamera()->setClearMask(clearMask | GL_STENCIL_BUFFER_BIT);
+	viewer.getCamera()->setClearStencil(0);
+	viewer.setSceneData(root);
+
 	viewer.realize();
 	viewer.run();
 

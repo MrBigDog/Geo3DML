@@ -28,7 +28,7 @@
 
 namespace
 {
-	osg::Node* createFeatureNode(gmml::GeologicFeature* gf, osg::TransferFunction1D* tf, const osg::Vec4& color)
+	osg::Node* createFeatureNode(gmml::GeologicFeature* gf, osg::TransferFunction1D* tf)
 	{
 		osg::ref_ptr<osg::Geode> geode = new osg::Geode;
 		for (int i = 0; i < gf->GetMappedFeatureCount(); ++i)
@@ -85,16 +85,12 @@ namespace
 						(*na)[pts[2]] = nn;
 					}
 
-					osg::ref_ptr<osg::Vec4Array> ca = new osg::Vec4Array;
-					ca->push_back(color);
-
 					osg::ref_ptr<osg::Geometry> geom = new osg::Geometry;
 					geom->setUseDisplayList(false);
 					geom->setUseVertexBufferObjects(true);
 					geom->setName(shapeName);
 					geom->setVertexArray(va);
 					geom->setNormalArray(na, osg::Array::BIND_PER_VERTEX);
-					geom->setColorArray(ca, osg::Array::BIND_OVERALL);
 					geom->addPrimitiveSet(de);
 					geode->addDrawable(geom);
 				}
@@ -359,8 +355,6 @@ public:
 			gmml::Geo3DMap* pMap = project->GetGeo3DMap(mi);
 			int layercount = pMap->GetGeo3DLayerCount();
 
-			osg::ref_ptr<osg::Vec4Array> temptCa = new osg::Vec4Array;
-
 			//osg::ref_ptr<osg::Group> mgroup = new osg::Group;
 			for (int layeri = 0; layeri < layercount; ++layeri)
 			{
@@ -374,8 +368,6 @@ public:
 				for (int ftsi = 0; ftsi < ftsNum; ++ftsi)
 				{
 					se::FeatureType3DStyle* fts = style->GetFeatureTypeStyle(ftsi);
-					std::string name = fts->getFeatureTypeName();
-
 					int rulNum = fts->getRuleCount();
 					for (int ruli = 0; ruli < rulNum; ++ruli)
 					{
@@ -383,7 +375,7 @@ public:
 						se::GeoSymbolizer* gs = rule->GetSymbolizer();
 						gs->DiffuseColor;
 						osg::Vec4 color(gs->DiffuseColor[0], gs->DiffuseColor[1], gs->DiffuseColor[2], 1.0);
-						temptCa->push_back(color);
+						std::cout << "color: " << color[0] << " " << color[1] << " " << color[2] << " " << color[3] << std::endl;
 					}
 				}
 
@@ -404,6 +396,15 @@ public:
 			for (int fci = 0; fci < fcNum; ++fci)
 			{
 				gmml::GeologicFeatureClass* fc = pModel->GetGeoFeatureClass(fci);
+
+				gmml::Geo3DLayer* layer = dynamic_cast<gmml::Geo3DLayer*>(fc->getContainer());
+				if (layer)
+				{
+					std::cout << "wow" << std::endl;
+				}
+
+				int fscn = fc->GetFeatureClassSchemaCount();
+
 				int fnum = fc->GetGeologicFeatureCount();
 				for (int fi = 0; fi < fnum; ++fi)
 				{
@@ -411,7 +412,7 @@ public:
 					int mfc = geoFeature->GetMappedFeatureCount();
 
 					gmml::MappedFeature* mf = geoFeature->GetMappedFeature(0);
-					osg::ref_ptr<osg::Node> node = createFeatureNode(geoFeature, _transferFunction, temptCa->at(fi));
+					osg::ref_ptr<osg::Node> node = createFeatureNode(geoFeature, _transferFunction);
 					mgroup->addChild(node);
 				}
 			}

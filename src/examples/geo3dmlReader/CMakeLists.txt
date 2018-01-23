@@ -1,5 +1,5 @@
-SET(TARGET_H  VoxelMeshClipper.h Vector.h)
-SET(TARGET_SRC Geo3dmlReaderWriter.cpp VoxelMeshClipper.cpp Vector.cpp main.cpp)
+SET(TARGET_H  VoxelMeshClipper.h Vector.h EffectUtil.h)
+SET(TARGET_SRC Geo3dmlReaderWriter.cpp VoxelMeshClipper.cpp Vector.cpp EffectUtil.cpp main.cpp)
 
 INCLUDE_DIRECTORIES(${GWEARTH_SOURCE_DIR}/Src ${GWEARTH_SOURCE_DIR}/Src/vtklibxml2 ${OSG_INCLUDE_DIR} ${ICONV_INCLUDE_DIR} )
 
@@ -7,6 +7,7 @@ SET(TARGET_LIBRARIES_VARS
 	OSG_LIBRARY 
 	OSGGA_LIBRARY 
 	OSGDB_LIBRARY 
+	OSGFX_LIBRARY
 	OSGUTIL_LIBRARY 
 	OSGVIEWER_LIBRARY 
 	OPENTHREADS_LIBRARY
