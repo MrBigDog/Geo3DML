@@ -15,7 +15,6 @@
 #include <GM_XML/Geo3DStyle.h>
 #include <GM_XML/FeatureStyle.h>
 #include <GM_XML/GeoSymbolizer.h>
-#include <GM_XML/FeatureRelation.h>
 #include <GMLFeature/gmlFeatureCollection.h>
 #include <GMXMLFileIO/Geo3DProjectXMLReader.h>
 #include <vtkExtending/vtkObject.h>
@@ -412,33 +411,19 @@ public:
 		gmml::Geo3DProject* project = dynamic_cast<gmml::Geo3DProject*>(xmlreader.GetGeoProject());
 
 		if (!project) return ReadResult(0L);
+		int modelNum = project->GetGeoModelCount();
+		if (modelNum < 1) return ReadResult(0L);
 
 		GeoDataMap geoData;
-		std::map<std::string, gmml::FeatureRelation*> relData;
 
-		for (int mi = 0; mi < project->GetGeoModelCount(); ++mi)
+		for (int mi = 0; mi < modelNum; ++mi)
 		{
 			gmml::GeoModel* pModel = project->GetGeoModel(mi);
 			if (!pModel) continue;
 			readModelGeoData(pModel, geoData);
-
-
-			// ¶ÁÈ¡¹ØÏµ [1/26/2018 mahc]
-			int nCount = pModel->GetGeoFeatureRelationCount();
-			for (int i = 0; i < nCount; ++i)
-			{
-				gmml::FeatureRelation* pRel = pModel->GetGeoFeatureRelation(i);
-				relData.insert(std::make_pair(pRel->getSourceRole(), pRel));
-			}
-
 		}
 
-		if (geoData.empty())
-		{
-			return ReadResult(0L);
-		}
-
-		osg::ref_ptr<osg::Group> projGroup = new osg::Group;
+		osg::ref_ptr<osg::Group> projectGroup = new osg::Group;
 
 		for (int i = 0; i < project->GetGeo3DMapCount(); ++i)
 		{
@@ -446,10 +431,6 @@ public:
 			int layercount = pMap->GetGeo3DLayerCount();
 			for (int j = 0; j < layercount; ++j)
 			{
-				//if (j != 0)
-				//{
-				//	continue;
-				//}
 				gmml::Geo3DLayer* layer = pMap->GetLayer(j);
 				if (!layer) continue;
 
@@ -460,8 +441,6 @@ public:
 				{
 					continue;
 				}
-
-				osg::ref_ptr<osg::Group> layerGroup = new osg::Group;
 
 				gmml::Geo3DStyle* style = layer->GetStyle();
 				int ftsNum = style->GetFeatureTypeStyleCount();
@@ -474,91 +453,100 @@ public:
 					for (int ruli = 0; ruli < rulNum; ++ruli)
 					{
 						se::FeatureStyleRule* rule = fts->getRule(ruli);
-						if (!rule) continue;
-
 						auto itFeature = itFeatureClass->second.find(rule->Literal);
 						if (itFeature == itFeatureClass->second.end())
 						{
-							auto itRel = relData.find(rule->Literal);
-							if (itRel == relData.end())
-							{
-								continue;
-							}
-							osg::ref_ptr<osg::Group> featureGroup = new osg::Group;
-							for (int iRel = 0; iRel < itRel->second->GetTargetCount(); ++iRel)
-							{
-								std::string str = itRel->second->getTargetRole(iRel);
-								auto itFeature = itFeatureClass->second.find(str);
-								gmml::GeologicFeature* pFC = NULL;
-								if (itFeature == itFeatureClass->second.end())
-								{
-									for (auto it = geoData.begin(); it != geoData.end(); ++it)
-									{
-										itFeature = it->second.find(str);
-										if (itFeature != it->second.end())
-										{
-											pFC = itFeature->second;
-											break;
-										}
-									}
-								}
-								else
-								{
-									pFC = itFeature->second;
-								}
-
-
-								if (NULL != pFC)
-								{
-
-									se::GeoSymbolizer* gs = rule->GetSymbolizer();
-									osg::Vec4 color(1, 1, 1, 1);
-									if (gs)
-									{
-										color = osg::Vec4(gs->DiffuseColor[0], gs->DiffuseColor[1], gs->DiffuseColor[2], 1.0);
-									}
-									osg::ref_ptr<osg::Node> node = createFeatureNode(pFC, _transferFunction, color);
-									if (node.valid())
-									{
-										featureGroup->addChild(node);
-									}
-								}
-							}
-							layerGroup->addChild(featureGroup);
 							continue;
 						}
-
 						gmml::GeologicFeature* geoFeature = itFeature->second;
-						if (!geoFeature) continue;
-
-						//std::string gfname = geoFeature->getName();
-						//string::size_type idx = gfname.find("ault");
-						//if (idx != string::npos)
-						//{
-						//	cout << gfname << std::endl;
-						//	continue;
-						//}
-
-						osg::Vec4 color(1, 1, 1, 1);
 						se::GeoSymbolizer* gs = rule->GetSymbolizer();
-						if (gs)
-						{
-							color = osg::Vec4(gs->DiffuseColor[0], gs->DiffuseColor[1], gs->DiffuseColor[2], 1.0);
-						}
+
+						osg::Vec4 color(gs->DiffuseColor[0], gs->DiffuseColor[1], gs->DiffuseColor[2], 1.0);
 
 						osg::ref_ptr<osg::Node> node = createFeatureNode(geoFeature, _transferFunction, color);
-						if (node.valid())
-						{
-							//osgDB::writeNodeFile(*node, "mytest.ive");
-							layerGroup->addChild(node);
-						}
+
+
+						//d3d9_hardware_mesh* v_sub_mesh = new d3d9_hardware_mesh();
+						//v_sub_mesh->m_path = buf->get_path();
+						//construct_single_mesh(buf->get_document(), v_sub_mesh, pFC, gs);
+						//v_sub_mesh->set_name(string_ext::to_wstring(layer->getName() + rule->Literal).c_str());
+						//v_new_mesh->m_root_frame = nullptr;
+						//v_new_mesh->m_fvf = v_sub_mesh->m_fvf;
+						//box.combine(v_sub_mesh->m_mesh_aabb);
+						//v_new_mesh->m_mesh_frame_map.insert(make_pair(v_sub_mesh, nullptr));
 					}
 				}
-				if (layerGroup->getNumChildren() > 0)
+			}
+
+		}
+
+		osg::ref_ptr<osg::Group> projGroup = new osg::Group;
+		for (int mi = 0; mi < modelNum; ++mi)
+		{
+			gmml::GeoModel* pModel = project->GetGeoModel(mi);
+			if (!pModel) continue;
+
+			gmml::Geo3DMap* pMap = project->GetGeo3DMap(mi);
+			int layercount = pMap->GetGeo3DLayerCount();
+
+			osg::ref_ptr<osg::Vec4Array> temptCa = new osg::Vec4Array;
+
+			//osg::ref_ptr<osg::Group> mgroup = new osg::Group;
+			for (int layeri = 0; layeri < layercount; ++layeri)
+			{
+				gmml::Geo3DLayer* layer = pMap->GetLayer(layeri);
+				if (!layer) continue;
+
+				gmml::GeologicFeatureClass* fc = layer->GetFeatureClass();
+
+				gmml::Geo3DStyle* style = layer->GetStyle();
+				int ftsNum = style->GetFeatureTypeStyleCount();
+				for (int ftsi = 0; ftsi < ftsNum; ++ftsi)
 				{
-					projGroup->addChild(layerGroup);
+					se::FeatureType3DStyle* fts = style->GetFeatureTypeStyle(ftsi);
+					std::string name = fts->getFeatureTypeName();
+
+					int rulNum = fts->getRuleCount();
+					for (int ruli = 0; ruli < rulNum; ++ruli)
+					{
+						se::FeatureStyleRule* rule = fts->getRule(ruli);
+						se::GeoSymbolizer* gs = rule->GetSymbolizer();
+						gs->DiffuseColor;
+						osg::Vec4 color(gs->DiffuseColor[0], gs->DiffuseColor[1], gs->DiffuseColor[2], 1.0);
+						temptCa->push_back(color);
+					}
+				}
+
+				//int fnum = fc->GetGeologicFeatureCount();
+				//int fcsn = fc->GetFeatureClassSchemaCount();
+				//for (int fi = 0; fi < fnum; ++fi)
+				//{
+				//	gmml::GeologicFeature* geoFeature = fc->GetGeologicFeature(fi);
+				//	osg::ref_ptr<osg::Node> node = createFeatureNode(geoFeature, _transferFunction);
+				//	mgroup->addChild(node);
+				//}
+			}
+			//projGroup->addChild(mgroup);
+
+
+			osg::ref_ptr<osg::Group> mgroup = new osg::Group;
+			int fcNum = pModel->GetGeoFeatureClassCount();
+			for (int fci = 0; fci < fcNum; ++fci)
+			{
+				gmml::GeologicFeatureClass* fc = pModel->GetGeoFeatureClass(fci);
+				int fnum = fc->GetGeologicFeatureCount();
+				for (int fi = 0; fi < fnum; ++fi)
+				{
+					gmml::GeologicFeature* geoFeature = fc->GetGeologicFeature(fi);
+					//std::string name = utf8ToLatin1(geoFeature->getName());
+					//std::string id = utf8ToLatin1(geoFeature->getID());
+
+					osg::ref_ptr<osg::Node> node = createFeatureNode(geoFeature, _transferFunction, temptCa->at(fi));
+					mgroup->addChild(node);
 				}
 			}
+			projGroup->addChild(mgroup);
+
 		}
 
 		delete project;

@@ -110,14 +110,21 @@ private:
 int main()
 {
 	std::string fpath = "D:\\Geo3DGml_GIT\\Geo3DML\\data\\geo3dml_test_models\\cubeMode\\aa.xml";
-	std::string newpath = "E:\\DATA\\GeoData\\Workspace\\500\\workspace.xml";
-	std::string newpath1 = "E:\\DATA\\GeoData\\Workspace\\800\\Workspace\\workspace.xml";
-	std::string newpath2 = "E:\\DATA\\GeoData\\Workspace--\\Workspace\\800\\newws\\800.xml";
+	std::string newpath = "E:\\DATA\\GeoData\\Workspace111\\500\\workspace.xml";
+	std::string newpath1 = "E:\\DATA\\GeoData\\Workspace111\\800\\Workspace\\workspace.xml";
+
 	osg::ref_ptr<osg::Node> geo3dmlNode = osgDB::readNodeFile(newpath1);
 
-	setBloomEffect3(geo3dmlNode);
+	osg::ComputeBoundsVisitor cbv;
+	geo3dmlNode->accept(cbv);
+	osg::BoundingBox bb = cbv.getBoundingBox();
 
-	//osgDB::writeNodeFile(*geo3dmlNode, "geoModel-500.osg");
+	//FlatVisitor fv(bb.center());
+	//geo3dmlNode->accept(fv);
+
+	//setBloomEffect3(geo3dmlNode);
+
+	//osgDB::writeNodeFile(*geo3dmlNode, "geoModel-800-1.osg");
 	//osg::ref_ptr<osg::PolygonMode> pm = new osg::PolygonMode;
 	//pm->setMode(osg::PolygonMode::FRONT_AND_BACK, osg::PolygonMode::LINE);
 	//geo3dmlNode->getOrCreateStateSet()->setAttributeAndModes(pm, osg::StateAttribute::OVERRIDE | osg::StateAttribute::ON);
@@ -147,6 +154,7 @@ int main()
 	osg::ref_ptr<osg::Group> root = new osg::Group;
 	root->addChild(geo3dmlNode);
 	//root->addChild(mt);
+
 	//setOutlineEffect(geo3dmlNode);
 
 
